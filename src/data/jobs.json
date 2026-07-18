@@ -1,336 +1,148 @@
 [
   {
-    "id": "remoteok-1134061",
-    "title": "Field Reliability Engineer LATAM",
-    "company": "Honeycomb.io",
-    "location": "Brazil",
-    "workMode": "remote",
-    "tags": [
-      "SRE"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-field-reliability-engineer-latam-honeycomb-io-1134061",
-    "source": "remoteok",
-    "postedAt": "2026-06-25"
-  },
-  {
-    "id": "remoteok-1134015",
-    "title": "Senior DevOps Engineer",
-    "company": "Lemon.io",
-    "location": "Anywhere",
-    "workMode": "remote",
-    "tags": [
-      "AWS",
-      "GCP",
-      "Kubernetes",
-      "DevOps",
-      "Databases",
-      "Python"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1134015",
-    "source": "remoteok",
-    "postedAt": "2026-06-24"
-  },
-  {
-    "id": "remoteok-1131552",
-    "title": "Manager Platform Engineering",
-    "company": "Natera",
-    "location": "US Remote",
-    "workMode": "remote",
-    "tags": [
-      "DevOps",
-      "Platform Engineering"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-manager-platform-engineering-natera-1131552",
-    "source": "remoteok",
-    "postedAt": "2026-05-12"
-  },
-  {
-    "id": "remoteok-1131468",
-    "title": "Senior Platform Engineer",
-    "company": "saas.group",
-    "location": "Remote, Europe",
-    "workMode": "remote",
-    "tags": [
-      "SRE",
-      "DevOps",
-      "Platform Engineering",
-      "Cloud Architecture"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-platform-engineer-saas-group-1131468",
-    "source": "remoteok",
-    "postedAt": "2026-05-05"
-  },
-  {
-    "id": "remoteok-1131375",
-    "title": "Senior Site Reliability Engineer AI Infrastructure",
-    "company": "Andromeda Cluster",
-    "location": "San Francisco",
-    "workMode": "remote",
-    "tags": [
-      "SRE",
-      "DevOps",
-      "Infrastructure"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-site-reliability-engineer-ai-infrastructure-andromeda-cluster-1131375",
-    "source": "remoteok",
-    "postedAt": "2026-04-29"
-  },
-  {
-    "id": "remoteok-1131281",
-    "title": "Principal Customer Solutions Architect",
+    "id": "greenhouse-caylent-6010762004",
+    "title": "Customer Solutions Architect",
     "company": "Caylent",
-    "location": "CANADA",
-    "workMode": "remote",
+    "location": "BRAZIL",
+    "workMode": "onsite",
     "tags": [
       "AWS",
       "DevOps",
       "Cloud Architecture"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-principal-customer-solutions-architect-caylent-1131281",
-    "source": "remoteok",
-    "postedAt": "2026-04-23"
+    "url": "https://job-boards.greenhouse.io/caylent/jobs/6010762004",
+    "source": "greenhouse",
+    "postedAt": "2026-07-16"
   },
   {
-    "id": "remoteok-1131263",
-    "title": "Senior Site Reliability Engineer",
-    "company": "Pave Bank",
-    "location": "Kuala Lumpur",
-    "workMode": "remote",
-    "tags": [
-      "GCP",
-      "Kubernetes",
-      "Docker",
-      "SRE",
-      "DevOps",
-      "Python"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-site-reliability-engineer-pave-bank-1131263",
-    "source": "remoteok",
-    "postedAt": "2026-04-22"
-  },
-  {
-    "id": "remoteok-1131251",
-    "title": "Senior Cloud Engineer",
-    "company": "DV Trading",
-    "location": "Anywhere",
-    "workMode": "remote",
-    "tags": [
-      "AWS",
-      "GCP",
-      "DevOps",
-      "Security"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-cloud-engineer-dv-trading-1131251",
-    "source": "remoteok",
-    "postedAt": "2026-04-22"
-  },
-  {
-    "id": "remoteok-1131206",
-    "title": "Senior Site Reliability Engineer",
-    "company": "UJET",
-    "location": "Austin, TX, US",
-    "workMode": "remote",
-    "tags": [
-      "SRE",
-      "DevOps",
-      "Cloud Architecture"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-site-reliability-engineer-ujet-1131206",
-    "source": "remoteok",
-    "postedAt": "2026-04-18"
-  },
-  {
-    "id": "remoteok-1131169",
-    "title": "Senior Software Engineer Cloud Platform",
-    "company": "Signifyd",
-    "location": "United States",
-    "workMode": "remote",
-    "tags": [
-      "Kubernetes",
-      "DevOps",
-      "Cloud Architecture",
-      "Security"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-cloud-platform-signifyd-1131169",
-    "source": "remoteok",
-    "postedAt": "2026-04-16"
-  },
-  {
-    "id": "remoteok-1131145",
-    "title": "Senior Solutions Architect",
-    "company": "540",
-    "location": "Anywhere",
-    "workMode": "remote",
-    "tags": [
-      "GCP",
-      "Kubernetes",
-      "Cloud Architecture",
-      "Security"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-solutions-architect-540-1131145",
-    "source": "remoteok",
-    "postedAt": "2026-04-16"
-  },
-  {
-    "id": "remoteok-1131089",
-    "title": "Senior Cloud Architect ML AI",
+    "id": "greenhouse-doitintl-7788227003",
+    "title": "Senior Cloud Architect, Delivery (GenAI)",
     "company": "DoiT",
-    "location": "Anywhere",
+    "location": "Remote Netherlands",
     "workMode": "remote",
     "tags": [
       "Kubernetes",
       "Cloud Architecture"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
-    "source": "remoteok",
-    "postedAt": "2026-04-12"
+    "url": "https://job-boards.greenhouse.io/doitintl/jobs/7788227003",
+    "source": "greenhouse",
+    "postedAt": "2026-07-13"
   },
   {
-    "id": "remoteok-1131081",
-    "title": "Senior Engineer Platform Devops",
-    "company": "CloudWalk",
-    "location": "SÃ£o Paulo",
-    "workMode": "remote",
-    "tags": [
-      "GCP",
-      "Kubernetes",
-      "DevOps",
-      "Platform Engineering",
-      "Cloud Architecture",
-      "Security"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-engineer-platform-devops-cloudwalk-1131081",
-    "source": "remoteok",
-    "postedAt": "2026-04-11"
-  },
-  {
-    "id": "remoteok-1130893",
-    "title": "Site Reliability Engineer US West",
-    "company": "MinIO",
-    "location": "Anywhere",
-    "workMode": "remote",
-    "tags": [
-      "SRE",
-      "DevOps"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-site-reliability-engineer-us-west-minio-1130893",
-    "source": "remoteok",
-    "postedAt": "2026-03-26"
-  },
-  {
-    "id": "remoteok-1130799",
-    "title": "DevOps Database Assistant Vice President",
+    "id": "greenhouse-icapitalnetwork-8605461002",
+    "title": "Manager for DevOps and DBA Engineer - Assistant Vice President",
     "company": "iCapital",
-    "location": "Salt Lake City",
-    "workMode": "remote",
+    "location": "Salt Lake City, Utah, United States",
+    "workMode": "onsite",
     "tags": [
       "AWS",
       "DevOps",
       "Security",
       "Databases"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-devops-database-assistant-vice-president-icapital-1130799",
-    "source": "remoteok",
-    "postedAt": "2026-03-16"
+    "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8605461002",
+    "source": "greenhouse",
+    "postedAt": "2026-07-09"
   },
   {
-    "id": "remoteok-1130783",
-    "title": "Staff DevOps Engineer",
-    "company": "Life360",
-    "location": "Anywhere",
-    "workMode": "remote",
+    "id": "greenhouse-ujet-4709322005",
+    "title": "Senior Site Reliability Engineer (SRE)",
+    "company": "UJET",
+    "location": "Seoul, Korea",
+    "workMode": "onsite",
     "tags": [
-      "Kubernetes",
-      "DevOps"
+      "SRE",
+      "DevOps",
+      "Cloud Architecture"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-staff-devops-engineer-life360-1130783",
-    "source": "remoteok",
-    "postedAt": "2026-03-14"
+    "url": "https://job-boards.greenhouse.io/ujet/jobs/4709322005",
+    "source": "greenhouse",
+    "postedAt": "2026-07-07"
   },
   {
-    "id": "remoteok-1130779",
-    "title": "Engineering Manager Workload Management",
-    "company": "Graphcore",
-    "location": "GdaÅsk",
+    "id": "greenhouse-honeycomb-5254507008",
+    "title": "Field Reliability Engineer- LATAM",
+    "company": "Honeycomb.io",
+    "location": "Remote - Brazil",
     "workMode": "remote",
     "tags": [
-      "Kubernetes",
-      "DevOps"
+      "SRE"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-engineering-manager-workload-management-graphcore-1130779",
-    "source": "remoteok",
-    "postedAt": "2026-03-14"
+    "url": "https://job-boards.greenhouse.io/honeycomb/jobs/5254507008",
+    "source": "greenhouse",
+    "postedAt": "2026-06-26"
   },
   {
-    "id": "remoteok-1130763",
-    "title": "Software Engineer New Grad Production Infrastructure",
-    "company": "Palantir Technologies",
-    "location": "Seattle, WA",
+    "id": "greenhouse-dvtrading-4686573005",
+    "title": "Senior Cloud Engineer (Chicago)",
+    "company": "DV Trading",
+    "location": "Chicago",
+    "workMode": "onsite",
+    "tags": [
+      "AWS",
+      "GCP",
+      "DevOps",
+      "Security"
+    ],
+    "url": "https://job-boards.greenhouse.io/dvtrading/jobs/4686573005",
+    "source": "greenhouse",
+    "postedAt": "2026-06-22"
+  },
+  {
+    "id": "greenhouse-540-7768592003",
+    "title": "Senior Solutions Architect",
+    "company": "540",
+    "location": "Patrick SFB, FL or Arlington, VA",
+    "workMode": "onsite",
+    "tags": [
+      "GCP",
+      "Kubernetes",
+      "Cloud Architecture",
+      "Security"
+    ],
+    "url": "https://job-boards.greenhouse.io/540/jobs/7768592003",
+    "source": "greenhouse",
+    "postedAt": "2026-06-10"
+  },
+  {
+    "id": "lever-cloudwalk-a4be5326-9d29-40b3-98bf-a249e24aba10",
+    "title": "Senior Engineer - Platform/Devops",
+    "company": "CloudWalk",
+    "location": "São Paulo",
+    "workMode": "onsite",
+    "tags": [
+      "GCP",
+      "Kubernetes",
+      "DevOps",
+      "Platform Engineering",
+      "Cloud Architecture",
+      "Security"
+    ],
+    "url": "https://jobs.lever.co/cloudwalk/a4be5326-9d29-40b3-98bf-a249e24aba10",
+    "source": "lever",
+    "postedAt": "2026-04-10"
+  },
+  {
+    "id": "ashby-andromeda-c0129afa-ddfb-47e1-9968-b3dbf27b5d55",
+    "title": "Senior Site Reliability Engineer - AI Infrastructure",
+    "company": "Andromeda Cluster",
+    "location": "Global Remote / San Francisco, CA",
     "workMode": "remote",
     "tags": [
-      "Kubernetes",
+      "SRE",
       "DevOps",
       "Infrastructure"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-new-grad-production-infrastructure-palantir-technologies-1130763",
-    "source": "remoteok",
-    "postedAt": "2026-03-13"
+    "url": "https://jobs.ashbyhq.com/andromeda/c0129afa-ddfb-47e1-9968-b3dbf27b5d55",
+    "source": "ashby",
+    "postedAt": "2026-04-09"
   },
   {
-    "id": "remoteok-1130741",
-    "title": "Senior Software Engineer Karpenter",
-    "company": "Cast AI",
-    "location": "Anywhere",
-    "workMode": "remote",
-    "tags": [
-      "Kubernetes",
-      "DevOps"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-karpenter-cast-ai-1130741",
-    "source": "remoteok",
-    "postedAt": "2026-03-12"
-  },
-  {
-    "id": "remoteok-1129909",
-    "title": "Senior DevOps Architect",
-    "company": "2100 NVIDIA USA",
-    "location": "US, CA, Santa Clara",
-    "workMode": "remote",
-    "tags": [
-      "Kubernetes",
-      "Docker",
-      "Ansible",
-      "DevOps",
-      "Cloud Architecture",
-      "Databases"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-architect-2100-nvidia-usa-1129909",
-    "source": "remoteok",
-    "postedAt": "2026-01-31"
-  },
-  {
-    "id": "remoteok-1129905",
-    "title": "Principal Software Engineer Dynamo",
-    "company": "2100 NVIDIA USA",
-    "location": "US, CA, Santa Clara",
-    "workMode": "remote",
-    "tags": [
-      "Kubernetes",
-      "SRE",
-      "DevOps",
-      "Cloud Architecture",
-      "Python"
-    ],
-    "url": "https://remoteOK.com/remote-jobs/remote-principal-software-engineer-dynamo-2100-nvidia-usa-1129905",
-    "source": "remoteok",
-    "postedAt": "2026-01-31"
-  },
-  {
-    "id": "remoteok-1129770",
-    "title": "Senior Platform Engineer Postgres Specialist",
+    "id": "ashby-tigerdata-8c701831-c4cf-4cc8-a9f0-0afa30474c08",
+    "title": "Senior Platform Engineer - Postgres Specialist",
     "company": "Tiger Data",
-    "location": "Anywhere",
-    "workMode": "remote",
+    "location": "US Full-time",
+    "workMode": "onsite",
     "tags": [
       "Kubernetes",
       "Linux",
@@ -339,38 +151,41 @@
       "Databases",
       "Go"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-platform-engineer-postgres-specialist-tiger-data-1129770",
-    "source": "remoteok",
+    "url": "https://jobs.ashbyhq.com/tigerdata/8c701831-c4cf-4cc8-a9f0-0afa30474c08",
+    "source": "ashby",
     "postedAt": "2026-01-26"
   },
   {
-    "id": "remoteok-1129727",
-    "title": "Site Reliability Engineer",
-    "company": "Mistral AI",
-    "location": "Anywhere",
-    "workMode": "remote",
+    "id": "ashby-pavebank-30befbe2-228d-46ea-8c2b-03fb62f4fafb",
+    "title": "Senior Site Reliability Engineer",
+    "company": "Pave Bank",
+    "location": "Singapore, Singapore",
+    "workMode": "onsite",
     "tags": [
+      "GCP",
       "Kubernetes",
+      "Docker",
       "SRE",
-      "DevOps"
+      "DevOps",
+      "Python"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-site-reliability-engineer-mistral-ai-1129727",
-    "source": "remoteok",
-    "postedAt": "2026-01-23"
+    "url": "https://jobs.ashbyhq.com/pavebank/30befbe2-228d-46ea-8c2b-03fb62f4fafb",
+    "source": "ashby",
+    "postedAt": "2026-01-12"
   },
   {
-    "id": "remoteok-1129690",
-    "title": "Senior Software Development Engineer DevOps",
-    "company": "Equip Health",
-    "location": "Anywhere",
-    "workMode": "remote",
+    "id": "lever-palantir-15844944-fb69-4b57-9531-e988650b20c6",
+    "title": "Software Engineer, New Grad - Production Infrastructure",
+    "company": "Palantir Technologies",
+    "location": "Washington, D.C.",
+    "workMode": "onsite",
     "tags": [
-      "AWS",
+      "Kubernetes",
       "DevOps",
-      "Databases"
+      "Infrastructure"
     ],
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-software-development-engineer-devops-equip-health-1129690",
-    "source": "remoteok",
-    "postedAt": "2026-01-21"
+    "url": "https://jobs.lever.co/palantir/15844944-fb69-4b57-9531-e988650b20c6",
+    "source": "lever",
+    "postedAt": "2025-08-19"
   }
 ]

@@ -44,10 +44,11 @@ Researched July 2026.
 ## The generalists (LinkedIn, Indeed, We Work Remotely, RemoteOK)
 
 Huge volume, but cloud/infra roles are buried in noise, duplicates are
-rampant, and there's no curation for this niche. Not competitors so much as
-**sources**: We Work Remotely publishes public RSS feeds (attribution
-required), RemoteOK has a free JSON API (must link back to the original
-listing), Remotive has an RSS feed.
+rampant, and there's no curation for this niche. Their free feeds (RemoteOK
+API, We Work Remotely and Remotive RSS) were considered as sources, but
+their terms require linking back to their own listing pages — which
+conflicts with this board's rule that "Apply" always lands on the company's
+own posting. Jobs are sourced from company hiring systems instead.
 
 ## The gap, in one sentence
 

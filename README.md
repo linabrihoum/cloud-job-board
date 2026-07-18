@@ -12,9 +12,10 @@ job seekers. No accounts, no paywall.
 
 It's a static site. Listings live in a JSON file in the repo, Next.js bakes
 them into plain HTML at build time, and Vercel serves the result. No database.
-Jobs come from hand-picked listings plus feeds that permit reuse (RemoteOK's
-API, We Work Remotely and Remotive RSS) with attribution and links back to the
-source. See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the full picture.
+Jobs are hand-picked or pulled straight from target companies' own hiring
+systems (Greenhouse/Lever/Ashby public APIs), so "Apply" always lands on the
+company's own posting — never an aggregator page. See
+[docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the full picture.
 
 ## Running locally
 
@@ -33,7 +34,7 @@ Requires Node 20+.
 - [ ] Job data: `Job` type, `jobs.json` with the first hand-picked listings, validated loader, tests
 - [ ] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
 - [ ] Search and filters: keyword, remote/location, technology tags, shareable URLs
-- [ ] Feed scripts: RemoteOK + WWR + Remotive, keyword filtering, dedupe, scheduled refresh
+- [ ] Sourcing scripts: pull target companies' live jobs from Greenhouse/Lever/Ashby APIs, keyword filtering, dedupe, scheduled refresh
 - [ ] Listing verification: re-check every posting's link on a schedule; drop dead, expired, or duplicate listings
 - [ ] Launch: SEO basics, anonymous analytics, real domain
 - [ ] Deploy to Vercel

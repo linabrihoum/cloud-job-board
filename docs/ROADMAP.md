@@ -78,12 +78,14 @@ subtasks. "Session" here means one focused working sitting.
 
 - [ ] Script scaffolding: `scripts/update-jobs.ts`, run via `npm run
       update-jobs`
-- [ ] RemoteOK source
-  - [ ] Fetch their JSON API, map entries onto the `Job` type
-  - [ ] Keep the required direct link back to the RemoteOK listing
-- [ ] We Work Remotely + Remotive sources
-  - [ ] Parse their RSS feeds (pick one well-maintained RSS parser)
-  - [ ] Map onto the `Job` type with attribution per their terms
+- [ ] Company registry: `src/data/companies.json` — each target company's
+      name, website, hiring system (greenhouse/lever/ashby), and board slug
+- [ ] ATS fetchers — pull each company's live jobs from its own hiring
+      system, so every URL is the company's real posting
+  - [ ] Greenhouse public board API (`boards-api.greenhouse.io`)
+  - [ ] Lever public postings API (`api.lever.co/v0/postings/...`)
+  - [ ] Ashby public job board API
+  - [ ] Map each onto the `Job` type
 - [ ] Relevance filter: reuse the canonical tag/keyword list from Phase 1 —
       one list, not three copies
 - [ ] Dedupe: normalize company + title; when two sources (or a source and
@@ -91,19 +93,20 @@ subtasks. "Session" here means one focused working sitting.
       closest to the original posting. No duplicate ever appears on the site
 - [ ] Freshness cutoff: drop listings older than ~45 days
 - [ ] Verification pass (`npm run verify-jobs`) — no dead or fake listings
-  - [ ] Re-visit every listing's URL, hand-picked and feed-sourced alike;
-        drop listings whose page is gone (404/410 or redirected away)
+  - [ ] Every listing links to the company's own posting, so re-visiting
+        the URL validates the job against the company site directly; drop
+        listings whose page is gone (404/410 or redirected away)
+  - [ ] ATS-sourced jobs re-verify for free: if the job leaves the
+        company's board API, it leaves ours
   - [ ] Catch "zombie" postings: pages that still load but say the role is
         closed ("no longer accepting applications" and similar phrases)
-  - [ ] Hand-picked jobs link straight to the company's own posting, so
-        this check validates them against the company site directly
-  - [ ] Only accept listings from trusted sources; filter by job title, not
-        source tags (the seed run proved source tags can't be trusted)
-- [ ] Merge with hand-picked entries and write `jobs.json` (hand-picked
-      ones are never auto-deleted by the feed refresh, but they are subject
-      to the verification pass like everything else)
+  - [ ] Filter by job title, not source tags (the seed run proved tags
+        can't be trusted)
+- [ ] Merge ATS-sourced with hand-picked entries and write `jobs.json`
+      (hand-picked ones are never auto-deleted by the refresh, but they are
+      subject to the verification pass like everything else)
 - [ ] Tests: mapping, filtering, dedupe, and verification against saved
-      sample feed data and mocked link responses
+      sample ATS responses and mocked link responses
 - [ ] Scheduled GitHub Action (weekly to start) that runs refresh +
       verification and opens a PR with the changes — a human still reviews
       what got added and removed before it goes live

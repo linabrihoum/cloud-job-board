@@ -44,10 +44,11 @@ lives in the "Later" section of [ROADMAP.md](./ROADMAP.md).
 
 - **[MVP]** As a maintainer, I want jobs stored in a simple JSON file so
   that adding or removing a listing is a quick edit, not a database task.
-- **[MVP]** As a maintainer, I want a script that pulls jobs from
-  legitimate feeds (RemoteOK API, We Work Remotely RSS, Remotive RSS) and
-  filters them for cloud/SRE relevance so that the board stays fresh
-  without manual work.
+- **[MVP]** As a maintainer, I want a script that pulls jobs straight from
+  target companies' own hiring systems (Greenhouse/Lever/Ashby public
+  APIs) and filters them for cloud/SRE relevance so that the board stays
+  fresh without manual work — and every listing naturally links to the
+  company's own posting.
 - As a maintainer, I want the feed script to run on a schedule (GitHub
   Actions) so that the board updates itself.
 - **[MVP]** As a maintainer, I want an automated verification pass that

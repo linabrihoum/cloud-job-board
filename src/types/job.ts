@@ -2,7 +2,7 @@ import type { CanonicalTag } from "@/lib/tags";
 
 export type WorkMode = "remote" | "hybrid" | "onsite";
 
-export type JobSource = "hand-picked" | "remoteok" | "weworkremotely" | "remotive";
+export type JobSource = "hand-picked" | "greenhouse" | "lever" | "ashby";
 
 export interface Job {
   /** Stable unique id, prefixed by source, e.g. "remoteok-1131263" */
@@ -14,9 +14,9 @@ export interface Job {
   workMode: WorkMode;
   tags: CanonicalTag[];
   /**
-   * Link to the posting. Hand-picked jobs link to the company's own page;
-   * feed-sourced jobs link wherever the source's terms require (RemoteOK
-   * requires a direct link back to their listing).
+   * Link to the company's own posting — always. Hand-picked jobs link to
+   * the company careers page; sourced jobs link to the company's posting
+   * on its own hiring system (Greenhouse/Lever/Ashby).
    */
   url: string;
   source: JobSource;

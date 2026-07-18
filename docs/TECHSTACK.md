@@ -10,7 +10,7 @@ rejected and why.
 | Language | TypeScript | 5.x |
 | Styling | Tailwind CSS | 4.x |
 | Job data | JSON file in the repo (`src/data/jobs.json`) | — |
-| Job sourcing | Feed scripts: RemoteOK JSON API, We Work Remotely RSS, Remotive RSS + hand-picking | — |
+| Job sourcing | Company ATS public APIs (Greenhouse, Lever, Ashby) + hand-picking | — |
 | Hosting | Vercel (free Hobby tier) | — |
 | CI | GitHub Actions (lint + build, tests when they exist) | — |
 | Tests | Vitest + React Testing Library | added Phase 1 |
@@ -40,12 +40,16 @@ scales to a few thousand jobs. The trigger for adding a database is **user
 accounts** (post-MVP); even then the database holds only user data — jobs
 can stay in JSON. Nothing built now gets thrown away.
 
-**Feeds, not scraping.** The earlier plan used JobFunnel to scrape Indeed/
-Glassdoor. Rejected: those sites actively block scrapers, so scrapers break
-constantly. Instead: legitimate sources only — RemoteOK's free JSON API
-(terms: link directly back to the original listing), We Work Remotely's
-public RSS feeds (terms: attribute with links back), Remotive's RSS feed —
-plus hand-picked listings from company career pages.
+**Company ATS APIs, not scraping or aggregator feeds.** The earliest plan
+used JobFunnel to scrape Indeed/Glassdoor — rejected because those sites
+actively block scrapers. Aggregator feeds (RemoteOK, We Work Remotely,
+Remotive) were considered next, but their terms require linking back to
+their own listing pages, which conflicts with the rule that "Apply" always
+lands on the company's posting. Instead: most tech companies run hiring on
+Greenhouse, Lever, or Ashby, and all three expose free public APIs of each
+company's live jobs. We maintain a registry of target companies and pull
+from their own systems — direct company URLs, inherently real and current —
+plus hand-picked listings from career pages.
 
 **Vercel.** Made by the Next.js team, so deploys are near-zero-config: push
 to GitHub and the site updates; every PR gets its own preview URL. Free

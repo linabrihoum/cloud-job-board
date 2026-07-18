@@ -11,6 +11,8 @@ export interface Job {
   slug: string;
   title: string;
   company: string;
+  /** Company website domain (e.g. "honeycomb.io") — used for the logo. */
+  companyWebsite?: string;
   /** City/region text, or "Anywhere" for fully location-flexible roles */
   location: string;
   workMode: WorkMode;

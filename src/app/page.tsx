@@ -34,9 +34,9 @@ export default function Home() {
         </div>
 
         <h1 className="font-display animate-fade-up mx-auto max-w-3xl text-4xl font-bold leading-tight text-white sm:text-6xl">
-          Your next mission in the{" "}
+          Your next job in the{" "}
           <span className="bg-linear-to-r from-accent to-violet bg-clip-text text-transparent">
-            cloud
+            cloud.
           </span>
         </h1>
         <p
@@ -45,7 +45,7 @@ export default function Home() {
         >
           Hand-checked cloud, SRE &amp; DevOps roles — verified against each
           company&apos;s own hiring system, linking straight to their posting.
-          No stale jobs. No middlemen. No paywall. Ever.
+          No stale jobs. No middlemen. No paywall.
         </p>
         <div
           className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-4"
@@ -91,7 +91,7 @@ export default function Home() {
             View all →
           </Link>
         </div>
-        <div className="stagger grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="stagger mx-auto flex max-w-4xl flex-col gap-3">
           {latest.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

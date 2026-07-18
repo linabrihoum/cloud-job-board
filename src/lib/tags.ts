@@ -1,7 +1,8 @@
 /**
- * The canonical tag list. Defined once and used everywhere: job data is
- * validated against it, filter chips are built from it, and the Phase 4
- * feed scripts will map source tags onto it. Add new tags here, nowhere else.
+ * The canonical tag list — concrete technologies only, no vague role labels
+ * (the role is what the title is for). Defined once and used everywhere:
+ * job data is validated against it, filter chips are built from it, and the
+ * sourcing scripts map descriptions onto it. Add new tags here, nowhere else.
  */
 export const CANONICAL_TAGS = [
   "AWS",
@@ -11,19 +12,21 @@ export const CANONICAL_TAGS = [
   "Docker",
   "Terraform",
   "Ansible",
+  "Jenkins",
+  "GitHub Actions",
+  "Helm",
+  "Argo",
   "Linux",
-  "CI/CD",
-  "SRE",
-  "DevOps",
-  "Platform Engineering",
-  "Cloud Architecture",
-  "Infrastructure",
-  "Observability",
-  "Security",
-  "Databases",
-  "Networking",
-  "Go",
   "Python",
+  "Go",
+  "PostgreSQL",
+  "MySQL",
+  "Redis",
+  "Kafka",
+  "Prometheus",
+  "Grafana",
+  "Datadog",
+  "Elasticsearch",
 ] as const;
 
 export type CanonicalTag = (typeof CANONICAL_TAGS)[number];

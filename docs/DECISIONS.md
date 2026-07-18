@@ -4,6 +4,50 @@ Big decisions, why we made them, and what we said no to. Newest at the top.
 
 ---
 
+## 2026-07-18 — "Apply" always goes to the company's own posting; aggregator feeds dropped
+
+**Decision:** Every listing's link points at the company's own job posting.
+Automation is rebuilt around sources that allow that: the public job APIs
+of the hiring systems companies actually use (Greenhouse, Lever, Ashby),
+driven by a maintained list of target companies. Until that lands in
+Phase 4, listings are hand-picked.
+
+**Why:** Sending a job seeker through an aggregator page is friction and
+feels like a middleman — the board's promise is the shortest honest path
+to a real job. Pulling from a company's own hiring system also makes
+listings inherently real and current, which strengthens the verification
+guarantee.
+
+**Rejected:** RemoteOK / We Work Remotely / Remotive as sources — their
+free feeds require linking back to *their* listing pages, which directly
+conflicts with this rule. (Nothing against them; their terms are fair for
+what they offer. The 24 RemoteOK-linked seed listings are being replaced
+accordingly.) Also rejected: showing two links per card (apply +
+attribution) — clutter that still routes some clicks through a middleman.
+
+---
+
+## 2026-07-18 — Every listing gets verified; no dead, duplicate, or fake jobs
+
+**Decision:** The board re-checks every listing's URL on a schedule and
+removes listings that are dead (page gone), expired (page says the role is
+closed), or duplicated across sources. Hand-picked jobs link directly to
+the company's own posting, so verifying the link verifies the job against
+the company site. Feed jobs are verified at the page their source terms
+require us to link to, plus a freshness cutoff, plus human review of every
+automated refresh PR.
+
+**Why:** "Fresh and real" is the board's core promise — one click-through
+to a filled job costs more trust than ten good listings earn.
+
+**Rejected:** Trusting feeds blindly (the seed run surfaced hospitality
+jobs tagged "sys admin"); fully automated cross-matching of feed jobs
+against each company's careers site (every careers site is different —
+revisit if a practical approach appears, e.g. Greenhouse/Lever APIs);
+exempting hand-picked listings from verification.
+
+---
+
 ## 2026-07-12 — Open source under AGPL-3.0; docs stay public
 
 **Decision:** The project is open source under the GNU AGPL-3.0, with a

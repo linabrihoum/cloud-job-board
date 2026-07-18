@@ -8,9 +8,10 @@ time. There is no database, no server code, and no user data.
 ```
   Job sources                        GitHub repo                     Visitors
   ───────────                        ───────────                     ────────
-  RemoteOK API      ┐
-  We Work Remotely  ├─► update script ─► src/data/jobs.json
-  Remotive RSS      ┘   (Phase 4)              │
+  Company hiring    ┐
+  systems, via      ├─► update script ─► src/data/jobs.json
+  Greenhouse/Lever/ ┘   (Phase 4)              │
+  Ashby public APIs                            │
   Hand-picked jobs ──── edited directly ───────┤
                                                ▼
                                      Next.js build (on push)
@@ -41,7 +42,7 @@ time. There is no database, no server code, and no user data.
 | Job data | `src/data/jobs.json` | The single source of truth for listings |
 | Types | `src/types/` | The `Job` TypeScript shape — defined once, used everywhere |
 | Data loading | `src/lib/` | Reads + validates jobs.json at build time |
-| Feed scripts | `scripts/` | Pull from RemoteOK/WWR/Remotive, filter for cloud/SRE keywords, dedupe, merge into jobs.json (Phase 4) |
+| Feed scripts | `scripts/` | Pull target companies' live jobs from Greenhouse/Lever/Ashby APIs, filter for cloud/SRE relevance, dedupe, verify, merge into jobs.json (Phase 4) |
 | CI | `.github/workflows/` | Lint + build (+ tests) on every PR |
 
 ## Search and filters without a server

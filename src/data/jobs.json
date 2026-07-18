@@ -1,0 +1,191 @@
+[
+  {
+    "id": "greenhouse-caylent-6010762004",
+    "title": "Customer Solutions Architect",
+    "company": "Caylent",
+    "location": "BRAZIL",
+    "workMode": "onsite",
+    "tags": [
+      "AWS",
+      "DevOps",
+      "Cloud Architecture"
+    ],
+    "url": "https://job-boards.greenhouse.io/caylent/jobs/6010762004",
+    "source": "greenhouse",
+    "postedAt": "2026-07-16"
+  },
+  {
+    "id": "greenhouse-doitintl-7788227003",
+    "title": "Senior Cloud Architect, Delivery (GenAI)",
+    "company": "DoiT",
+    "location": "Remote Netherlands",
+    "workMode": "remote",
+    "tags": [
+      "Kubernetes",
+      "Cloud Architecture"
+    ],
+    "url": "https://job-boards.greenhouse.io/doitintl/jobs/7788227003",
+    "source": "greenhouse",
+    "postedAt": "2026-07-13"
+  },
+  {
+    "id": "greenhouse-icapitalnetwork-8605461002",
+    "title": "Manager for DevOps and DBA Engineer - Assistant Vice President",
+    "company": "iCapital",
+    "location": "Salt Lake City, Utah, United States",
+    "workMode": "onsite",
+    "tags": [
+      "AWS",
+      "DevOps",
+      "Security",
+      "Databases"
+    ],
+    "url": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8605461002",
+    "source": "greenhouse",
+    "postedAt": "2026-07-09"
+  },
+  {
+    "id": "greenhouse-ujet-4709322005",
+    "title": "Senior Site Reliability Engineer (SRE)",
+    "company": "UJET",
+    "location": "Seoul, Korea",
+    "workMode": "onsite",
+    "tags": [
+      "SRE",
+      "DevOps",
+      "Cloud Architecture"
+    ],
+    "url": "https://job-boards.greenhouse.io/ujet/jobs/4709322005",
+    "source": "greenhouse",
+    "postedAt": "2026-07-07"
+  },
+  {
+    "id": "greenhouse-honeycomb-5254507008",
+    "title": "Field Reliability Engineer- LATAM",
+    "company": "Honeycomb.io",
+    "location": "Remote - Brazil",
+    "workMode": "remote",
+    "tags": [
+      "SRE"
+    ],
+    "url": "https://job-boards.greenhouse.io/honeycomb/jobs/5254507008",
+    "source": "greenhouse",
+    "postedAt": "2026-06-26"
+  },
+  {
+    "id": "greenhouse-dvtrading-4686573005",
+    "title": "Senior Cloud Engineer (Chicago)",
+    "company": "DV Trading",
+    "location": "Chicago",
+    "workMode": "onsite",
+    "tags": [
+      "AWS",
+      "GCP",
+      "DevOps",
+      "Security"
+    ],
+    "url": "https://job-boards.greenhouse.io/dvtrading/jobs/4686573005",
+    "source": "greenhouse",
+    "postedAt": "2026-06-22"
+  },
+  {
+    "id": "greenhouse-540-7768592003",
+    "title": "Senior Solutions Architect",
+    "company": "540",
+    "location": "Patrick SFB, FL or Arlington, VA",
+    "workMode": "onsite",
+    "tags": [
+      "GCP",
+      "Kubernetes",
+      "Cloud Architecture",
+      "Security"
+    ],
+    "url": "https://job-boards.greenhouse.io/540/jobs/7768592003",
+    "source": "greenhouse",
+    "postedAt": "2026-06-10"
+  },
+  {
+    "id": "lever-cloudwalk-a4be5326-9d29-40b3-98bf-a249e24aba10",
+    "title": "Senior Engineer - Platform/Devops",
+    "company": "CloudWalk",
+    "location": "São Paulo",
+    "workMode": "onsite",
+    "tags": [
+      "GCP",
+      "Kubernetes",
+      "DevOps",
+      "Platform Engineering",
+      "Cloud Architecture",
+      "Security"
+    ],
+    "url": "https://jobs.lever.co/cloudwalk/a4be5326-9d29-40b3-98bf-a249e24aba10",
+    "source": "lever",
+    "postedAt": "2026-04-10"
+  },
+  {
+    "id": "ashby-andromeda-c0129afa-ddfb-47e1-9968-b3dbf27b5d55",
+    "title": "Senior Site Reliability Engineer - AI Infrastructure",
+    "company": "Andromeda Cluster",
+    "location": "Global Remote / San Francisco, CA",
+    "workMode": "remote",
+    "tags": [
+      "SRE",
+      "DevOps",
+      "Infrastructure"
+    ],
+    "url": "https://jobs.ashbyhq.com/andromeda/c0129afa-ddfb-47e1-9968-b3dbf27b5d55",
+    "source": "ashby",
+    "postedAt": "2026-04-09"
+  },
+  {
+    "id": "ashby-tigerdata-8c701831-c4cf-4cc8-a9f0-0afa30474c08",
+    "title": "Senior Platform Engineer - Postgres Specialist",
+    "company": "Tiger Data",
+    "location": "US Full-time",
+    "workMode": "onsite",
+    "tags": [
+      "Kubernetes",
+      "Linux",
+      "DevOps",
+      "Platform Engineering",
+      "Databases",
+      "Go"
+    ],
+    "url": "https://jobs.ashbyhq.com/tigerdata/8c701831-c4cf-4cc8-a9f0-0afa30474c08",
+    "source": "ashby",
+    "postedAt": "2026-01-26"
+  },
+  {
+    "id": "ashby-pavebank-30befbe2-228d-46ea-8c2b-03fb62f4fafb",
+    "title": "Senior Site Reliability Engineer",
+    "company": "Pave Bank",
+    "location": "Singapore, Singapore",
+    "workMode": "onsite",
+    "tags": [
+      "GCP",
+      "Kubernetes",
+      "Docker",
+      "SRE",
+      "DevOps",
+      "Python"
+    ],
+    "url": "https://jobs.ashbyhq.com/pavebank/30befbe2-228d-46ea-8c2b-03fb62f4fafb",
+    "source": "ashby",
+    "postedAt": "2026-01-12"
+  },
+  {
+    "id": "lever-palantir-15844944-fb69-4b57-9531-e988650b20c6",
+    "title": "Software Engineer, New Grad - Production Infrastructure",
+    "company": "Palantir Technologies",
+    "location": "Washington, D.C.",
+    "workMode": "onsite",
+    "tags": [
+      "Kubernetes",
+      "DevOps",
+      "Infrastructure"
+    ],
+    "url": "https://jobs.lever.co/palantir/15844944-fb69-4b57-9531-e988650b20c6",
+    "source": "lever",
+    "postedAt": "2025-08-19"
+  }
+]

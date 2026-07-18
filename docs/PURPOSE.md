@@ -36,7 +36,11 @@ In rough order of when they should happen:
 
 - Free for job seekers, always. That's the wedge against paywalled
   competitors.
-- Every listing shows its posting date and links to the original source.
+- Every listing shows its posting date, and "Apply" always lands on the
+  company's own posting — never a middleman or an aggregator page.
+- Every listing is verified: posting links are re-checked on a schedule,
+  and dead, expired, duplicate, or suspicious listings are removed. No
+  fake jobs, no zombies.
 - No personal data stored in the MVP — no accounts, no tracking beyond
   basic anonymous analytics. Accounts and email alerts come post-MVP.
 - Respect job sources: only use feeds/APIs that permit reuse, and always

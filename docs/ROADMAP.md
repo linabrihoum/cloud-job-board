@@ -22,25 +22,27 @@ subtasks. "Session" here means one focused working sitting.
 
 ## 1. Job data (~2 sessions)
 
-- [ ] Define the `Job` type in `src/types/job.ts`
-  - [ ] Fields: `id`, `title`, `company`, `location`, `workMode`
+- [x] Define the `Job` type in `src/types/job.ts`
+  - [x] Fields: `id`, `title`, `company`, `location`, `workMode`
         (`remote` / `hybrid` / `onsite`), `tags`, `url`, `source`, `postedAt`
-  - [ ] Decide the canonical tag list (AWS, GCP, Azure, Kubernetes,
-        Terraform, SRE, Platform, DevOps...) — defined once, reused by
-        filters and feed scripts later
-- [ ] Create `src/data/jobs.json` with the first real listings
+  - [x] Decide the canonical tag list (`src/lib/tags.ts`) — defined once,
+        reused by filters and feed scripts later
+- [x] Create `src/data/jobs.json` with the first real listings
+  - [x] Seeded with 24 curated infra listings from RemoteOK's API
+        (attributed and linking back per their terms)
   - [ ] Pick 15–20 target companies with public career pages
-  - [ ] Hand-collect 20–50 current cloud/SRE/platform/DevOps postings
-        (title, company, location, tags, direct URL, posting date)
-- [ ] Build the loader in `src/lib/jobs.ts`
-  - [ ] Add `zod` and write a schema matching the `Job` type
-  - [ ] Read + validate `jobs.json` at build time; malformed data fails
-        the build with a clear message pointing at the bad entry
-  - [ ] Helpers: sort newest-first, look up all distinct tags/locations
-- [ ] Set up testing
-  - [ ] Install Vitest + React Testing Library, add `npm test`
-  - [ ] Tests: loader accepts good data, rejects bad data, sorts correctly
-  - [ ] Add `npm test` to the CI workflow
+  - [ ] Hand-collect fresh postings from company career pages to grow the
+        set toward 50 (title, company, location, tags, direct URL, date)
+- [x] Build the loader in `src/lib/jobs.ts`
+  - [x] Add `zod` and write a schema matching the `Job` type
+  - [x] Read + validate `jobs.json`; malformed data fails with a clear
+        message pointing at the bad entry (enforced by CI now; enforced at
+        build time once pages consume the loader in Phase 2)
+  - [x] Helpers: sort newest-first, look up distinct tags in use
+- [x] Set up testing
+  - [x] Install Vitest + React Testing Library, add `npm test`
+  - [x] Tests: loader accepts good data, rejects bad data, sorts correctly
+  - [x] Add `npm test` to the CI workflow
 
 ## 2. Job list (~2–3 sessions)
 
@@ -72,26 +74,42 @@ subtasks. "Session" here means one focused working sitting.
 - [ ] Tests: filter logic as pure functions, plus a component test that
       typing a keyword narrows the list
 
-## 4. Automated freshness (~2–3 sessions)
+## 4. Automated freshness & verification (~3–4 sessions)
 
 - [ ] Script scaffolding: `scripts/update-jobs.ts`, run via `npm run
       update-jobs`
-- [ ] RemoteOK source
-  - [ ] Fetch their JSON API, map entries onto the `Job` type
-  - [ ] Keep the required direct link back to the RemoteOK listing
-- [ ] We Work Remotely + Remotive sources
-  - [ ] Parse their RSS feeds (pick one well-maintained RSS parser)
-  - [ ] Map onto the `Job` type with attribution per their terms
+- [ ] Company registry: `src/data/companies.json` — each target company's
+      name, website, hiring system (greenhouse/lever/ashby), and board slug
+- [ ] ATS fetchers — pull each company's live jobs from its own hiring
+      system, so every URL is the company's real posting
+  - [ ] Greenhouse public board API (`boards-api.greenhouse.io`)
+  - [ ] Lever public postings API (`api.lever.co/v0/postings/...`)
+  - [ ] Ashby public job board API
+  - [ ] Map each onto the `Job` type
 - [ ] Relevance filter: reuse the canonical tag/keyword list from Phase 1 —
       one list, not three copies
-- [ ] Dedupe: normalize company + title; when two sources have the same
-      job, keep the one closest to the original posting
+- [ ] Dedupe: normalize company + title; when two sources (or a source and
+      a hand-picked entry) have the same job, keep exactly one — the one
+      closest to the original posting. No duplicate ever appears on the site
 - [ ] Freshness cutoff: drop listings older than ~45 days
-- [ ] Merge with hand-picked entries (hand-picked ones never get
-      auto-deleted) and write `jobs.json`
-- [ ] Tests: mapping, filtering, and dedupe against saved sample feed data
-- [ ] Scheduled GitHub Action (weekly to start) that runs the script and
-      opens a PR with the refreshed data — a human still clicks merge
+- [ ] Verification pass (`npm run verify-jobs`) — no dead or fake listings
+  - [ ] Every listing links to the company's own posting, so re-visiting
+        the URL validates the job against the company site directly; drop
+        listings whose page is gone (404/410 or redirected away)
+  - [ ] ATS-sourced jobs re-verify for free: if the job leaves the
+        company's board API, it leaves ours
+  - [ ] Catch "zombie" postings: pages that still load but say the role is
+        closed ("no longer accepting applications" and similar phrases)
+  - [ ] Filter by job title, not source tags (the seed run proved tags
+        can't be trusted)
+- [ ] Merge ATS-sourced with hand-picked entries and write `jobs.json`
+      (hand-picked ones are never auto-deleted by the refresh, but they are
+      subject to the verification pass like everything else)
+- [ ] Tests: mapping, filtering, dedupe, and verification against saved
+      sample ATS responses and mocked link responses
+- [ ] Scheduled GitHub Action (weekly to start) that runs refresh +
+      verification and opens a PR with the changes — a human still reviews
+      what got added and removed before it goes live
 
 ## 5. Launch (~1–2 sessions)
 

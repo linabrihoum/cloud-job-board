@@ -26,8 +26,9 @@ export function JobCard({ job }: { job: Job }) {
       <CompanyAvatar company={job.company} website={job.companyWebsite} />
 
       <div className="min-w-0 flex-1">
+        <div className="text-sm font-medium text-paper-muted">{job.company}</div>
         <div className="flex items-center gap-2">
-          <h3 className="font-display truncate font-semibold text-paper-ink group-hover:text-accent-soft">
+          <h3 className="font-display truncate text-lg font-semibold text-paper-ink group-hover:text-accent-soft">
             {job.title}
           </h3>
           {isNew(job.postedAt) && (
@@ -37,8 +38,6 @@ export function JobCard({ job }: { job: Job }) {
           )}
         </div>
         <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm text-paper-muted">
-          <span className="font-medium">{job.company}</span>
-          <span aria-hidden>·</span>
           <span className="truncate">{job.location}</span>
           <span aria-hidden>·</span>
           <span>{WORK_MODE_LABEL[job.workMode]}</span>

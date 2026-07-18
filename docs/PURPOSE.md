@@ -10,7 +10,7 @@ The niche boards that do exist either paywall the listings for job seekers
 (LearnXOps newsletter).
 
 **The gap this app fills: quality over quantity.** A free, fresh,
-well-designed board where every listing is relevant to cloud/SRE/DevOps,
+well-designed board where every listing is relevant to Cloud/SRE/Platform/DevOps,
 shows when it was posted, and links straight to the company's own posting.
 
 ## Who it's for

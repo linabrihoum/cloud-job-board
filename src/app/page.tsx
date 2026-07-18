@@ -1,95 +1,47 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { JobCard } from "@/components/JobCard";
+import { loadJobs } from "@/lib/jobs";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const jobs = loadJobs();
+  const latest = jobs.slice(0, 6);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  return (
+    <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="py-16 text-center sm:py-24">
+        <h1 className="font-display mx-auto max-w-3xl text-4xl font-bold leading-tight text-white sm:text-6xl">
+          Cloud, SRE &amp; DevOps jobs.
+          <br />
+          <span className="text-accent">Verified. Fresh. Direct.</span>
+        </h1>
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted">
+          Every listing is checked against the company&apos;s own hiring system
+          and links straight to their posting. No stale jobs, no duplicates,
+          no middlemen — and always free for job seekers.
+        </p>
+        <div className="mt-8">
+          <Link
+            href="/jobs"
+            className="inline-block rounded-xl bg-accent px-6 py-3 font-display font-semibold text-night transition hover:bg-accent-soft"
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+            Browse {jobs.length} open {jobs.length === 1 ? "role" : "roles"}
+          </Link>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="pb-8">
+        <div className="mb-6 flex items-baseline justify-between">
+          <h2 className="font-display text-2xl font-bold text-white">Latest roles</h2>
+          <Link href="/jobs" className="text-sm font-medium text-accent hover:underline">
+            View all →
+          </Link>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {latest.map((job) => (
+            <JobCard key={job.id} job={job} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

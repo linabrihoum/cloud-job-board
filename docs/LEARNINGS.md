@@ -4,6 +4,16 @@ Mistakes, gotchas, and surprises from building this project — written down
 so we don't repeat them. Add an entry whenever something cost real time or
 changed our approach.
 
+## 2026-07-18 — Tailwind v3 directives silently do nothing under the v4 pipeline
+
+The starter's `globals.css` used Tailwind v3's `@tailwind base/components/
+utilities` directives while the build ran Tailwind v4's PostCSS plugin. The
+build passed, but no utility classes were ever generated — pages quietly
+rendered unstyled. v4 wants a single `@import "tailwindcss";` (and theme
+tokens via `@theme` in CSS instead of `tailwind.config.ts`). Lesson: "build
+passes" doesn't mean "styles exist"; when Tailwind classes have no effect,
+check that the CSS entry file matches the Tailwind major version.
+
 ## 2026-07-18 — Vercel silently blocks deploys of vulnerable Next.js versions
 
 The first production deploy kept failing even though the build log showed

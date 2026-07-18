@@ -32,7 +32,8 @@ Requires Node 20+.
 
 - [x] Project docs, CI (lint + build on every PR)
 - [ ] Job data: `Job` type, `jobs.json` with the first hand-picked listings, validated loader, tests
-- [ ] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
+- [x] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
+- [ ] Create a dedicated post-a-job email address (placeholder ships in `src/lib/site.ts` until then)
 - [ ] Search and filters: keyword, remote/location, technology tags, shareable URLs
 - [ ] Sourcing scripts: pull target companies' live jobs from Greenhouse/Lever/Ashby APIs, keyword filtering, dedupe, scheduled refresh
 - [ ] Listing verification: re-check every posting's link on a schedule; drop dead, expired, or duplicate listings

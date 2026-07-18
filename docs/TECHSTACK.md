@@ -1,8 +1,8 @@
 # Tech Stack
 
-Decided at kickoff (July 2026). The theme: boring, huge-community tools,
-most of which were already installed and working. See
-[DECISIONS.md](./DECISIONS.md) for alternatives we rejected.
+Chosen July 2026. The bias throughout: boring, well-documented tools with
+big communities. See [DECISIONS.md](./DECISIONS.md) for alternatives we
+rejected and why.
 
 | Layer | Choice | Version |
 |---|---|---|
@@ -32,8 +32,8 @@ tutorials/components use it. The Space Crew look (dark, bold cards, strong
 typography) is bread-and-butter Tailwind. If pre-built components are
 wanted later, shadcn/ui sits on top of Tailwind and is the standard pairing.
 
-**JSON file instead of a database.** The job list changes only when the
-owner changes it, and visitors only read it — so a database would be a
+**JSON file instead of a database.** The job list changes only when a
+maintainer (or the feed script) changes it, and visitors only read it — so a database would be a
 running service with nothing to do. A JSON file means $0/month, nothing to
 secure, instant page loads (pages are baked to HTML at build time), and it
 scales to a few thousand jobs. The trigger for adding a database is **user

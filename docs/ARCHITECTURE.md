@@ -49,7 +49,7 @@ time. There is no database, no server code, and no user data.
 The full job list is small enough to ship to the browser. Search and
 filtering (keyword, remote/location, tags) happen client-side in React —
 instant results, no API needed. If the list ever grows past a few thousand
-jobs, revisit (that's a LEARNINGS.md moment, not a today problem).
+jobs, revisit this.
 
 ## What changes post-MVP
 

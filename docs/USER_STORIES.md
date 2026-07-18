@@ -30,21 +30,22 @@ lives in the "Later" section of [ROADMAP.md](./ROADMAP.md).
 ## Companies
 
 - **[MVP]** As a company, I want a "Post a job" link that opens an email so
-  that I can submit a listing with zero friction. (Lina adds it by hand.)
+  that I can submit a listing with zero friction. (A maintainer adds it by
+  hand.)
 - As a company, I want a real submission form with review/approval so that
   posting scales beyond email.
 - As a company, I want to pay for a featured listing so that my role gets
   more visibility.
 
-## Site owner (Lina)
+## Maintainers
 
-- **[MVP]** As the site owner, I want jobs stored in a simple JSON file so
+- **[MVP]** As a maintainer, I want jobs stored in a simple JSON file so
   that adding or removing a listing is a quick edit, not a database task.
-- **[MVP]** As the site owner, I want a script that pulls jobs from
+- **[MVP]** As a maintainer, I want a script that pulls jobs from
   legitimate feeds (RemoteOK API, We Work Remotely RSS, Remotive RSS) and
   filters them for cloud/SRE relevance so that the board stays fresh
   without manual work.
-- As the site owner, I want the feed script to run on a schedule (GitHub
+- As a maintainer, I want the feed script to run on a schedule (GitHub
   Actions) so that the board updates itself.
-- As the site owner, I want basic anonymous analytics so that I know
+- As a maintainer, I want basic anonymous analytics so that I know
   whether real visitors are showing up.

@@ -4,6 +4,31 @@ Big decisions, why we made them, and what we said no to. Newest at the top.
 
 ---
 
+## 2026-07-12 — Open source under AGPL-3.0; docs stay public
+
+**Decision:** The project is open source under the GNU AGPL-3.0, with a
+CONTRIBUTING.md and the full `docs/` folder published in the repo, written
+in neutral project voice.
+
+**Why AGPL over MIT/GPL:** For a hosted web app, MIT/Apache would let
+anyone clone the board and run it as a closed, competing site. Regular GPL
+only triggers on *distributing* copies — running a website doesn't count.
+AGPL closes that gap: anyone running a modified version as a service must
+share their changes under the same license.
+
+**Why docs stay public:** Contributors need the roadmap (what to work on),
+the architecture (how it fits), and this file (what's already settled).
+Hiding them was considered and rejected — a gitignore can't be
+branch-specific anyway, and docs-in-repo is how the project keeps its
+memory between sessions.
+
+**Rejected:** MIT and Apache-2.0 (permit closed-source hosted clones);
+keeping docs local-only or on a never-merged branch; the `docs/archive/`
+folder of pre-restart drafts was dropped from the repo (still recoverable
+from git history).
+
+---
+
 ## 2026-07-11 — Full kickoff restart; earlier planning docs archived
 
 **Decision:** Treat all pre-kickoff planning (the 14-phase README plan, the

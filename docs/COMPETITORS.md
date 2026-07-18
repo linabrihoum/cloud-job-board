@@ -1,8 +1,8 @@
 # Competitors
 
-Researched July 2026 during kickoff.
+Researched July 2026.
 
-## Named as inspiration
+## Inspiration
 
 ### Career Vault — https://careervault.io/
 - **What it is:** general remote job board (software, design, sales,
@@ -47,9 +47,7 @@ Huge volume, but cloud/infra roles are buried in noise, duplicates are
 rampant, and there's no curation for this niche. Not competitors so much as
 **sources**: We Work Remotely publishes public RSS feeds (attribution
 required), RemoteOK has a free JSON API (must link back to the original
-listing), Remotive has an RSS feed. See
-[archive/JOB_SOURCING_STRATEGY.md](./archive/JOB_SOURCING_STRATEGY.md) for
-the earlier draft thinking.
+listing), Remotive has an RSS feed.
 
 ## The gap, in one sentence
 

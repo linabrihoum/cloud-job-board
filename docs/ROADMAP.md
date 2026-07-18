@@ -1,80 +1,77 @@
 # Roadmap
 
-Work phases in order; don't jump ahead. Each phase ends with something you
-can click. Target for Phases 0–5: live site by ~July 25, 2026.
+Phases in order. Each one ends with something you can click. The condensed
+version lives in the README's TODO section.
 
-## Phase 0 — Setup & first deploy
+## 0. Setup
 
-Deploying a trivial page first means deployment problems surface on day
-one, not launch day.
-
-- [x] GitHub repo exists (`linabrihoum/cloud-job-board`)
-- [x] CI workflow: GitHub Actions runs lint + build on every PR
-- [ ] Kickoff docs merged via first PR
+- [x] GitHub repo and CI (lint + build on every PR)
+- [x] Project docs
 - [ ] Remove the unused `shadcn-ui` package from package.json
-- [ ] Commit or clean up the pre-kickoff work-in-progress (JobCard edits,
-      `src/app/jobs/`) so the working tree is clean
-- [ ] Connect repo to Vercel; current site (any page) deploys on push
-- [ ] Confirm the deployed URL loads on phone and desktop
+- [ ] Connect the repo to Vercel; site deploys on push
+- [ ] Confirm the deployed URL works on phone and desktop
 
-## Phase 1 — Job data foundation
+## 1. Job data
 
-- [ ] Define the `Job` TypeScript type in `src/types/job.ts` (title,
-      company, location, remote?, tags, url, source, postedAt)
-- [ ] Create `src/data/jobs.json` with 20–50 hand-picked cloud/SRE/DevOps
+- [ ] `Job` type in `src/types/job.ts` (title, company, location, remote,
+      tags, url, source, postedAt)
+- [ ] `src/data/jobs.json` with 20–50 hand-picked cloud/SRE/platform/DevOps
       jobs from company career pages
-- [ ] Data loader in `src/lib/jobs.ts` that reads and validates jobs.json
-      at build time (fail the build on malformed data)
-- [ ] Set up Vitest + React Testing Library; first test covers the loader
-- [ ] Add tests to the CI workflow
+- [ ] Loader in `src/lib/jobs.ts` that reads and validates jobs.json at
+      build time; malformed data fails the build
+- [ ] Vitest + React Testing Library set up; first test covers the loader
+- [ ] Tests added to CI
 
-## Phase 2 — Job list you'd actually use
+## 2. Job list
 
-- [ ] Rebuild the jobs page from real jobs.json data (cards show title,
-      company, location, tags, posting date, link out)
-- [ ] Header/footer + homepage that leads to the board
-- [ ] Space Crew-inspired visual pass: dark, bold cards, strong typography
-- [ ] Responsive check: works well on phone and desktop
-- [ ] "Post a job" mailto link in the footer/header
+- [ ] Jobs page renders real data from jobs.json: title, company, location,
+      tags, posting date, link out
+- [ ] Header, footer, and a homepage that leads to the board
+- [ ] Visual pass: dark, bold cards, strong typography (Space Crew is the
+      reference)
+- [ ] Works well on phone and desktop
+- [ ] "Post a job" mailto link
 
-## Phase 3 — Search & filters
+## 3. Search and filters
 
 - [ ] Keyword search over title/company/tags
 - [ ] Remote/location filter
 - [ ] Technology/category tag filter
-- [ ] Filters combine, and state lives in the URL (shareable links)
-- [ ] Component tests for search + filters
+- [ ] Filters combine; state lives in the URL so results are shareable
+- [ ] Component tests for search and filters
 
-## Phase 4 — Automated freshness
+## 4. Automated freshness
 
-- [ ] Script: pull RemoteOK JSON API, filter for cloud/SRE keywords,
-      link back to original listing per their terms
-- [ ] Script: parse We Work Remotely + Remotive RSS, same filtering,
+- [ ] Script: pull RemoteOK's JSON API, filter for cloud/SRE keywords,
+      link back to the original listing per their terms
+- [ ] Script: parse We Work Remotely and Remotive RSS, same filtering,
       attribution links per their terms
-- [ ] Dedupe (same job from two sources appears once) + merge into jobs.json
-- [ ] Drop listings older than a cutoff so the board stays visibly fresh
-- [ ] Run manually via `npm run update-jobs`; then schedule it with GitHub
-      Actions (opens an automated PR with the refreshed data)
+- [ ] Dedupe (same job from two sources appears once), merge into jobs.json
+- [ ] Drop listings older than a cutoff so the board stays fresh
+- [ ] `npm run update-jobs` to run it manually, then a scheduled GitHub
+      Action that opens a PR with refreshed data
 
-## Phase 5 — Launch
+## 5. Launch
 
-- [ ] SEO basics: page metadata, sitemap, robots.txt
-- [ ] Basic anonymous analytics (pick a cookie-free option)
-- [ ] Buy a real domain (~$12/year) and connect it to Vercel
-- [ ] Lighthouse pass — fix anything glaring
-- [ ] Tell people: share in CNCF Slack #jobs, DevOps communities, socials
+- [ ] SEO basics: metadata, sitemap, robots.txt
+- [ ] Anonymous, cookie-free analytics
+- [ ] Real domain connected to Vercel
+- [ ] Lighthouse pass; fix anything glaring
+- [ ] Announce: CNCF Slack #jobs, DevOps communities, socials
 
-## Later (post-MVP, in rough priority order)
+## Later
 
-1. **Email job alerts** — first post-MVP feature; competitor research says
-   alerts are the retention engine for niche boards. Needs an email
-   provider; may come before full accounts (plain signup form).
-2. User accounts + saved jobs (this is what triggers adding a database —
-   user data only; jobs stay in JSON)
-3. Job detail pages (`/jobs/[slug]`) with JSON-LD structured data for
-   Google Jobs
-4. Company submission form with review/approval (replaces the mailto link)
-5. Featured/paid listings (Stripe) — also triggers Vercel Pro plan
-6. Company profile pages
-7. Category landing pages (Cloud, SRE, DevOps, Platform)
-8. Blog/industry content for credibility, like Space Crew's
+Roughly in priority order:
+
+1. Email job alerts — the retention feature every serious niche board has.
+   May come before full accounts (a plain signup form is enough to start).
+2. User accounts and saved jobs. This is what finally justifies a database
+   (for user data only — jobs stay in JSON).
+3. Job detail pages (`/jobs/[slug]`) with JSON-LD structured data so
+   listings can appear in Google Jobs.
+4. Company submission form with review/approval, replacing the mailto link.
+5. Featured/paid listings (Stripe). Also the point where hosting moves off
+   Vercel's free tier.
+6. Company profile pages.
+7. Category landing pages (Cloud, SRE, DevOps, Platform).
+8. Blog/industry content for credibility.

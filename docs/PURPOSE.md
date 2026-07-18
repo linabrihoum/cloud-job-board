@@ -9,29 +9,28 @@ The niche boards that do exist either paywall the listings for job seekers
 (DevOps Projects HQ) or treat the board as a side feature of something else
 (LearnXOps newsletter).
 
-**The gap this app fills: quality over quantity.** A free, fresh,
+**The gap this board fills: quality over quantity.** A free, fresh,
 well-designed board where every listing is relevant to Cloud/SRE/Platform/DevOps,
 shows when it was posted, and links straight to the company's own posting.
 
 ## Who it's for
 
-1. **Me (Lina), first.** I'm searching for cloud/SRE work myself — the board
-   is built to be useful for my own search from day one.
-2. **The cloud/SRE/DevOps community, next.** If it works for me, open it up
-   and grow it into a destination site, the way Space Crew is for the space
-   industry.
-3. **Companies**, minimally at first: they can email in a job. Featured/paid
-   listings come later, once there's an audience.
+1. **Job seekers** in cloud, SRE, platform, and DevOps roles. The board is
+   built around a real job search from day one, and stays free for them.
+2. **Companies** hiring for those roles — minimally at first (email in a
+   job), with featured listings later once there's an audience.
+3. **Contributors** — the project is open source (AGPL-3.0), so anyone can
+   help build it or run their own instance.
 
 ## What success looks like
 
 In rough order of when they should happen:
 
-- [ ] **I land a cloud/SRE job** — the board demonstrably helped my own search.
-- [ ] **Real visitors use it** — strangers find it via Google or sharing, and
-      come back.
-- [ ] **It makes some money** — featured listings or partnerships bring in
-      revenue. (Later; needs the audience first.)
+- [ ] The board is genuinely useful in a real job search — good enough to
+      be someone's first stop instead of the big boards.
+- [ ] Real visitors find it (via Google or sharing) and come back.
+- [ ] It sustains itself — featured listings or partnerships cover costs.
+      (Later; needs the audience first.)
 
 ## Guardrails
 

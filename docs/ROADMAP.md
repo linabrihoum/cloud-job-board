@@ -63,6 +63,14 @@ subtasks. "Session" here means one focused working sitting.
   - [x] Card grid with hover states
   - [x] Empty state that doesn't look broken (no loading states — the
         site is fully static)
+- [x] Job detail pages (`/jobs/[slug]`) — pulled forward from "Later" by
+      request: each card opens a page with the full role description
+      (fetched from the company's own hiring system, stored as plain text,
+      rendered without raw HTML), verified badge, similar roles, JSON-LD
+      structured data, and the direct apply link to the company
+- [x] Personality pass — animated CSS starfield, floating hero elements,
+      staggered card entrances, glow buttons, gradient headline (all
+      disabled under `prefers-reduced-motion`)
 - [ ] Create a dedicated post-a-job email address and replace the
       placeholder in `src/lib/site.ts`
 - [ ] Responsive check on real phone + laptop, not just the dev tools
@@ -138,8 +146,7 @@ Roughly in priority order:
    May come before full accounts (a plain signup form is enough to start).
 2. User accounts and saved jobs. This is what finally justifies a database
    (for user data only — jobs stay in JSON).
-3. Job detail pages (`/jobs/[slug]`) with JSON-LD structured data so
-   listings can appear in Google Jobs.
+3. ~~Job detail pages~~ — done in Phase 2 (pulled forward by request).
 4. Company submission form with review/approval, replacing the mailto link.
 5. Featured/paid listings (Stripe). Also the point where hosting moves off
    Vercel's free tier.

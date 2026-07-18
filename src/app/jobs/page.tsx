@@ -22,7 +22,7 @@ export default function JobsPage() {
           No listings right now — check back soon.
         </div>
       ) : (
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="stagger mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {jobs.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

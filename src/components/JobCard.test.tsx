@@ -6,6 +6,7 @@ import type { Job } from "@/types/job";
 
 const job: Job = {
   id: "hand-picked-example-1",
+  slug: "example-corp-site-reliability-engineer",
   title: "Site Reliability Engineer",
   company: "Example Corp",
   location: "Remote - US",
@@ -28,21 +29,19 @@ describe("JobCard", () => {
     expect(screen.getByText("Kubernetes")).toBeTruthy();
   });
 
-  it("links the whole card to the company posting in a new tab", () => {
+  it("links the whole card to the role's page on this site", () => {
     render(<JobCard job={job} />);
     const link = screen.getByRole("link");
-    expect(link.getAttribute("href")).toBe("https://example.com/careers/sre");
-    expect(link.getAttribute("target")).toBe("_blank");
-    expect(link.getAttribute("rel")).toContain("noopener");
+    expect(link.getAttribute("href")).toBe("/jobs/example-corp-site-reliability-engineer");
   });
 
   it("badges fresh listings as new", () => {
     render(<JobCard job={job} />);
-    expect(screen.getByText("new")).toBeTruthy();
+    expect(screen.getByText(/new/)).toBeTruthy();
   });
 
   it("does not badge older listings", () => {
     render(<JobCard job={{ ...job, postedAt: "2026-01-01" }} />);
-    expect(screen.queryByText("new")).toBeNull();
+    expect(screen.queryByText(/new/)).toBeNull();
   });
 });

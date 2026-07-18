@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-/* Dark-only theme. Deep-navy "night sky" base with a sky-blue accent —
-   the cloud take on Space Crew's space aesthetic. */
+/* Dark-only cosmic theme — the cloud take on Space Crew's space aesthetic:
+   deep-navy night sky, twinkling stars, sky-blue glow. */
 @theme {
   --color-night: #0b1120;
   --color-surface: #131c31;
@@ -12,10 +12,46 @@
   --color-faint: #64748b;
   --color-accent: #38bdf8;
   --color-accent-soft: #0ea5e9;
+  --color-violet: #a78bfa;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif,
     system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-twinkle: twinkle 4s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.35;
+  }
 }
 
 html {
@@ -27,6 +63,74 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Starfield: two twinkling layers of box-shadow "stars", fixed behind
+   everything. Pure CSS — no assets, no JavaScript. */
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56, 189, 248, 0.13), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 85% 20%, rgba(167, 139, 250, 0.08), transparent 70%);
+}
+.starfield::before,
+.starfield::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: transparent;
+  animation: twinkle 5s ease-in-out infinite;
+}
+.starfield::before {
+  box-shadow:
+    4vw 12vh 0 0 #cbd5e1, 12vw 32vh 0 1px #94a3b8, 21vw 8vh 0 0 #e2e8f0,
+    29vw 44vh 0 0 #cbd5e1, 37vw 19vh 0 1px #f1f5f9, 46vw 71vh 0 0 #94a3b8,
+    52vw 28vh 0 0 #e2e8f0, 61vw 55vh 0 1px #cbd5e1, 69vw 9vh 0 0 #f1f5f9,
+    76vw 39vh 0 0 #94a3b8, 84vw 64vh 0 0 #e2e8f0, 92vw 22vh 0 1px #cbd5e1,
+    9vw 82vh 0 0 #94a3b8, 33vw 91vh 0 0 #cbd5e1, 57vw 86vh 0 1px #e2e8f0,
+    81vw 93vh 0 0 #94a3b8, 97vw 78vh 0 0 #cbd5e1, 17vw 61vh 0 0 #f1f5f9;
+}
+.starfield::after {
+  animation-delay: 2.5s;
+  box-shadow:
+    7vw 25vh 0 0 #64748b, 15vw 55vh 0 0 #94a3b8, 25vw 75vh 0 1px #64748b,
+    35vw 5vh 0 0 #94a3b8, 44vw 35vh 0 0 #64748b, 55vw 15vh 0 1px #94a3b8,
+    64vw 45vh 0 0 #64748b, 73vw 85vh 0 0 #94a3b8, 83vw 30vh 0 0 #64748b,
+    90vw 50vh 0 1px #94a3b8, 96vw 10vh 0 0 #64748b, 28vw 95vh 0 0 #94a3b8,
+    49vw 92vh 0 0 #64748b, 70vw 68vh 0 0 #94a3b8, 88vw 88vh 0 1px #64748b;
+}
+
+/* Soft glow for accent buttons */
+.glow-accent {
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.35);
+}
+.glow-accent:hover {
+  box-shadow: 0 0 36px rgba(56, 189, 248, 0.55);
+}
+
+/* Staggered entrance for card grids */
+.stagger > * {
+  animation: var(--animate-fade-up);
+}
+.stagger > *:nth-child(2) { animation-delay: 0.07s; }
+.stagger > *:nth-child(3) { animation-delay: 0.14s; }
+.stagger > *:nth-child(4) { animation-delay: 0.21s; }
+.stagger > *:nth-child(5) { animation-delay: 0.28s; }
+.stagger > *:nth-child(6) { animation-delay: 0.35s; }
+.stagger > *:nth-child(n + 7) { animation-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .starfield::before,
+  .starfield::after,
+  .stagger > *,
+  [class*="animate-"] {
+    animation: none !important;
+  }
 }
 
 ::selection {

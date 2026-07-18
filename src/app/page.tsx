@@ -10,8 +10,8 @@ export default function Home() {
   const tags = tagsInUse(jobs).slice(0, 8);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6">
-      <section className="relative py-16 text-center sm:py-24">
+    <div>
+      <section className="relative mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-24">
         <div
           aria-hidden
           className="animate-float pointer-events-none absolute left-[8%] top-10 text-4xl opacity-60 sm:text-5xl"
@@ -84,27 +84,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-16">
-        <div className="mb-6 flex items-baseline justify-between">
-          <h2 className="font-display text-2xl font-bold text-white">Latest roles</h2>
-          <Link href="/jobs" className="text-sm font-medium text-accent hover:underline">
-            View all →
-          </Link>
-        </div>
-        <div className="stagger mx-auto flex max-w-4xl flex-col gap-3">
-          {latest.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
-        </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-2">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-muted"
+      <section className="bg-paper">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <div className="mx-auto mb-6 flex max-w-4xl items-baseline justify-between">
+            <h2 className="font-display text-2xl font-bold text-paper-ink">Latest roles</h2>
+            <Link
+              href="/jobs"
+              className="text-sm font-medium text-accent-soft hover:underline"
             >
-              {tag}
-            </span>
-          ))}
+              View all →
+            </Link>
+          </div>
+          <div className="stagger mx-auto flex max-w-4xl flex-col gap-3">
+            {latest.map((job) => (
+              <JobCard key={job.id} job={job} />
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap justify-center gap-2">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full border border-paper-line bg-paper-card px-3 py-1 text-xs text-paper-muted"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
     </div>

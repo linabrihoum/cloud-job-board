@@ -26,6 +26,10 @@ export interface Job {
   source: JobSource;
   /** ISO date the job was posted, e.g. "2026-07-18" */
   postedAt: string;
+  /** e.g. "Full-time" — only when the company's hiring system provides it */
+  employmentType?: string;
+  /** Formatted salary range, e.g. "$140k–$180k" — only when provided */
+  salary?: string;
   /**
    * Role description in markdown-lite (## headings, - bullets, **bold**),
    * converted from the company's own posting at ingestion. Plain text only —

@@ -27,6 +27,8 @@ export const jobSchema = z.object({
     .regex(ISO_DATE, "postedAt must be an ISO date like 2026-07-18")
     .refine((d) => !Number.isNaN(Date.parse(d)), "postedAt is not a real date"),
   description: z.string().optional(),
+  employmentType: z.string().min(1).optional(),
+  salary: z.string().min(1).optional(),
 });
 
 export const jobsFileSchema = z.array(jobSchema);

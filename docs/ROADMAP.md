@@ -46,19 +46,25 @@ subtasks. "Session" here means one focused working sitting.
 
 ## 2. Job list (~2–3 sessions)
 
-- [ ] Rebuild `JobCard` around the real `Job` type
-  - [ ] Show title, company, location, work mode, tags, posting date
-  - [ ] Relative dates ("3 days ago"), with stale listings visually muted
-  - [ ] Link out with `target="_blank"` and `rel="noopener"`
-- [ ] Page structure
-  - [ ] Header: site name, link to the board, "Post a job" mailto link
-  - [ ] Footer: GitHub link, license note, source attributions
-  - [ ] Homepage: short pitch + newest listings + link to the full board
-  - [ ] Jobs page renders everything from `jobs.json` via the loader
-- [ ] Visual pass (Space Crew is the reference)
-  - [ ] Pick the palette and heading font; dark theme
-  - [ ] Card grid with hover states
-  - [ ] Empty/loading states that don't look broken
+- [x] Rebuild `JobCard` around the real `Job` type
+  - [x] Show title, company, location, work mode, tags, posting date
+  - [x] Relative dates ("3 days ago"), with stale listings visually muted
+  - [x] Link out with `target="_blank"` and `rel="noopener"`
+- [x] Page structure
+  - [x] Header: site name, link to the board, "Post a job" mailto link
+        (placeholder address — see the TODO below)
+  - [x] Footer: GitHub link, license note, direct-link promise
+  - [x] Homepage: short pitch + newest listings + link to the full board
+  - [x] Jobs page renders everything from `jobs.json` via the loader
+        (malformed data now fails the build, as designed)
+- [x] Visual pass (Space Crew is the reference)
+  - [x] Palette (deep-navy night sky + sky-blue accent) and heading font
+        (Space Grotesk); dark-only by decision
+  - [x] Card grid with hover states
+  - [x] Empty state that doesn't look broken (no loading states — the
+        site is fully static)
+- [ ] Create a dedicated post-a-job email address and replace the
+      placeholder in `src/lib/site.ts`
 - [ ] Responsive check on real phone + laptop, not just the dev tools
 
 ## 3. Search and filters (~2 sessions)

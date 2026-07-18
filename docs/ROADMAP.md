@@ -17,7 +17,7 @@ subtasks. "Session" here means one focused working sitting.
   - [x] Log in to vercel.com with the GitHub account
   - [x] Import the `cloud-job-board` repo (defaults are fine for Next.js)
   - [x] Confirm the site builds and gets a `.vercel.app` URL
-  - [ ] Confirm PR preview deploys work (open any PR, look for the preview link)
+  - [x] Confirm PR preview deploys work (open any PR, look for the preview link)
   - [ ] Load the URL on a phone and a laptop
 
 ## 1. Job data (~2 sessions)

@@ -74,7 +74,7 @@ subtasks. "Session" here means one focused working sitting.
 - [ ] Tests: filter logic as pure functions, plus a component test that
       typing a keyword narrows the list
 
-## 4. Automated freshness (~2–3 sessions)
+## 4. Automated freshness & verification (~3–4 sessions)
 
 - [ ] Script scaffolding: `scripts/update-jobs.ts`, run via `npm run
       update-jobs`
@@ -86,14 +86,27 @@ subtasks. "Session" here means one focused working sitting.
   - [ ] Map onto the `Job` type with attribution per their terms
 - [ ] Relevance filter: reuse the canonical tag/keyword list from Phase 1 —
       one list, not three copies
-- [ ] Dedupe: normalize company + title; when two sources have the same
-      job, keep the one closest to the original posting
+- [ ] Dedupe: normalize company + title; when two sources (or a source and
+      a hand-picked entry) have the same job, keep exactly one — the one
+      closest to the original posting. No duplicate ever appears on the site
 - [ ] Freshness cutoff: drop listings older than ~45 days
-- [ ] Merge with hand-picked entries (hand-picked ones never get
-      auto-deleted) and write `jobs.json`
-- [ ] Tests: mapping, filtering, and dedupe against saved sample feed data
-- [ ] Scheduled GitHub Action (weekly to start) that runs the script and
-      opens a PR with the refreshed data — a human still clicks merge
+- [ ] Verification pass (`npm run verify-jobs`) — no dead or fake listings
+  - [ ] Re-visit every listing's URL, hand-picked and feed-sourced alike;
+        drop listings whose page is gone (404/410 or redirected away)
+  - [ ] Catch "zombie" postings: pages that still load but say the role is
+        closed ("no longer accepting applications" and similar phrases)
+  - [ ] Hand-picked jobs link straight to the company's own posting, so
+        this check validates them against the company site directly
+  - [ ] Only accept listings from trusted sources; filter by job title, not
+        source tags (the seed run proved source tags can't be trusted)
+- [ ] Merge with hand-picked entries and write `jobs.json` (hand-picked
+      ones are never auto-deleted by the feed refresh, but they are subject
+      to the verification pass like everything else)
+- [ ] Tests: mapping, filtering, dedupe, and verification against saved
+      sample feed data and mocked link responses
+- [ ] Scheduled GitHub Action (weekly to start) that runs refresh +
+      verification and opens a PR with the changes — a human still reviews
+      what got added and removed before it goes live
 
 ## 5. Launch (~1–2 sessions)
 

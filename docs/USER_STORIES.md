@@ -19,6 +19,9 @@ lives in the "Later" section of [ROADMAP.md](./ROADMAP.md).
   middleman.
 - **[MVP]** As a job seeker, I want to see when each job was posted so that
   I don't waste time on stale listings.
+- **[MVP]** As a job seeker, I want every listing verified to still be
+  open — dead and expired postings removed automatically — so that I never
+  click through to a job that's already filled.
 - **[MVP]** As a job seeker, I want the site to work well on my phone and my
   laptop so that I can browse anywhere.
 - As a job seeker, I want email alerts when new jobs match my search so
@@ -47,5 +50,10 @@ lives in the "Later" section of [ROADMAP.md](./ROADMAP.md).
   without manual work.
 - As a maintainer, I want the feed script to run on a schedule (GitHub
   Actions) so that the board updates itself.
+- **[MVP]** As a maintainer, I want an automated verification pass that
+  re-visits every listing's URL (hand-picked jobs link straight to the
+  company's own posting, so checking the link checks the company site) and
+  drops dead, expired, or duplicate listings so the board never shows a
+  job that isn't real and open.
 - As a maintainer, I want basic anonymous analytics so that I know
   whether real visitors are showing up.

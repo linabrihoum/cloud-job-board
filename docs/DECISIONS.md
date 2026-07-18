@@ -4,6 +4,27 @@ Big decisions, why we made them, and what we said no to. Newest at the top.
 
 ---
 
+## 2026-07-18 — Every listing gets verified; no dead, duplicate, or fake jobs
+
+**Decision:** The board re-checks every listing's URL on a schedule and
+removes listings that are dead (page gone), expired (page says the role is
+closed), or duplicated across sources. Hand-picked jobs link directly to
+the company's own posting, so verifying the link verifies the job against
+the company site. Feed jobs are verified at the page their source terms
+require us to link to, plus a freshness cutoff, plus human review of every
+automated refresh PR.
+
+**Why:** "Fresh and real" is the board's core promise — one click-through
+to a filled job costs more trust than ten good listings earn.
+
+**Rejected:** Trusting feeds blindly (the seed run surfaced hospitality
+jobs tagged "sys admin"); fully automated cross-matching of feed jobs
+against each company's careers site (every careers site is different —
+revisit if a practical approach appears, e.g. Greenhouse/Lever APIs);
+exempting hand-picked listings from verification.
+
+---
+
 ## 2026-07-12 — Open source under AGPL-3.0; docs stay public
 
 **Decision:** The project is open source under the GNU AGPL-3.0, with a

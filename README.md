@@ -34,6 +34,7 @@ Requires Node 20+.
 - [ ] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
 - [ ] Search and filters: keyword, remote/location, technology tags, shareable URLs
 - [ ] Feed scripts: RemoteOK + WWR + Remotive, keyword filtering, dedupe, scheduled refresh
+- [ ] Listing verification: re-check every posting's link on a schedule; drop dead, expired, or duplicate listings
 - [ ] Launch: SEO basics, anonymous analytics, real domain
 - [ ] Deploy to Vercel
 

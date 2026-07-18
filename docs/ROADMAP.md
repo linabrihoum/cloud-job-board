@@ -1,0 +1,123 @@
+# Roadmap
+
+Phases in order. Each one ends with something you can click. The condensed
+version lives in the README's TODO section; this file breaks each item into
+subtasks. "Session" here means one focused working sitting.
+
+## 0. Setup (~1 session)
+
+- [x] GitHub repo and CI (lint + build on every PR)
+- [x] Project docs
+- [ ] Remove the unused `shadcn-ui` package
+  - [ ] `npm uninstall shadcn-ui`
+  - [ ] Confirm `npm run build` still passes
+- [ ] First deploy to Vercel — done early on purpose, so hosting surprises
+      show up now instead of at launch
+  - [ ] Log in to vercel.com with the GitHub account
+  - [ ] Import the `cloud-job-board` repo (defaults are fine for Next.js)
+  - [ ] Confirm the site builds and gets a `.vercel.app` URL
+  - [ ] Confirm PR preview deploys work (open any PR, look for the preview link)
+  - [ ] Load the URL on a phone and a laptop
+
+## 1. Job data (~2 sessions)
+
+- [ ] Define the `Job` type in `src/types/job.ts`
+  - [ ] Fields: `id`, `title`, `company`, `location`, `workMode`
+        (`remote` / `hybrid` / `onsite`), `tags`, `url`, `source`, `postedAt`
+  - [ ] Decide the canonical tag list (AWS, GCP, Azure, Kubernetes,
+        Terraform, SRE, Platform, DevOps...) — defined once, reused by
+        filters and feed scripts later
+- [ ] Create `src/data/jobs.json` with the first real listings
+  - [ ] Pick 15–20 target companies with public career pages
+  - [ ] Hand-collect 20–50 current cloud/SRE/platform/DevOps postings
+        (title, company, location, tags, direct URL, posting date)
+- [ ] Build the loader in `src/lib/jobs.ts`
+  - [ ] Add `zod` and write a schema matching the `Job` type
+  - [ ] Read + validate `jobs.json` at build time; malformed data fails
+        the build with a clear message pointing at the bad entry
+  - [ ] Helpers: sort newest-first, look up all distinct tags/locations
+- [ ] Set up testing
+  - [ ] Install Vitest + React Testing Library, add `npm test`
+  - [ ] Tests: loader accepts good data, rejects bad data, sorts correctly
+  - [ ] Add `npm test` to the CI workflow
+
+## 2. Job list (~2–3 sessions)
+
+- [ ] Rebuild `JobCard` around the real `Job` type
+  - [ ] Show title, company, location, work mode, tags, posting date
+  - [ ] Relative dates ("3 days ago"), with stale listings visually muted
+  - [ ] Link out with `target="_blank"` and `rel="noopener"`
+- [ ] Page structure
+  - [ ] Header: site name, link to the board, "Post a job" mailto link
+  - [ ] Footer: GitHub link, license note, source attributions
+  - [ ] Homepage: short pitch + newest listings + link to the full board
+  - [ ] Jobs page renders everything from `jobs.json` via the loader
+- [ ] Visual pass (Space Crew is the reference)
+  - [ ] Pick the palette and heading font; dark theme
+  - [ ] Card grid with hover states
+  - [ ] Empty/loading states that don't look broken
+- [ ] Responsive check on real phone + laptop, not just the dev tools
+
+## 3. Search and filters (~2 sessions)
+
+- [ ] Decide the URL shape first (e.g. `/jobs?q=sre&mode=remote&tags=aws`)
+      so every filter state is a shareable link
+- [ ] Keyword search over title, company, and tags (case-insensitive)
+- [ ] Work-mode filter (remote / hybrid / onsite)
+- [ ] Tag filter: chips built from the tags actually present in the data,
+      multi-select
+- [ ] All filters combine (AND), with a clear-all button
+- [ ] "No matches" state that suggests removing a filter
+- [ ] Tests: filter logic as pure functions, plus a component test that
+      typing a keyword narrows the list
+
+## 4. Automated freshness (~2–3 sessions)
+
+- [ ] Script scaffolding: `scripts/update-jobs.ts`, run via `npm run
+      update-jobs`
+- [ ] RemoteOK source
+  - [ ] Fetch their JSON API, map entries onto the `Job` type
+  - [ ] Keep the required direct link back to the RemoteOK listing
+- [ ] We Work Remotely + Remotive sources
+  - [ ] Parse their RSS feeds (pick one well-maintained RSS parser)
+  - [ ] Map onto the `Job` type with attribution per their terms
+- [ ] Relevance filter: reuse the canonical tag/keyword list from Phase 1 —
+      one list, not three copies
+- [ ] Dedupe: normalize company + title; when two sources have the same
+      job, keep the one closest to the original posting
+- [ ] Freshness cutoff: drop listings older than ~45 days
+- [ ] Merge with hand-picked entries (hand-picked ones never get
+      auto-deleted) and write `jobs.json`
+- [ ] Tests: mapping, filtering, and dedupe against saved sample feed data
+- [ ] Scheduled GitHub Action (weekly to start) that runs the script and
+      opens a PR with the refreshed data — a human still clicks merge
+
+## 5. Launch (~1–2 sessions)
+
+- [ ] SEO basics
+  - [ ] Per-page titles and descriptions, Open Graph tags
+  - [ ] `sitemap.xml` and `robots.txt` (Next.js has built-in support)
+- [ ] Anonymous, cookie-free analytics (evaluate Vercel Analytics,
+      Plausible, Umami — record the choice in DECISIONS.md)
+- [ ] Domain
+  - [ ] Pick and buy the domain (~$12/year)
+  - [ ] Connect it to Vercel, confirm HTTPS
+- [ ] Lighthouse audit; fix anything glaring
+- [ ] Announce: CNCF Slack #jobs, DevOps communities, socials
+
+## Later
+
+Roughly in priority order:
+
+1. Email job alerts — the retention feature every serious niche board has.
+   May come before full accounts (a plain signup form is enough to start).
+2. User accounts and saved jobs. This is what finally justifies a database
+   (for user data only — jobs stay in JSON).
+3. Job detail pages (`/jobs/[slug]`) with JSON-LD structured data so
+   listings can appear in Google Jobs.
+4. Company submission form with review/approval, replacing the mailto link.
+5. Featured/paid listings (Stripe). Also the point where hosting moves off
+   Vercel's free tier.
+6. Company profile pages.
+7. Category landing pages (Cloud, SRE, DevOps, Platform).
+8. Blog/industry content for credibility.

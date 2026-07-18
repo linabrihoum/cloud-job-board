@@ -56,6 +56,8 @@ const JobCard: React.FC<JobCardProps> = ({
   );
 };
 
+export { JobCard };
+
 // Example usage with dummy data
 export default function ExampleJobCard() {
   return (

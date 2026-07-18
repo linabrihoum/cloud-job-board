@@ -8,6 +8,9 @@ const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 export const jobSchema = z.object({
   id: z.string().min(1),
+  slug: z
+    .string()
+    .regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "slug must be lowercase words joined by dashes"),
   title: z.string().min(1),
   company: z.string().min(1),
   location: z.string().min(1),
@@ -19,6 +22,7 @@ export const jobSchema = z.object({
     .string()
     .regex(ISO_DATE, "postedAt must be an ISO date like 2026-07-18")
     .refine((d) => !Number.isNaN(Date.parse(d)), "postedAt is not a real date"),
+  description: z.string().optional(),
 });
 
 export const jobsFileSchema = z.array(jobSchema);
@@ -47,13 +51,30 @@ export function parseJobs(raw: string): Job[] {
     );
   }
   const ids = new Set<string>();
+  const slugs = new Set<string>();
   for (const job of result.data) {
     if (ids.has(job.id)) {
       throw new Error(`Duplicate job id in jobs.json: ${job.id}`);
     }
+    if (slugs.has(job.slug)) {
+      throw new Error(`Duplicate job slug in jobs.json: ${job.slug}`);
+    }
     ids.add(job.id);
+    slugs.add(job.slug);
   }
   return sortNewestFirst(result.data);
+}
+
+export function getJobBySlug(jobs: Job[], slug: string): Job | undefined {
+  return jobs.find((j) => j.slug === slug);
+}
+
+/** Up to `limit` other jobs sharing at least one tag, newest first. */
+export function relatedJobs(jobs: Job[], job: Job, limit = 3): Job[] {
+  const tags = new Set(job.tags);
+  return jobs
+    .filter((j) => j.id !== job.id && j.tags.some((t) => tags.has(t)))
+    .slice(0, limit);
 }
 
 export function sortNewestFirst(jobs: Job[]): Job[] {

@@ -4,6 +4,17 @@ Mistakes, gotchas, and surprises from building this project — written down
 so we don't repeat them. Add an entry whenever something cost real time or
 changed our approach.
 
+## 2026-07-18 — Never install Node with winget on an nvm-managed machine
+
+This machine manages Node with nvm-windows, which makes `C:\Program
+Files\nodejs` a symlink into `%APPDATA%\nvm\v<version>`. A winget Node
+install wrote its files *through* that symlink into nvm's version folder,
+producing a corrupted 22/24 hybrid where `npm install` and `npx` die with
+"Class extends value undefined" (while `node` and `npm run` still work,
+hiding the damage). Repair: elevated PowerShell → `winget uninstall
+OpenJS.NodeJS.LTS`, then `nvm install <version>` + `nvm use <version>`.
+Rule: on this machine, Node versions change through nvm only.
+
 ## 2026-07-18 — Tailwind v3 directives silently do nothing under the v4 pipeline
 
 The starter's `globals.css` used Tailwind v3's `@tailwind base/components/

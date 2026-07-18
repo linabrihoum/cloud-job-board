@@ -22,25 +22,27 @@ subtasks. "Session" here means one focused working sitting.
 
 ## 1. Job data (~2 sessions)
 
-- [ ] Define the `Job` type in `src/types/job.ts`
-  - [ ] Fields: `id`, `title`, `company`, `location`, `workMode`
+- [x] Define the `Job` type in `src/types/job.ts`
+  - [x] Fields: `id`, `title`, `company`, `location`, `workMode`
         (`remote` / `hybrid` / `onsite`), `tags`, `url`, `source`, `postedAt`
-  - [ ] Decide the canonical tag list (AWS, GCP, Azure, Kubernetes,
-        Terraform, SRE, Platform, DevOps...) — defined once, reused by
-        filters and feed scripts later
-- [ ] Create `src/data/jobs.json` with the first real listings
+  - [x] Decide the canonical tag list (`src/lib/tags.ts`) — defined once,
+        reused by filters and feed scripts later
+- [x] Create `src/data/jobs.json` with the first real listings
+  - [x] Seeded with 24 curated infra listings from RemoteOK's API
+        (attributed and linking back per their terms)
   - [ ] Pick 15–20 target companies with public career pages
-  - [ ] Hand-collect 20–50 current cloud/SRE/platform/DevOps postings
-        (title, company, location, tags, direct URL, posting date)
-- [ ] Build the loader in `src/lib/jobs.ts`
-  - [ ] Add `zod` and write a schema matching the `Job` type
-  - [ ] Read + validate `jobs.json` at build time; malformed data fails
-        the build with a clear message pointing at the bad entry
-  - [ ] Helpers: sort newest-first, look up all distinct tags/locations
-- [ ] Set up testing
-  - [ ] Install Vitest + React Testing Library, add `npm test`
-  - [ ] Tests: loader accepts good data, rejects bad data, sorts correctly
-  - [ ] Add `npm test` to the CI workflow
+  - [ ] Hand-collect fresh postings from company career pages to grow the
+        set toward 50 (title, company, location, tags, direct URL, date)
+- [x] Build the loader in `src/lib/jobs.ts`
+  - [x] Add `zod` and write a schema matching the `Job` type
+  - [x] Read + validate `jobs.json`; malformed data fails with a clear
+        message pointing at the bad entry (enforced by CI now; enforced at
+        build time once pages consume the loader in Phase 2)
+  - [x] Helpers: sort newest-first, look up distinct tags in use
+- [x] Set up testing
+  - [x] Install Vitest + React Testing Library, add `npm test`
+  - [x] Tests: loader accepts good data, rejects bad data, sorts correctly
+  - [x] Add `npm test` to the CI workflow
 
 ## 2. Job list (~2–3 sessions)
 

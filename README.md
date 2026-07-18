@@ -30,12 +30,12 @@ Requires Node 20+.
 ## TODO
 
 - [x] Project docs, CI (lint + build on every PR)
-- [ ] Deploy to Vercel
 - [ ] Job data: `Job` type, `jobs.json` with the first hand-picked listings, validated loader, tests
 - [ ] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
 - [ ] Search and filters: keyword, remote/location, technology tags, shareable URLs
 - [ ] Feed scripts: RemoteOK + WWR + Remotive, keyword filtering, dedupe, scheduled refresh
 - [ ] Launch: SEO basics, anonymous analytics, real domain
+- [ ] Deploy to Vercel
 
 The detailed plan (including post-MVP ideas like email alerts and featured
 listings) is in [docs/ROADMAP.md](./docs/ROADMAP.md).

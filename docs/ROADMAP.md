@@ -8,15 +8,16 @@ subtasks. "Session" here means one focused working sitting.
 
 - [x] GitHub repo and CI (lint + build on every PR)
 - [x] Project docs
-- [ ] Remove the unused `shadcn-ui` package
-  - [ ] `npm uninstall shadcn-ui`
-  - [ ] Confirm `npm run build` still passes
+- [x] Remove the unused `shadcn-ui` package
+  - [x] `npm uninstall shadcn-ui`
+  - [x] Confirm `npm run build` still passes
 - [ ] First deploy to Vercel — done early on purpose, so hosting surprises
-      show up now instead of at launch
-  - [ ] Log in to vercel.com with the GitHub account
-  - [ ] Import the `cloud-job-board` repo (defaults are fine for Next.js)
-  - [ ] Confirm the site builds and gets a `.vercel.app` URL
-  - [ ] Confirm PR preview deploys work (open any PR, look for the preview link)
+      show up now instead of at launch (and they did: see the Vercel
+      CVE-block entry in LEARNINGS.md)
+  - [x] Log in to vercel.com with the GitHub account
+  - [x] Import the `cloud-job-board` repo (defaults are fine for Next.js)
+  - [x] Confirm the site builds and gets a `.vercel.app` URL
+  - [x] Confirm PR preview deploys work (open any PR, look for the preview link)
   - [ ] Load the URL on a phone and a laptop
 
 ## 1. Job data (~2 sessions)

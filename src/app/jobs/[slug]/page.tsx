@@ -72,10 +72,10 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
         <header className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-start">
           <CompanyAvatar company={job.company} website={job.companyWebsite} size="lg" />
           <div className="min-w-0 flex-1">
-            <h1 className="font-display text-3xl font-bold leading-tight text-white">
+            <p className="text-lg font-medium text-muted">{job.company}</p>
+            <h1 className="font-display mt-1 text-3xl font-bold leading-tight text-white">
               {job.title}
             </h1>
-            <p className="mt-1 text-lg text-muted">{job.company}</p>
             <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted">
               {facts.map((fact, i) => (
                 <span key={fact} className="flex items-center gap-x-3">

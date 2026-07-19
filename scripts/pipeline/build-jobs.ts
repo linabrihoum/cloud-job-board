@@ -17,7 +17,11 @@ import { SITE } from "@/lib/site";
 import type { Job } from "@/types/job";
 import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats } from "./ats";
 import { fetchUsaJobs } from "./usajobs";
-import { discoverFromHackerNews, type DiscoveredBoard } from "./discover";
+import {
+  discoverFromHackerNews,
+  discoverFromHackerNewsJobPosts,
+  type DiscoveredBoard,
+} from "./discover";
 import { htmlToMd } from "./html";
 import {
   capPerCompany,
@@ -47,7 +51,7 @@ const COMPANIES_FILE = path.join(ROOT, "src", "data", "companies.json");
 const JOBS_FILE = path.join(ROOT, "src", "data", "jobs.json");
 
 /** Guardrail: at most this many newly discovered boards join per run. */
-const MAX_NEW_BOARDS_PER_RUN = 25;
+const MAX_NEW_BOARDS_PER_RUN = 50;
 
 async function main() {
   const companies: CompanyEntry[] = JSON.parse(fs.readFileSync(COMPANIES_FILE, "utf8"));
@@ -55,11 +59,16 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
 
   // 1. Discovery
-  let discovered: DiscoveredBoard[] = [];
+  const discovered: DiscoveredBoard[] = [];
   try {
-    discovered = await discoverFromHackerNews();
+    discovered.push(...(await discoverFromHackerNews()));
   } catch (err) {
-    console.error("discovery failed (continuing with known boards):", err);
+    console.error("HN thread discovery failed (continuing):", err);
+  }
+  try {
+    discovered.push(...(await discoverFromHackerNewsJobPosts()));
+  } catch (err) {
+    console.error("HN job-post discovery failed (continuing):", err);
   }
   const known = new Set(companies.map((c) => `${c.ats}:${c.slug}`));
   let added = 0;

@@ -43,7 +43,7 @@ interface AlgoliaHit {
 
 /** Find the most recent HN "Who is hiring?" threads and mine their
  * comments for hiring-system links. */
-export async function discoverFromHackerNews(threadCount = 2): Promise<DiscoveredBoard[]> {
+export async function discoverFromHackerNews(threadCount = 4): Promise<DiscoveredBoard[]> {
   const search = (await (
     await fetch(
       "https://hn.algolia.com/api/v1/search_by_date?tags=story,author_whoishiring&hitsPerPage=10"
@@ -60,6 +60,20 @@ export async function discoverFromHackerNews(threadCount = 2): Promise<Discovere
       await fetch(`https://hn.algolia.com/api/v1/items/${thread.objectID}`)
     ).json()) as unknown;
     boards.push(...extractBoards(JSON.stringify(item)));
+  }
+  return boards;
+}
+
+/** HN also carries individual "X is hiring" job posts (YC companies).
+ * Their URLs and text often point straight at hiring-system boards. */
+export async function discoverFromHackerNewsJobPosts(pages = 2): Promise<DiscoveredBoard[]> {
+  const boards: DiscoveredBoard[] = [];
+  for (let page = 0; page < pages; page++) {
+    const res = await fetch(
+      `https://hn.algolia.com/api/v1/search_by_date?tags=job&hitsPerPage=100&page=${page}`
+    );
+    if (!res.ok) break;
+    boards.push(...extractBoards(JSON.stringify(await res.json())));
   }
   return boards;
 }

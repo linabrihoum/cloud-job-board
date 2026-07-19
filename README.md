@@ -12,10 +12,12 @@ job seekers. No accounts, no paywall.
 
 It's a static site. Listings live in a JSON file in the repo, Next.js bakes
 them into plain HTML at build time, and Vercel serves the result. No database.
-Jobs are hand-picked or pulled straight from target companies' own hiring
-systems (Greenhouse/Lever/Ashby public APIs), so "Apply" always lands on the
-company's own posting — never an aggregator page. See
-[docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the full picture.
+A daily pipeline discovers company hiring boards from public sources and
+pulls live roles straight from each company's own hiring system
+(Greenhouse, Lever, Ashby, Workable, SmartRecruiters, USAJobs), so "Apply"
+always lands on the company's own posting — never an aggregator page. See
+[docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the full picture and
+[docs/ROADMAP.md](./docs/ROADMAP.md) for what's planned.
 
 ## Running locally
 
@@ -27,21 +29,6 @@ npm run build
 ```
 
 Requires Node 20+.
-
-## TODO
-
-- [x] Project docs, CI (lint + build on every PR)
-- [ ] Job data: `Job` type, `jobs.json` with the first hand-picked listings, validated loader, tests
-- [x] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
-- [ ] Create a dedicated post-a-job email address (placeholder ships in `src/lib/site.ts` until then)
-- [x] Search and a filter bar on the jobs page: keyword, remote/location, technology tags, shareable URLs
-- [x] Sourcing pipeline: discover company boards from public sources, pull live jobs from Greenhouse/Lever/Ashby APIs, title filtering, dedupe, daily scheduled refresh
-- [x] Listing verification: every listing re-verified against its company's own hiring system daily; dead, stale, and duplicate listings drop off
-- [ ] Launch: SEO basics, anonymous analytics, real domain
-- [ ] Deploy to Vercel
-
-The detailed plan (including post-MVP ideas like email alerts and featured
-listings) is in [docs/ROADMAP.md](./docs/ROADMAP.md).
 
 ## Contributing
 

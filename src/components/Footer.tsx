@@ -27,13 +27,6 @@ export function Footer() {
               className="underline transition hover:text-muted"
             >
               Contribute on GitHub
-            </a>{" "}
-            ·{" "}
-            <a
-              href={`mailto:${SITE.postJobEmail}`}
-              className="underline transition hover:text-muted"
-            >
-              Post a job
             </a>
           </p>
           <p className="ml-auto">Made by Lina Brihoum</p>

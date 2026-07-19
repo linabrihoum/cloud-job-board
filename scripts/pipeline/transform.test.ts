@@ -3,6 +3,7 @@ import type { Job } from "@/types/job";
 import {
   dedupeJobs,
   dropStale,
+  extractSalary,
   isRelevantTitle,
   mapPostingToJob,
   slugify,
@@ -121,6 +122,22 @@ describe("dedupe, staleness, slug uniqueness", () => {
   it("suffixes colliding slugs", () => {
     const out = uniqueSlugs([job({ id: "a", slug: "acme-sre" }), job({ id: "b", slug: "acme-sre" })]);
     expect(out.map((j) => j.slug)).toEqual(["acme-sre", "acme-sre-2"]);
+  });
+});
+
+describe("extractSalary", () => {
+  it("finds $-ranges in description text", () => {
+    expect(extractSalary("The range for this role is $140,000 - $180,000 plus equity")).toBe(
+      "$140k–$180k"
+    );
+    expect(extractSalary("Comp: $120k–$150k DOE")).toBe("$120k–$150k");
+    expect(extractSalary("between $95,000 to $125,000 annually")).toBe("$95k–$125k");
+  });
+
+  it("ignores hourly-looking and nonsense ranges", () => {
+    expect(extractSalary("pays $25 - $35 per hour")).toBeUndefined();
+    expect(extractSalary("$180,000 - $140,000 (typo'd range)")).toBeUndefined();
+    expect(extractSalary("no compensation mentioned")).toBeUndefined();
   });
 });
 

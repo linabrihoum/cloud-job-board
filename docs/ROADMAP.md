@@ -87,8 +87,6 @@ with 134 verified listings across 41 companies, and the daily pipeline
 - [x] Personality pass — animated CSS starfield, floating hero elements,
       staggered card entrances, glow buttons, gradient headline (all
       disabled under `prefers-reduced-motion`)
-- [ ] Create a dedicated post-a-job email address and replace the
-      placeholder in `src/lib/site.ts`
 - [ ] Responsive check on real phone + laptop, not just the dev tools
 
 ## 3. Search and filters on the jobs page (~2 sessions)
@@ -179,12 +177,15 @@ Roughly in priority order:
 2. User accounts and saved jobs. This is what finally justifies a database
    (for user data only — jobs stay in JSON).
 3. ~~Job detail pages~~ — done in Phase 2 (pulled forward by request).
-4. Company submission form with review/approval, replacing the mailto link.
+4. "Post a job" for companies (removed from the UI for now): a dedicated
+   email address first, then a submission form with review/approval.
 5. Featured/paid listings (Stripe). Also the point where hosting moves off
    Vercel's free tier.
 6. Company profile pages.
 7. Category landing pages (Cloud, SRE, DevOps, Platform).
-8. Blog/industry content for credibility.
+8. Blog section: articles explaining cloud terminology and technologies
+   (what is SRE, Kubernetes vs. serverless, IaC compared...) — credibility
+   for the board and strong SEO surface.
 9. More job sources: ~~USAJobs API~~ (done — key-gated; register at
    developer.usajobs.gov and add USAJOBS_EMAIL/USAJOBS_API_KEY as repo
    secrets to switch it on), CNCF-landscape company probing, European

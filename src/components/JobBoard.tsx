@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo } from "react";
+import { FilterDropdown, type DropdownOption } from "@/components/FilterDropdown";
 import { JobCard } from "@/components/JobCard";
 import {
   EMPTY_FILTER,
@@ -17,55 +18,22 @@ import {
   type JobFilter,
   type Level,
   type Region,
+  type WorkModeFilter,
 } from "@/lib/filter";
-import type { Job, WorkMode } from "@/types/job";
+import type { Job } from "@/types/job";
 
-const MODES: { value: WorkMode | "all"; label: string }[] = [
-  { value: "all", label: "All" },
+const MODE_OPTIONS: DropdownOption[] = [
+  { value: "all", label: "All work modes" },
   { value: "remote", label: "Remote" },
   { value: "hybrid", label: "Hybrid" },
   { value: "onsite", label: "On-site" },
 ];
 
-function PillGroup<T extends string>({
-  label,
-  options,
-  active,
-  onSelect,
-}: {
-  label: string;
-  options: { value: T; label: string }[];
-  active: T;
-  onSelect: (value: T) => void;
-}) {
-  return (
-    <div className="flex items-center gap-2">
-      <span className="text-xs font-semibold uppercase tracking-wide text-paper-muted">
-        {label}
-      </span>
-      <div className="flex flex-wrap gap-1 rounded-xl border border-paper-line bg-paper p-1">
-        {options.map((o) => (
-          <button
-            key={o.value}
-            type="button"
-            onClick={() => onSelect(o.value)}
-            className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
-              active === o.value
-                ? "bg-accent text-night"
-                : "text-paper-muted hover:text-paper-ink"
-            }`}
-          >
-            {o.label}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 /**
- * The interactive jobs list: filter bar + results. Filter state lives in
- * the URL (?q=&mode=&tags=), so every filtered view is a shareable link.
+ * The interactive jobs list: a search bar, four centered filter dropdowns
+ * (Level, Region, Work mode, Technology — each searchable while open), and
+ * the results. Filter state lives in the URL, so every filtered view is a
+ * shareable link.
  */
 export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) {
   const router = useRouter();
@@ -76,26 +44,24 @@ export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) 
   const results = useMemo(() => filterJobs(jobs, filter), [jobs, filter]);
 
   // Only offer level/region options that actually exist in the data.
-  const levelOptions = useMemo(() => {
+  const levelOptions = useMemo<DropdownOption[]>(() => {
     const present = new Set(jobs.map((j) => levelOf(j.title)));
     return [
-      { value: "all" as Level | "all", label: "All" },
-      ...LEVELS.filter((l) => present.has(l)).map((l) => ({
-        value: l as Level | "all",
-        label: LEVEL_LABEL[l],
-      })),
+      { value: "all", label: "All levels" },
+      ...LEVELS.filter((l) => present.has(l)).map((l) => ({ value: l, label: LEVEL_LABEL[l] })),
     ];
   }, [jobs]);
-  const regionOptions = useMemo(() => {
+  const regionOptions = useMemo<DropdownOption[]>(() => {
     const present = new Set(jobs.map((j) => regionOf(j.location)));
     return [
-      { value: "all" as Region | "all", label: "All" },
-      ...REGIONS.filter((r) => present.has(r)).map((r) => ({
-        value: r as Region | "all",
-        label: r,
-      })),
+      { value: "all", label: "All regions" },
+      ...REGIONS.filter((r) => present.has(r)).map((r) => ({ value: r, label: r })),
     ];
   }, [jobs]);
+  const tagOptions = useMemo<DropdownOption[]>(
+    () => allTags.map((t) => ({ value: t, label: t })),
+    [allTags]
+  );
 
   const apply = (next: JobFilter) => {
     router.replace(`${pathname}${toQueryString(next)}`, { scroll: false });
@@ -111,67 +77,41 @@ export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) 
   return (
     <div className="mx-auto max-w-4xl">
       <div className="rounded-2xl border border-paper-line bg-paper-card p-4 shadow-sm sm:p-5">
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <input
-            type="search"
-            value={filter.q}
-            onChange={(e) => apply({ ...filter, q: e.target.value })}
-            placeholder="Search title, company, or technology…"
-            aria-label="Search jobs"
-            className="w-full rounded-xl border border-paper-line bg-paper px-4 py-2.5 text-sm text-paper-ink outline-none transition placeholder:text-paper-muted/70 focus:border-accent"
-          />
-          <div className="flex shrink-0 gap-1 rounded-xl border border-paper-line bg-paper p-1">
-            {MODES.map((m) => (
-              <button
-                key={m.value}
-                type="button"
-                onClick={() => apply({ ...filter, mode: m.value })}
-                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
-                  filter.mode === m.value
-                    ? "bg-accent text-night"
-                    : "text-paper-muted hover:text-paper-ink"
-                }`}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
-        </div>
+        <input
+          type="search"
+          value={filter.q}
+          onChange={(e) => apply({ ...filter, q: e.target.value })}
+          placeholder="Search title, company, or technology…"
+          aria-label="Search jobs"
+          className="w-full rounded-xl border border-paper-line bg-paper px-4 py-2.5 text-sm text-paper-ink outline-none transition placeholder:text-paper-muted/70 focus:border-accent"
+        />
 
-        <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2">
-          <PillGroup
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <FilterDropdown
             label="Level"
             options={levelOptions}
-            active={filter.level}
-            onSelect={(level) => apply({ ...filter, level })}
+            selected={filter.level}
+            onChange={(level) => apply({ ...filter, level: level as Level | "all" })}
           />
-          <PillGroup
+          <FilterDropdown
             label="Region"
             options={regionOptions}
-            active={filter.region}
-            onSelect={(region) => apply({ ...filter, region })}
+            selected={filter.region}
+            onChange={(region) => apply({ ...filter, region: region as Region | "all" })}
           />
-        </div>
-
-        <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5">
-          {allTags.map((tag) => {
-            const active = filter.tags.includes(tag);
-            return (
-              <button
-                key={tag}
-                type="button"
-                onClick={() => toggleTag(tag)}
-                aria-pressed={active}
-                className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
-                  active
-                    ? "border-accent bg-accent/15 text-accent-soft"
-                    : "border-paper-line bg-paper text-paper-muted hover:border-accent/50 hover:text-paper-ink"
-                }`}
-              >
-                {tag}
-              </button>
-            );
-          })}
+          <FilterDropdown
+            label="Work mode"
+            options={MODE_OPTIONS}
+            selected={filter.mode}
+            onChange={(mode) => apply({ ...filter, mode: mode as WorkModeFilter })}
+          />
+          <FilterDropdown
+            label="Technology"
+            options={tagOptions}
+            selected={filter.tags}
+            multi
+            onChange={toggleTag}
+          />
         </div>
 
         {!isEmptyFilter(filter) && (

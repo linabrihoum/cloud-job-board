@@ -52,11 +52,13 @@ export function levelOf(title: string): Level {
   return "mid";
 }
 
+export type WorkModeFilter = WorkMode | "all";
+
 export interface JobFilter {
   /** Keyword matched against title, company, and tags (case-insensitive). */
   q: string;
   /** Work-mode restriction, or "all" for no restriction. */
-  mode: WorkMode | "all";
+  mode: WorkModeFilter;
   /** Selected technology tags; a job must carry every selected tag. */
   tags: string[];
   /** Region restriction (derived from location), or "all". */

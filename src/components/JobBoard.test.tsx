@@ -62,11 +62,23 @@ describe("JobBoard", () => {
     expect(screen.queryByText("Cloud Engineer")).toBeNull();
   });
 
-  it("work-mode filter narrows the list", () => {
+  it("work-mode dropdown narrows the list", () => {
     renderBoard();
-    fireEvent.click(screen.getByRole("button", { name: "On-site" }));
+    fireEvent.click(screen.getByRole("button", { name: /Work mode/ }));
+    fireEvent.click(screen.getByRole("option", { name: "On-site" }));
     expect(screen.queryByText("Senior SRE")).toBeNull();
     expect(screen.getByText("Cloud Engineer")).toBeTruthy();
+  });
+
+  it("typing inside the technology dropdown filters its options", () => {
+    renderBoard();
+    fireEvent.click(screen.getByRole("button", { name: /Technology/ }));
+    fireEvent.change(screen.getByLabelText("Search technology"), { target: { value: "aw" } });
+    expect(screen.getByRole("option", { name: /AWS/ })).toBeTruthy();
+    expect(screen.queryByRole("option", { name: /GCP/ })).toBeNull();
+    fireEvent.click(screen.getByRole("option", { name: /AWS/ }));
+    expect(screen.getByText("Senior SRE")).toBeTruthy();
+    expect(screen.queryByText("Cloud Engineer")).toBeNull();
   });
 
   it("shows the no-matches state and clears filters", () => {

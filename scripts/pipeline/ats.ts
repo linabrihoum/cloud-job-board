@@ -26,10 +26,12 @@ export interface Board {
   postings: RawPosting[];
 }
 
+import { fetchJsonRetry } from "./util";
+
 async function get(url: string): Promise<unknown> {
-  const res = await fetch(url, { headers: { "user-agent": "cloud-job-board (github.com/linabrihoum/cloud-job-board)" } });
-  if (!res.ok) throw new Error(`${res.status} for ${url}`);
-  return res.json();
+  return fetchJsonRetry(url, {
+    headers: { "user-agent": "cloud-job-board (github.com/linabrihoum/cloud-job-board)" },
+  });
 }
 
 function decodeEntities(s: string): string {
@@ -117,20 +119,15 @@ export async function fetchBoard(ats: Ats, slug: string): Promise<Board> {
 
   if (ats === "workable") {
     // v3 list; per-job detail (fetched later, only for relevant titles)
-    const post = () =>
-      fetch(`https://apply.workable.com/api/v3/accounts/${slug}/jobs`, {
+    const data = (await fetchJsonRetry(
+      `https://apply.workable.com/api/v3/accounts/${slug}/jobs`,
+      {
         method: "POST",
         headers: { "content-type": "application/json", "user-agent": "cloud-job-board" },
         body: JSON.stringify({ query: "", location: [], department: [], worktype: [], remote: [] }),
-      });
-    let res = await post();
-    if (res.status === 429) {
-      // rate-limited: back off once, politely
-      await new Promise((r) => setTimeout(r, 8000));
-      res = await post();
-    }
-    if (!res.ok) throw new Error(`${res.status} for workable/${slug}`);
-    const data = (await res.json()) as any;
+      },
+      8000
+    )) as any;
     return {
       name: prettifySlug(slug),
       postings: (data.results ?? []).map((j: any) => ({

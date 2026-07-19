@@ -16,6 +16,7 @@ import { detectTags } from "@/lib/tags";
 import { SITE } from "@/lib/site";
 import type { Job } from "@/types/job";
 import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats } from "./ats";
+import { guessWebsite, mineWebsiteFromHtml } from "./logos";
 import { fetchUsaJobs } from "./usajobs";
 import {
   discoverFromHackerNews,
@@ -98,6 +99,20 @@ async function main() {
         company.name = board.name;
       }
       const relevant = board.postings.filter((p) => isRelevantTitle(p.title));
+
+      // Companies without a recorded website get initials instead of a
+      // logo — mine their own description links for it.
+      if (!company.website && relevant.length) {
+        for (const posting of board.postings) {
+          const mined = posting.html && mineWebsiteFromHtml(posting.html, company.name);
+          if (mined) {
+            company.website = mined;
+            console.log(`  website mined for ${company.name}: ${mined}`);
+            break;
+          }
+        }
+      }
+
       for (const posting of relevant) {
         // Workable/SmartRecruiters need a per-job detail call — done only
         // for postings that survived the relevance gate.
@@ -137,6 +152,28 @@ async function main() {
         sourcedJobs.push(job);
         break;
       }
+    }
+  }
+
+  // 2a. Companies still missing a website: guess-and-verify from the name
+  // (capped per run; results persist in companies.json so this converges).
+  let guesses = 0;
+  for (const company of companies) {
+    if (guesses >= 20) break;
+    if (company.blocked || company.website) continue;
+    if (!sourcedJobs.some((j) => j.company === company.name)) continue;
+    guesses++;
+    const guessed = await guessWebsite(company.name);
+    if (guessed) {
+      company.website = guessed;
+      console.log(`  website guessed for ${company.name}: ${guessed}`);
+    }
+  }
+  // Attach any newly resolved websites to this run's jobs.
+  const websiteByName = new Map(companies.filter((c) => c.website).map((c) => [c.name, c.website!]));
+  for (const job of sourcedJobs) {
+    if (!job.companyWebsite && websiteByName.has(job.company)) {
+      job.companyWebsite = websiteByName.get(job.company);
     }
   }
 

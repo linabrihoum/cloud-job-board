@@ -163,14 +163,16 @@
     "ats": "greenhouse",
     "slug": "doubleverify",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "doubleverify.com"
   },
   {
     "name": "Prolific",
     "ats": "greenhouse",
     "slug": "prolific",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "prolific.com"
   },
   {
     "name": "Kinelo",
@@ -184,21 +186,24 @@
     "ats": "greenhouse",
     "slug": "grafanalabs",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "grafana.com"
   },
   {
     "name": "Obsidian Security",
     "ats": "greenhouse",
     "slug": "obsidiansecurity",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "obsidiansecurity.com"
   },
   {
     "name": "FINN",
     "ats": "greenhouse",
     "slug": "finnapp",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "finn.com"
   },
   {
     "name": "Mentimeter",
@@ -212,7 +217,8 @@
     "ats": "greenhouse",
     "slug": "oklo",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "oklo.ai"
   },
   {
     "name": "Beautiful.ai",
@@ -233,7 +239,8 @@
     "ats": "greenhouse",
     "slug": "proton",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "proton.me"
   },
   {
     "name": "Distru",
@@ -289,7 +296,8 @@
     "ats": "ashby",
     "slug": "antithesis",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "antithesis.com"
   },
   {
     "name": "Aureliussystems",
@@ -441,7 +449,8 @@
     "ats": "ashby",
     "slug": "railway",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "railway.app"
   },
   {
     "name": "Complement",
@@ -462,7 +471,8 @@
     "ats": "ashby",
     "slug": "pear-vc",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "pear.vc"
   },
   {
     "name": "Lago",
@@ -504,7 +514,8 @@
     "ats": "ashby",
     "slug": "amo",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "amo.io"
   },
   {
     "name": "Confido",
@@ -546,14 +557,16 @@
     "ats": "ashby",
     "slug": "livekit",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "livekit.com"
   },
   {
     "name": "Ditto",
     "ats": "ashby",
     "slug": "ditto",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "ditto.com"
   },
   {
     "name": "Opsmill",
@@ -567,7 +580,8 @@
     "ats": "ashby",
     "slug": "oscilar",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "oscilar.com"
   },
   {
     "name": "Atria Health",
@@ -595,14 +609,16 @@
     "ats": "greenhouse",
     "slug": "reddit",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "redditinc.com"
   },
   {
     "name": "SpaceX",
     "ats": "greenhouse",
     "slug": "spacex",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "spacex.com"
   },
   {
     "name": "Outschool",
@@ -616,14 +632,16 @@
     "ats": "greenhouse",
     "slug": "thealleninstitute",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "allenai.org"
   },
   {
     "name": "IonQ",
     "ats": "greenhouse",
     "slug": "ionq",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "ionq.com"
   },
   {
     "name": "Piramidal, Inc.",
@@ -679,14 +697,16 @@
     "ats": "lever",
     "slug": "aquabyte",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "aquabyte.ai"
   },
   {
     "name": "Prolific Machines",
     "ats": "lever",
     "slug": "prolific-machines",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "prolific-machines.com"
   },
   {
     "name": "upmetrics",
@@ -721,7 +741,8 @@
     "ats": "ashby",
     "slug": "prompt",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "prompt.io"
   },
   {
     "name": "Sheerhealth",
@@ -735,7 +756,8 @@
     "ats": "ashby",
     "slug": "kepler-ai",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "keplerai.io"
   },
   {
     "name": "Scribdinc",
@@ -749,7 +771,8 @@
     "ats": "ashby",
     "slug": "authorium",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "authorium.com"
   },
   {
     "name": "Chestnut",
@@ -770,14 +793,16 @@
     "ats": "ashby",
     "slug": "alembic",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "alembic.com"
   },
   {
     "name": "Fathom.Video",
     "ats": "ashby",
     "slug": "fathom.video",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "fathom.ai"
   },
   {
     "name": "Aptura",
@@ -826,7 +851,8 @@
     "ats": "ashby",
     "slug": "modal",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "modal.com"
   },
   {
     "name": "Kiloforge",
@@ -840,7 +866,8 @@
     "ats": "ashby",
     "slug": "mapbox",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "mapbox.com"
   },
   {
     "name": "Luxor",
@@ -854,7 +881,8 @@
     "ats": "ashby",
     "slug": "kong",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "konghq.com"
   },
   {
     "name": "Tracelabs",
@@ -875,7 +903,8 @@
     "ats": "ashby",
     "slug": "stream",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "getstream.io"
   },
   {
     "name": "Tetsuwan",
@@ -924,7 +953,8 @@
     "ats": "workable",
     "slug": "akeno",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "akeno.ai"
   },
   {
     "name": "Airship",
@@ -961,7 +991,8 @@
     "ats": "greenhouse",
     "slug": "orkes",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "orkes.io"
   },
   {
     "name": "Justworks",
@@ -975,28 +1006,32 @@
     "ats": "greenhouse",
     "slug": "cloudflare",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "cloudflare.com"
   },
   {
     "name": "Addepar",
     "ats": "greenhouse",
     "slug": "addepar1",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "addepar.com"
   },
   {
     "name": "Atomic Machines",
     "ats": "greenhouse",
     "slug": "atomicmachines",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "atomicmachines.com"
   },
   {
     "name": "The New York Times",
     "ats": "greenhouse",
     "slug": "thenewyorktimes",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "nytimes.com"
   },
   {
     "name": "Skysafe",
@@ -1017,7 +1052,8 @@
     "ats": "ashby",
     "slug": "zippymh",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "zippymh.com"
   },
   {
     "name": "River",
@@ -1031,7 +1067,8 @@
     "ats": "ashby",
     "slug": "mercor",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "mercor.com"
   },
   {
     "name": "Higharc",
@@ -1059,7 +1096,8 @@
     "ats": "ashby",
     "slug": "baseten",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "baseten.co"
   },
   {
     "name": "Airops",
@@ -1073,7 +1111,8 @@
     "ats": "ashby",
     "slug": "sentilink",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "sentilink.com"
   },
   {
     "name": "Turquoise Health",
@@ -1122,14 +1161,16 @@
     "ats": "greenhouse",
     "slug": "andurilindustries",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "anduril.com"
   },
   {
     "name": "PhysicsX",
     "ats": "greenhouse",
     "slug": "physicsx",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "physicsx.ai"
   },
   {
     "name": "ttiinc",
@@ -1150,7 +1191,8 @@
     "ats": "greenhouse",
     "slug": "verkada",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "verkada.com"
   },
   {
     "name": "redpandadata",
@@ -1164,7 +1206,8 @@
     "ats": "greenhouse",
     "slug": "adyen",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "adyen.com"
   },
   {
     "name": "Coast",
@@ -1262,7 +1305,8 @@
     "ats": "ashby",
     "slug": "supabase",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "supabase.com"
   },
   {
     "name": "Evervault",
@@ -1367,7 +1411,8 @@
     "ats": "ashby",
     "slug": "meticulous",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "meticulous.ai"
   },
   {
     "name": "Verge Genomics",
@@ -1395,13 +1440,15 @@
     "ats": "ashby",
     "slug": "photoroom",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "photoroom.com"
   },
   {
     "name": "Replit",
     "ats": "ashby",
     "slug": "replit",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "replit.com"
   }
 ]

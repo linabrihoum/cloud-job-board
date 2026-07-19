@@ -1,9 +1,11 @@
 /** Site-wide constants, defined once. */
 export const SITE = {
   name: "Cloud Job Board",
-  tagline: "Cloud, SRE & DevOps jobs. Verified, fresh, no middlemen.",
+  /** Canonical origin. Swap once the real domain is purchased + connected. */
+  url: "https://cloud-job-board.vercel.app",
+  tagline: "Cloud, DevOps & SRE Jobs — Verified Daily",
   description:
-    "A curated job board for cloud infrastructure, SRE, platform, and DevOps roles. Every listing is verified live and links straight to the company's own posting.",
+    "Verified cloud engineering, DevOps, SRE, and platform engineering jobs, updated daily. Every listing is checked against the company's own hiring system and links straight to their posting. Free for job seekers.",
   githubUrl: "https://github.com/linabrihoum/cloud-job-board",
   /** Listings newer than this many days get a "new" badge. */
   newWithinDays: 7,

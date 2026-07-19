@@ -21,10 +21,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const job = getJobBySlug(loadJobs(), slug);
   if (!job) return {};
+  const description = `${job.title} at ${job.company} — ${job.location}${
+    job.salary ? `, ${job.salary}` : ""
+  }. Verified listing; apply on the company's own site.`;
   return {
     title: `${job.title} at ${job.company}`,
-    description: `${job.title} at ${job.company} — ${job.location}. Verified listing, apply on the company's own site.`,
+    description,
+    alternates: { canonical: `/jobs/${job.slug}` },
+    openGraph: {
+      type: "article",
+      title: `${job.title} at ${job.company}`,
+      description,
+      url: `/jobs/${job.slug}`,
+    },
   };
+}
+
+/** Parse "$140k–$180k" back into numbers for structured data. */
+function salaryRange(salary: string): { min: number; max: number } | null {
+  const m = salary.match(/\$(\d+)k–\$(\d+)k/);
+  return m ? { min: Number(m[1]) * 1000, max: Number(m[2]) * 1000 } : null;
 }
 
 const WORK_MODE_LABEL = { remote: "Remote", hybrid: "Hybrid", onsite: "On-site" } as const;
@@ -36,14 +52,35 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
   if (!job) notFound();
   const related = relatedJobs(jobs, job);
 
+  // Google Jobs eligibility: description is required; salary, employment
+  // type, and remote signals are strongly recommended.
+  const pay = job.salary ? salaryRange(job.salary) : null;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: job.title,
+    description: job.description
+      ? job.description.replace(/^##\s+/gm, "").replace(/\*\*/g, "")
+      : `${job.title} at ${job.company} — ${job.location}.`,
     datePosted: job.postedAt,
-    employmentType: job.employmentType,
+    employmentType: /full/i.test(job.employmentType ?? "") ? "FULL_TIME" : undefined,
     hiringOrganization: { "@type": "Organization", name: job.company },
     jobLocation: { "@type": "Place", address: job.location },
+    ...(job.workMode === "remote" ? { jobLocationType: "TELECOMMUTE" } : {}),
+    ...(pay
+      ? {
+          baseSalary: {
+            "@type": "MonetaryAmount",
+            currency: "USD",
+            value: {
+              "@type": "QuantitativeValue",
+              minValue: pay.min,
+              maxValue: pay.max,
+              unitText: "YEAR",
+            },
+          },
+        }
+      : {}),
     directApply: true,
     url: job.url,
   };

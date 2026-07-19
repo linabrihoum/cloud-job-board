@@ -155,9 +155,20 @@ with 134 verified listings across 41 companies, and the daily pipeline
 
 ## 5. Launch (~1–2 sessions)
 
-- [ ] SEO basics
-  - [ ] Per-page titles and descriptions, Open Graph tags
-  - [ ] `sitemap.xml` and `robots.txt` (Next.js has built-in support)
+- [x] SEO foundation
+  - [x] Keyword-targeted titles and descriptions per page ("Cloud, DevOps
+        & SRE Jobs — N Verified Listings"), Open Graph + Twitter cards,
+        canonical URLs
+  - [x] `sitemap.xml` (every job page, dated) and `robots.txt`
+  - [x] Server-rendered job list — crawlers see all listings in the HTML
+        (was empty before; filters now apply client-side after load)
+  - [x] JobPosting structured data enriched for Google Jobs: description,
+        salary range, employment type, remote signal
+  - [x] WebSite structured data + crawlable "find your specialty" internal
+        links (remote / AWS / Azure / GCP / Kubernetes / Terraform / senior
+        / US)
+  - [ ] After the domain purchase: swap `SITE.url`, then submit the
+        sitemap in Google Search Console (creates the indexing request)
 - [ ] Anonymous, cookie-free analytics (evaluate Vercel Analytics,
       Plausible, Umami — record the choice in DECISIONS.md)
 - [ ] Domain

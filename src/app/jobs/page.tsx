@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { JobBoard } from "@/components/JobBoard";
 import { loadJobs, tagsInUse } from "@/lib/jobs";
 
-export const metadata: Metadata = {
-  title: "Jobs",
-};
+export function generateMetadata(): Metadata {
+  const count = loadJobs().length;
+  return {
+    title: `Cloud, DevOps & SRE Jobs — ${count} Verified Listings`,
+    description: `Browse ${count} verified cloud engineering, DevOps, SRE, and platform engineering jobs. Updated daily, every listing links straight to the company's own posting. Free, no sign-up.`,
+  };
+}
 
 export default function JobsPage() {
   const jobs = loadJobs();
@@ -22,9 +25,7 @@ export default function JobsPage() {
 
       <div className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          <Suspense>
-            <JobBoard jobs={jobs} allTags={tagsInUse(jobs)} />
-          </Suspense>
+          <JobBoard jobs={jobs} allTags={tagsInUse(jobs)} />
         </div>
       </div>
     </div>

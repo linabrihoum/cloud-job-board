@@ -16,10 +16,33 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.tagline}`,
-    template: `%s — ${SITE.name}`,
+    default: `${SITE.tagline} | ${SITE.name}`,
+    template: `%s | ${SITE.name}`,
   },
+  description: SITE.description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: SITE.name,
+    title: `${SITE.tagline} | ${SITE.name}`,
+    description: SITE.description,
+    url: SITE.url,
+  },
+  twitter: {
+    card: "summary",
+    title: `${SITE.tagline} | ${SITE.name}`,
+    description: SITE.description,
+  },
+  robots: { index: true, follow: true },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.name,
+  url: SITE.url,
   description: SITE.description,
 };
 
@@ -31,6 +54,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${spaceGrotesk.variable} flex min-h-screen flex-col`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <div className="starfield" aria-hidden />
         <Header />
         <main className="flex-1">{children}</main>

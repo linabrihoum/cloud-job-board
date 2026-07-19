@@ -29,6 +29,8 @@ export const jobSchema = z.object({
     "workable",
     "smartrecruiters",
     "usajobs",
+    "amazon",
+    "netflix",
   ]),
   postedAt: z
     .string()

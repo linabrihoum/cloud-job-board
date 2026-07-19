@@ -159,7 +159,7 @@
     "slug": "signifyd",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Equip Health",
@@ -666,7 +666,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Longshot Systems Ltd",
@@ -674,7 +674,7 @@
     "slug": "longshot-systems-ltd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "PlanetScale",
@@ -758,7 +758,7 @@
     "slug": "blackshark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Ridezum",
@@ -808,7 +808,7 @@
     "slug": "upmetrics",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "aavelabs",
@@ -816,7 +816,7 @@
     "slug": "aavelabs",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Safi",
@@ -1016,7 +1016,7 @@
     "slug": "wand",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Stream",
@@ -1041,7 +1041,7 @@
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Eagle",
@@ -1065,7 +1065,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 2
   },
   {
     "name": "Seeq",
@@ -1073,7 +1073,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 2
   },
   {
     "name": "Akeno",
@@ -1082,7 +1082,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 0
+    "failCount": 2
   },
   {
     "name": "Airship",
@@ -1287,7 +1287,7 @@
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 2
   },
   {
     "name": "yassi",
@@ -1295,7 +1295,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "deducta",
@@ -1303,7 +1303,7 @@
     "slug": "deducta",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Sectigo",
@@ -1338,7 +1338,7 @@
     "slug": "ttiinc",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "HumanSignal",
@@ -1363,7 +1363,7 @@
     "slug": "redpandadata",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Adyen",
@@ -1477,7 +1477,7 @@
     "slug": "honey",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Supabase",
@@ -1550,7 +1550,7 @@
     "slug": "curie",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "revelare-networks",
@@ -1558,7 +1558,7 @@
     "slug": "revelare-networks",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Artie",
@@ -1631,7 +1631,7 @@
     "slug": "maihem",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "Photoroom",
@@ -1724,7 +1724,7 @@
     "slug": "bdg",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "broadlume",
@@ -1732,7 +1732,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "bayutdubizzle",
@@ -1740,7 +1740,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "mytutor",
@@ -1748,7 +1748,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   },
   {
     "name": "wallapop",
@@ -1756,6 +1756,6 @@
     "slug": "wallapop",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 3
   }
 ]

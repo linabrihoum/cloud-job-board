@@ -44,4 +44,9 @@ describe("JobCard", () => {
     render(<JobCard job={{ ...job, postedAt: "2026-01-01" }} />);
     expect(screen.queryByText(/new/)).toBeNull();
   });
+
+  it("shows the salary when present", () => {
+    render(<JobCard job={{ ...job, salary: "$140k–$180k" }} />);
+    expect(screen.getByText(/\$140k–\$180k/)).toBeTruthy();
+  });
 });

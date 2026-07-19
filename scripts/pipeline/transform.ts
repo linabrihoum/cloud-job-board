@@ -32,6 +32,23 @@ export function workModeOf(location: string): Job["workMode"] {
   return /remote/i.test(location) ? "remote" : "onsite";
 }
 
+/** Pull a salary range out of description text when the hiring system
+ * doesn't publish one structurally. Conservative: only clear $-ranges. */
+export function extractSalary(text: string): string | undefined {
+  const m = text.match(
+    /\$\s?(\d{2,3})(?:[,.](\d{3}))?(k)?\s*(?:-|–|—|to)\s*\$?\s?(\d{2,3})(?:[,.](\d{3}))?(k)?/i
+  );
+  if (!m) return undefined;
+  const num = (whole: string, thousands?: string, k?: string) =>
+    k ? Number(whole) * 1000 : thousands ? Number(whole) * 1000 + Number(thousands) : Number(whole);
+  const min = num(m[1], m[2], m[3]);
+  const max = num(m[4], m[5], m[6]);
+  // Ranges below ~$40k are usually hourly rates or noise — leave them out.
+  if (min < 40000 || max <= min) return undefined;
+  const fmt = (n: number) => `$${Math.round(n / 1000)}k`;
+  return `${fmt(min)}–${fmt(max)}`;
+}
+
 export interface MapContext {
   ats: Ats;
   boardSlug: string;
@@ -45,6 +62,7 @@ export function mapPostingToJob(posting: RawPosting, ctx: MapContext): Job {
   const postingId = posting.url.replace(/\/+$/, "").split("/").pop() ?? "unknown";
   const location = posting.location.trim() || "Anywhere";
   const description = posting.html ? ctx.htmlToMd(posting.html) : "";
+  const salary = posting.salary ?? extractSalary(description);
   return {
     id: `${ctx.ats}-${ctx.boardSlug}-${postingId}`,
     slug: slugify(`${ctx.companyName}-${posting.title}`),
@@ -59,7 +77,7 @@ export function mapPostingToJob(posting: RawPosting, ctx: MapContext): Job {
     postedAt: posting.postedAt,
     ...(description ? { description } : {}),
     ...(posting.employmentType ? { employmentType: posting.employmentType } : {}),
-    ...(posting.salary ? { salary: posting.salary } : {}),
+    ...(salary ? { salary } : {}),
   };
 }
 

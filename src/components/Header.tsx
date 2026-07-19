@@ -20,12 +20,6 @@ export function Header() {
           >
             GitHub
           </a>
-          <a
-            href={`mailto:${SITE.postJobEmail}`}
-            className="rounded-lg bg-accent px-3 py-1.5 font-semibold text-night transition hover:bg-accent-soft"
-          >
-            Post a job
-          </a>
         </nav>
       </div>
     </header>

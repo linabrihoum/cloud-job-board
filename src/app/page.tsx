@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { JobCard } from "@/components/JobCard";
-import { loadJobs, tagsInUse } from "@/lib/jobs";
-import { SITE } from "@/lib/site";
+import { HomeJobFeed } from "@/components/HomeJobFeed";
+import { loadJobs } from "@/lib/jobs";
 
 export default function Home() {
   const jobs = loadJobs();
-  const latest = jobs.slice(0, 6);
   const remoteCount = jobs.filter((j) => j.workMode === "remote").length;
-  const tags = tagsInUse(jobs).slice(0, 8);
 
   return (
     <div>
@@ -43,9 +40,9 @@ export default function Home() {
           className="animate-fade-up mx-auto mt-6 max-w-2xl text-lg text-muted"
           style={{ animationDelay: "0.15s" }}
         >
-          Hand-checked cloud, SRE &amp; DevOps roles — verified against each
-          company&apos;s own hiring system, linking straight to their posting.
-          No stale jobs. No middlemen. No paywall.
+          Cloud, Site Reliability, DevOps, and Platform Engineering roles that
+          are verified against each company&apos;s own hiring system and link
+          straight to their posting. No stale jobs. No middlemen. No paywall.
         </p>
         <div
           className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-4"
@@ -57,12 +54,6 @@ export default function Home() {
           >
             Browse {jobs.length} open {jobs.length === 1 ? "role" : "roles"} 🚀
           </Link>
-          <a
-            href={`mailto:${SITE.postJobEmail}`}
-            className="font-display inline-block rounded-xl border border-line px-7 py-3 font-semibold text-ink transition hover:border-accent/60 hover:text-accent"
-          >
-            Post a job
-          </a>
         </div>
         <div
           className="animate-fade-up mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-faint"
@@ -95,21 +86,7 @@ export default function Home() {
               View all →
             </Link>
           </div>
-          <div className="stagger mx-auto flex max-w-4xl flex-col gap-3">
-            {latest.map((job) => (
-              <JobCard key={job.id} job={job} />
-            ))}
-          </div>
-          <div className="mt-10 flex flex-wrap justify-center gap-2">
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-paper-line bg-paper-card px-3 py-1 text-xs text-paper-muted"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+          <HomeJobFeed jobs={jobs} />
         </div>
       </section>
     </div>

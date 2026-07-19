@@ -51,9 +51,9 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
   // The one-line role facts, Space Crew style: plain details, spaced out.
   const facts = [
     `📍 ${job.location}`,
+    job.salary && `💰 ${job.salary}`,
     WORK_MODE_LABEL[job.workMode],
     job.employmentType,
-    job.salary && `💰 ${job.salary}`,
     `Posted ${formatRelativeDate(job.postedAt)}`,
   ].filter(Boolean) as string[];
 

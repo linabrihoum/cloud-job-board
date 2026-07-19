@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HomeJobFeed } from "@/components/HomeJobFeed";
+import { WaveDivider } from "@/components/WaveDivider";
 import { loadJobs } from "@/lib/jobs";
 
 export default function Home() {
@@ -9,6 +10,16 @@ export default function Home() {
   return (
     <div>
       <section className="relative mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-24">
+        <div
+          aria-hidden
+          className="orb left-[12%] top-8 h-48 w-48"
+          style={{ background: "rgba(56,189,248,0.18)" }}
+        />
+        <div
+          aria-hidden
+          className="orb right-[8%] top-32 h-64 w-64"
+          style={{ background: "rgba(167,139,250,0.14)", animationDelay: "3s" }}
+        />
         <div
           aria-hidden
           className="animate-float pointer-events-none absolute left-[8%] top-10 text-4xl opacity-60 sm:text-5xl"
@@ -32,7 +43,7 @@ export default function Home() {
 
         <h1 className="font-display animate-fade-up mx-auto max-w-3xl text-4xl font-bold leading-tight text-white sm:text-6xl">
           Your next job in the{" "}
-          <span className="bg-linear-to-r from-accent to-violet bg-clip-text text-transparent">
+          <span className="shimmer bg-linear-to-r from-accent via-violet to-accent bg-clip-text text-transparent">
             cloud.
           </span>
         </h1>
@@ -60,11 +71,16 @@ export default function Home() {
           style={{ animationDelay: "0.45s" }}
         >
           <span>
-            <span className="font-display font-bold text-white">{jobs.length}</span> verified
-            roles
+            <span className="font-display font-bold text-white" data-count={jobs.length}>
+              {jobs.length}
+            </span>{" "}
+            verified roles
           </span>
           <span>
-            <span className="font-display font-bold text-white">{remoteCount}</span> remote
+            <span className="font-display font-bold text-white" data-count={remoteCount}>
+              {remoteCount}
+            </span>{" "}
+            remote
           </span>
           <span>
             <span className="font-display font-bold text-white">100%</span> direct to company
@@ -75,9 +91,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-paper">
+      <WaveDivider />
+      <section className="paper-stars relative">
+        <div
+          aria-hidden
+          className="orb right-[5%] top-40 h-72 w-72"
+          style={{ background: "rgba(56,189,248,0.08)", animationDelay: "1.5s" }}
+        />
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div className="mx-auto mb-6 flex max-w-4xl items-baseline justify-between">
+          <div className="reveal mx-auto mb-6 flex max-w-4xl items-baseline justify-between">
             <h2 className="font-display text-2xl font-bold text-paper-ink">Latest roles</h2>
             <Link
               href="/jobs"
@@ -88,7 +110,7 @@ export default function Home() {
           </div>
           <HomeJobFeed jobs={jobs} />
 
-          <section className="mx-auto mt-14 max-w-4xl border-t border-paper-line pt-10">
+          <section className="reveal mx-auto mt-14 max-w-4xl border-t border-paper-line pt-10">
             <h2 className="font-display text-xl font-bold text-paper-ink">
               Find your specialty
             </h2>

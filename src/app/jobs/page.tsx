@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { JobCard } from "@/components/JobCard";
-import { loadJobs } from "@/lib/jobs";
+import { Suspense } from "react";
+import { JobBoard } from "@/components/JobBoard";
+import { loadJobs, tagsInUse } from "@/lib/jobs";
 
 export const metadata: Metadata = {
   title: "Jobs",
@@ -21,17 +22,9 @@ export default function JobsPage() {
 
       <div className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          {jobs.length === 0 ? (
-            <div className="mx-auto max-w-4xl rounded-2xl border border-paper-line bg-paper-card p-10 text-center text-paper-muted">
-              No listings right now — check back soon.
-            </div>
-          ) : (
-            <div className="stagger mx-auto flex max-w-4xl flex-col gap-3">
-              {jobs.map((job) => (
-                <JobCard key={job.id} job={job} />
-              ))}
-            </div>
-          )}
+          <Suspense>
+            <JobBoard jobs={jobs} allTags={tagsInUse(jobs)} />
+          </Suspense>
         </div>
       </div>
     </div>

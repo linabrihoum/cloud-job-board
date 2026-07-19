@@ -8,10 +8,16 @@ import type { Ats, RawPosting } from "./ats";
 /** A job title must look like a cloud/SRE/platform/DevOps role. This is the
  * relevance gate — source tags and categories are not trusted. */
 const RELEVANT_TITLE =
-  /devops|\bsre\b|site reliability|reliability engineer|platform engineer|cloud engineer|cloud architect|cloud infrastructure|cloud operations|infrastructure engineer|systems engineer|solutions architect|kubernetes/i;
+  /devops|devsecops|\bsre\b|site reliability|field reliability|database reliability|platform engineer|cloud engineer|cloud architect|cloud infrastructure|cloud operations|cloud security|infrastructure engineer|systems engineer|solutions architect|kubernetes|observability engineer|network engineer|release engineer/i;
+
+/** ...but generic words like "reliability" and "systems" also appear in
+ * hardware/aerospace/manufacturing/IT-support roles. Titles matching these
+ * domains are out — tuned against real SpaceX/Stripe boards. */
+const IRRELEVANT_TITLE =
+  /hardware|electrical|mechanical|avionics|embedded|manufactur|structural|civil|industrial|propulsion|thermal|control systems|test engineer|quality engineer|quality systems|\brf\b|radar|fraud|payments?|pre-?sales|partner|equipment|fluids|power systems|wireless|optical|solar|launch|supply chain|facilities|valves|silicon|\bgnc\b|windows|endpoint/i;
 
 export function isRelevantTitle(title: string): boolean {
-  return RELEVANT_TITLE.test(title);
+  return RELEVANT_TITLE.test(title) && !IRRELEVANT_TITLE.test(title);
 }
 
 export function slugify(text: string): string {
@@ -74,6 +80,21 @@ export function dropStale(jobs: Job[], maxDays: number, now: Date = new Date()):
     .toISOString()
     .slice(0, 10);
   return jobs.filter((j) => j.postedAt >= cutoff);
+}
+
+/** No company may flood the board: keep at most `max` per company,
+ * newest first. */
+export function capPerCompany(jobs: Job[], max: number): Job[] {
+  const counts = new Map<string, number>();
+  return [...jobs]
+    .sort((a, b) => b.postedAt.localeCompare(a.postedAt))
+    .filter((job) => {
+      const key = slugify(job.company);
+      const n = counts.get(key) ?? 0;
+      if (n >= max) return false;
+      counts.set(key, n + 1);
+      return true;
+    });
 }
 
 /** Ensure slugs are unique by suffixing collisions (-2, -3, ...). */

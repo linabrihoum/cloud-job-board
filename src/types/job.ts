@@ -2,7 +2,13 @@ import type { CanonicalTag } from "@/lib/tags";
 
 export type WorkMode = "remote" | "hybrid" | "onsite";
 
-export type JobSource = "hand-picked" | "greenhouse" | "lever" | "ashby";
+export type JobSource =
+  | "hand-picked"
+  | "greenhouse"
+  | "lever"
+  | "ashby"
+  | "workable"
+  | "smartrecruiters";
 
 export interface Job {
   /** Stable unique id, prefixed by source, e.g. "greenhouse-ujet-4709322005" */

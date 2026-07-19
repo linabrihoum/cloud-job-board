@@ -15,6 +15,8 @@ const BOARD_PATTERNS: { ats: Ats; re: RegExp }[] = [
   { ats: "greenhouse", re: /greenhouse\.io\/embed\/job_board\?[^"'\s]*for=([A-Za-z0-9_-]+)/g },
   { ats: "lever", re: /jobs(?:\.eu)?\.lever\.co\/([A-Za-z0-9_-]+)/g },
   { ats: "ashby", re: /jobs\.ashbyhq\.com\/([A-Za-z0-9_.-]+)/g },
+  { ats: "workable", re: /apply\.workable\.com\/(?:api\/[^\s"']+\/)?([A-Za-z0-9_-]+)/g },
+  { ats: "smartrecruiters", re: /(?:jobs|careers)\.smartrecruiters\.com\/([A-Za-z0-9_-]+)/g },
 ];
 
 /** Pull board references out of arbitrary text/HTML. Pure — testable.
@@ -27,7 +29,7 @@ export function extractBoards(text: string): DiscoveredBoard[] {
     for (const match of decoded.matchAll(re)) {
       const slug = decodeURIComponent(match[1]).toLowerCase();
       // Path segments that aren't board slugs
-      if (["jobs", "embed", "job", "careers"].includes(slug)) continue;
+      if (["jobs", "embed", "job", "careers", "api", "j", "widget"].includes(slug)) continue;
       found.set(`${ats}:${slug}`, { ats, slug });
     }
   }

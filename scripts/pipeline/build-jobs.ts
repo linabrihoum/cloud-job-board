@@ -33,6 +33,7 @@ import {
   mapPostingToJob,
   uniqueSlugs,
 } from "./transform";
+import { mapPool } from "./util";
 
 /** No single company may hold more than this many listings. */
 const MAX_PER_COMPANY = 12;
@@ -46,7 +47,14 @@ interface CompanyEntry {
   addedAt: string;
   /** Set true to permanently exclude a board (spam, irrelevant, etc.). */
   blocked?: boolean;
+  /** Consecutive fetch failures; auto-blocks at BLOCK_AFTER_FAILURES. */
+  failCount?: number;
 }
+
+/** Boards fetched concurrently (small pool — stays polite per host). */
+const FETCH_CONCURRENCY = 6;
+/** A board failing this many runs in a row gets auto-blocked. */
+const BLOCK_AFTER_FAILURES = 7;
 
 const ROOT = path.join(fileURLToPath(new URL(".", import.meta.url)), "..", "..");
 const COMPANIES_FILE = path.join(ROOT, "src", "data", "companies.json");
@@ -94,61 +102,74 @@ async function main() {
   }
   console.log(`discovery: ${discovered.length} boards seen, ${added} new`);
 
-  // 2. Fetch every non-blocked board
+  // 2. Fetch every non-blocked board (concurrently, in a small pool)
   const sourcedJobs: Job[] = [];
   const failedBoards = new Set<string>();
-  for (const company of companies) {
-    if (company.blocked) continue;
-    try {
-      const board = await fetchBoard(company.ats, company.slug);
-      if (company.discoveredVia !== "seed" && board.name && company.name === company.slug) {
-        company.name = board.name;
-      }
-      const relevant = board.postings.filter((p) => isRelevantTitle(p.title));
+  await mapPool(
+    companies.filter((c) => !c.blocked),
+    FETCH_CONCURRENCY,
+    async (company) => {
+      try {
+        const board = await fetchBoard(company.ats, company.slug);
+        company.failCount = 0;
+        if (company.discoveredVia !== "seed" && board.name && company.name === company.slug) {
+          company.name = board.name;
+        }
+        const relevant = board.postings.filter((p) => isRelevantTitle(p.title));
 
-      // Companies without a recorded website get initials instead of a
-      // logo — mine their own description links for it.
-      if (!company.website && relevant.length) {
-        for (const posting of board.postings) {
-          const mined = posting.html && mineWebsiteFromHtml(posting.html, company.name);
-          if (mined) {
-            company.website = mined;
-            console.log(`  website mined for ${company.name}: ${mined}`);
-            break;
+        // Companies without a recorded website get initials instead of a
+        // logo — mine their own description links for it.
+        if (!company.website && relevant.length) {
+          for (const posting of board.postings) {
+            const mined = posting.html && mineWebsiteFromHtml(posting.html, company.name);
+            if (mined) {
+              company.website = mined;
+              console.log(`  website mined for ${company.name}: ${mined}`);
+              break;
+            }
           }
         }
-      }
 
-      for (const posting of relevant) {
-        // Workable/SmartRecruiters need a per-job detail call — done only
-        // for postings that survived the relevance gate.
-        if (company.ats === "workable" && posting._shortcode) {
-          posting.html = await fetchWorkableDetail(company.slug, posting._shortcode);
-        } else if (company.ats === "smartrecruiters" && posting._detailId) {
-          const detail = await fetchSmartRecruitersDetail(company.slug, posting._detailId);
-          posting.html = detail.html;
-          if (detail.url) posting.url = detail.url;
-          if (detail.employmentType) posting.employmentType = detail.employmentType;
+        for (const posting of relevant) {
+          // Workable/SmartRecruiters need a per-job detail call — done only
+          // for postings that survived the relevance gate.
+          if (company.ats === "workable" && posting._shortcode) {
+            posting.html = await fetchWorkableDetail(company.slug, posting._shortcode);
+          } else if (company.ats === "smartrecruiters" && posting._detailId) {
+            const detail = await fetchSmartRecruitersDetail(company.slug, posting._detailId);
+            posting.html = detail.html;
+            if (detail.url) posting.url = detail.url;
+            if (detail.employmentType) posting.employmentType = detail.employmentType;
+          }
+          sourcedJobs.push(
+            mapPostingToJob(posting, {
+              ats: company.ats,
+              boardSlug: company.slug,
+              companyName: company.name,
+              companyWebsite: company.website,
+              htmlToMd,
+            })
+          );
         }
-        sourcedJobs.push(
-          mapPostingToJob(posting, {
-            ats: company.ats,
-            boardSlug: company.slug,
-            companyName: company.name,
-            companyWebsite: company.website,
-            htmlToMd,
-          })
-        );
+        if (relevant.length) console.log(`${company.name}: ${relevant.length} relevant roles`);
+      } catch {
+        // Unreachable ≠ removed: remember the failure so this board's
+        // existing listings survive the run (they still age out via the
+        // freshness cutoff if the board stays broken). Chronic failures
+        // get the board auto-blocked so the registry stays healthy.
+        failedBoards.add(`${company.ats}-${company.slug}-`);
+        company.failCount = (company.failCount ?? 0) + 1;
+        if (company.failCount >= BLOCK_AFTER_FAILURES) {
+          company.blocked = true;
+          console.error(
+            `auto-blocking ${company.ats}/${company.slug} after ${company.failCount} consecutive failures`
+          );
+        } else {
+          console.error(`fetch failed (keeping existing listings): ${company.ats}/${company.slug}`);
+        }
       }
-      if (relevant.length) console.log(`${company.name}: ${relevant.length} relevant roles`);
-    } catch {
-      // Unreachable ≠ removed: remember the failure so this board's
-      // existing listings survive the run (they still age out via the
-      // freshness cutoff if the board stays broken).
-      failedBoards.add(`${company.ats}-${company.slug}-`);
-      console.error(`fetch failed (keeping existing listings): ${company.ats}/${company.slug}`);
     }
-  }
+  );
 
   // Carry over listings from boards that merely failed to respond today.
   for (const job of existingJobs) {

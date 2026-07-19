@@ -5,7 +5,8 @@
     "ats": "greenhouse",
     "slug": "honeycomb",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Natera",
@@ -13,7 +14,8 @@
     "ats": "greenhouse",
     "slug": "natera",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "saas.group",
@@ -21,7 +23,8 @@
     "ats": "greenhouse",
     "slug": "saasgroup",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Andromeda Cluster",
@@ -29,7 +32,8 @@
     "ats": "ashby",
     "slug": "andromeda",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Caylent",
@@ -37,7 +41,8 @@
     "ats": "greenhouse",
     "slug": "caylent",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Pave Bank",
@@ -45,7 +50,8 @@
     "ats": "ashby",
     "slug": "pavebank",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "DV Trading",
@@ -53,7 +59,8 @@
     "ats": "greenhouse",
     "slug": "dvtrading",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "UJET",
@@ -61,7 +68,8 @@
     "ats": "greenhouse",
     "slug": "ujet",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "540",
@@ -69,7 +77,8 @@
     "ats": "greenhouse",
     "slug": "540",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "DoiT",
@@ -77,7 +86,8 @@
     "ats": "greenhouse",
     "slug": "doitintl",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "CloudWalk",
@@ -85,7 +95,8 @@
     "ats": "lever",
     "slug": "cloudwalk",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "MinIO",
@@ -93,7 +104,8 @@
     "ats": "greenhouse",
     "slug": "minio",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "iCapital",
@@ -101,7 +113,8 @@
     "ats": "greenhouse",
     "slug": "icapitalnetwork",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Life360",
@@ -109,7 +122,8 @@
     "ats": "greenhouse",
     "slug": "life360",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Graphcore",
@@ -117,7 +131,8 @@
     "ats": "greenhouse",
     "slug": "graphcore",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Palantir Technologies",
@@ -125,7 +140,8 @@
     "ats": "lever",
     "slug": "palantir",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Tiger Data",
@@ -133,7 +149,8 @@
     "ats": "ashby",
     "slug": "tigerdata",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Signifyd",
@@ -141,7 +158,8 @@
     "ats": "greenhouse",
     "slug": "signifyd",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 1
   },
   {
     "name": "Equip Health",
@@ -149,14 +167,16 @@
     "ats": "ashby",
     "slug": "equip",
     "discoveredVia": "seed",
-    "addedAt": "2026-07-18"
+    "addedAt": "2026-07-18",
+    "failCount": 0
   },
   {
     "name": "Nova Credit",
     "ats": "greenhouse",
     "slug": "novacredit",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "DoubleVerify",
@@ -164,7 +184,8 @@
     "slug": "doubleverify",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "doubleverify.com"
+    "website": "doubleverify.com",
+    "failCount": 0
   },
   {
     "name": "Prolific",
@@ -172,14 +193,16 @@
     "slug": "prolific",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "prolific.com"
+    "website": "prolific.com",
+    "failCount": 0
   },
   {
     "name": "Kinelo",
     "ats": "greenhouse",
     "slug": "kinelo",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Grafana Labs",
@@ -187,7 +210,8 @@
     "slug": "grafanalabs",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "grafana.com"
+    "website": "grafana.com",
+    "failCount": 0
   },
   {
     "name": "Obsidian Security",
@@ -195,7 +219,8 @@
     "slug": "obsidiansecurity",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "obsidiansecurity.com"
+    "website": "obsidiansecurity.com",
+    "failCount": 0
   },
   {
     "name": "FINN",
@@ -203,14 +228,16 @@
     "slug": "finnapp",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "finn.com"
+    "website": "finn.com",
+    "failCount": 0
   },
   {
     "name": "Mentimeter",
     "ats": "greenhouse",
     "slug": "mentimeter",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Oklo",
@@ -218,21 +245,24 @@
     "slug": "oklo",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "oklo.ai"
+    "website": "oklo.ai",
+    "failCount": 0
   },
   {
     "name": "Beautiful.ai",
     "ats": "greenhouse",
     "slug": "beautifulai",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Weave",
     "ats": "greenhouse",
     "slug": "weave",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Proton",
@@ -240,56 +270,64 @@
     "slug": "proton",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "proton.me"
+    "website": "proton.me",
+    "failCount": 0
   },
   {
     "name": "Distru",
     "ats": "lever",
     "slug": "distru",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Ro",
     "ats": "lever",
     "slug": "ro",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Electric Twin",
     "ats": "lever",
     "slug": "electric-twin",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Findigs",
     "ats": "lever",
     "slug": "findigs",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Wirescreen",
     "ats": "ashby",
     "slug": "wirescreen",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Rho",
     "ats": "ashby",
     "slug": "rho",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Duck Duck Go",
     "ats": "ashby",
     "slug": "duck-duck-go",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Antithesis",
@@ -297,42 +335,48 @@
     "slug": "antithesis",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "antithesis.com"
+    "website": "antithesis.com",
+    "failCount": 0
   },
   {
     "name": "Aureliussystems",
     "ats": "ashby",
     "slug": "aureliussystems",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Onecrew",
     "ats": "ashby",
     "slug": "onecrew",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Middesk",
     "ats": "ashby",
     "slug": "middesk",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Hiya",
     "ats": "ashby",
     "slug": "hiya",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Oneleet",
     "ats": "ashby",
     "slug": "oneleet",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Rescale",
@@ -340,7 +384,8 @@
     "ats": "ashby",
     "slug": "rescale",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Gusto",
@@ -348,7 +393,8 @@
     "ats": "greenhouse",
     "slug": "gusto",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Amplitude",
@@ -356,7 +402,8 @@
     "ats": "greenhouse",
     "slug": "amplitude",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Clutch",
@@ -364,7 +411,8 @@
     "ats": "greenhouse",
     "slug": "clutch",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "GoCardless",
@@ -372,7 +420,8 @@
     "ats": "greenhouse",
     "slug": "gocardless",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "SingleStore",
@@ -380,7 +429,8 @@
     "ats": "greenhouse",
     "slug": "singlestore",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Close",
@@ -388,7 +438,8 @@
     "ats": "ashby",
     "slug": "close",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Docker",
@@ -396,7 +447,8 @@
     "ats": "ashby",
     "slug": "docker",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Zencoder",
@@ -404,7 +456,8 @@
     "ats": "greenhouse",
     "slug": "zencoder",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Stripe",
@@ -412,7 +465,8 @@
     "ats": "greenhouse",
     "slug": "stripe",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Airbnb",
@@ -420,7 +474,8 @@
     "ats": "greenhouse",
     "slug": "airbnb",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Dropbox",
@@ -428,21 +483,24 @@
     "ats": "greenhouse",
     "slug": "dropbox",
     "discoveredVia": "yc-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Solace",
     "ats": "ashby",
     "slug": "solace",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Spruceid",
     "ats": "ashby",
     "slug": "spruceid",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Railway",
@@ -450,21 +508,24 @@
     "slug": "railway",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "railway.app"
+    "website": "railway.app",
+    "failCount": 0
   },
   {
     "name": "Complement",
     "ats": "ashby",
     "slug": "complement",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "9 Mothers",
     "ats": "ashby",
     "slug": "9-mothers",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Pear Vc",
@@ -472,42 +533,48 @@
     "slug": "pear-vc",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "pear.vc"
+    "website": "pear.vc",
+    "failCount": 0
   },
   {
     "name": "Lago",
     "ats": "ashby",
     "slug": "lago",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Runway Ml",
     "ats": "ashby",
     "slug": "runway-ml",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Kog",
     "ats": "ashby",
     "slug": "kog",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Radical Numerics",
     "ats": "ashby",
     "slug": "radical-numerics",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Colonist",
     "ats": "ashby",
     "slug": "colonist",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Amo",
@@ -515,42 +582,48 @@
     "slug": "amo",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "amo.io"
+    "website": "amo.io",
+    "failCount": 0
   },
   {
     "name": "Confido",
     "ats": "ashby",
     "slug": "confido",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Permitflow",
     "ats": "ashby",
     "slug": "permitflow",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Category Labs",
     "ats": "ashby",
     "slug": "category-labs",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Norm Ai",
     "ats": "ashby",
     "slug": "norm-ai",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Hive.Co",
     "ats": "ashby",
     "slug": "hive.co",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Livekit",
@@ -558,7 +631,8 @@
     "slug": "livekit",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "livekit.com"
+    "website": "livekit.com",
+    "failCount": 0
   },
   {
     "name": "Ditto",
@@ -566,14 +640,16 @@
     "slug": "ditto",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "ditto.com"
+    "website": "ditto.com",
+    "failCount": 0
   },
   {
     "name": "Opsmill",
     "ats": "ashby",
     "slug": "opsmill",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Oscilar",
@@ -581,28 +657,32 @@
     "slug": "oscilar",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "oscilar.com"
+    "website": "oscilar.com",
+    "failCount": 0
   },
   {
     "name": "Atria Health",
     "ats": "workable",
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Longshot Systems Ltd",
     "ats": "workable",
     "slug": "longshot-systems-ltd",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "PlanetScale",
     "ats": "greenhouse",
     "slug": "planetscale",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Reddit",
@@ -610,7 +690,8 @@
     "slug": "reddit",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "redditinc.com"
+    "website": "redditinc.com",
+    "failCount": 0
   },
   {
     "name": "SpaceX",
@@ -618,14 +699,16 @@
     "slug": "spacex",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "spacex.com"
+    "website": "spacex.com",
+    "failCount": 0
   },
   {
     "name": "Outschool",
     "ats": "greenhouse",
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "The Allen Institute for Artificial Intelligence",
@@ -633,7 +716,8 @@
     "slug": "thealleninstitute",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "allenai.org"
+    "website": "allenai.org",
+    "failCount": 0
   },
   {
     "name": "IonQ",
@@ -641,56 +725,64 @@
     "slug": "ionq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "ionq.com"
+    "website": "ionq.com",
+    "failCount": 0
   },
   {
     "name": "Piramidal, Inc.",
     "ats": "greenhouse",
     "slug": "piramidalinc",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Vestwell",
     "ats": "greenhouse",
     "slug": "vestwell",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Atomcomputing",
     "ats": "lever",
     "slug": "atomcomputing",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "blackshark",
     "ats": "lever",
     "slug": "blackshark",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Ridezum",
     "ats": "lever",
     "slug": "ridezum",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Apolloresearch",
     "ats": "lever",
     "slug": "apolloresearch",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Articulate",
     "ats": "lever",
     "slug": "articulate",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Aquabyte",
@@ -698,7 +790,8 @@
     "slug": "aquabyte",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "aquabyte.ai"
+    "website": "aquabyte.ai",
+    "failCount": 0
   },
   {
     "name": "Prolific Machines",
@@ -706,35 +799,40 @@
     "slug": "prolific-machines",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "prolific-machines.com"
+    "website": "prolific-machines.com",
+    "failCount": 0
   },
   {
     "name": "upmetrics",
     "ats": "lever",
     "slug": "upmetrics",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "aavelabs",
     "ats": "lever",
     "slug": "aavelabs",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Safi",
     "ats": "ashby",
     "slug": "safi",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Shepherd",
     "ats": "ashby",
     "slug": "shepherd",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Prompt",
@@ -742,14 +840,16 @@
     "slug": "prompt",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "prompt.io"
+    "website": "prompt.io",
+    "failCount": 0
   },
   {
     "name": "Sheerhealth",
     "ats": "ashby",
     "slug": "sheerhealth",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Kepler Ai",
@@ -757,14 +857,16 @@
     "slug": "kepler-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "keplerai.io"
+    "website": "keplerai.io",
+    "failCount": 0
   },
   {
     "name": "Scribdinc",
     "ats": "ashby",
     "slug": "scribdinc",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Authorium",
@@ -772,21 +874,24 @@
     "slug": "authorium",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "authorium.com"
+    "website": "authorium.com",
+    "failCount": 0
   },
   {
     "name": "Chestnut",
     "ats": "ashby",
     "slug": "chestnut",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Scholarly",
     "ats": "ashby",
     "slug": "scholarly",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Alembic",
@@ -794,7 +899,8 @@
     "slug": "alembic",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "alembic.com"
+    "website": "alembic.com",
+    "failCount": 0
   },
   {
     "name": "Fathom.Video",
@@ -802,49 +908,56 @@
     "slug": "fathom.video",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "fathom.ai"
+    "website": "fathom.ai",
+    "failCount": 0
   },
   {
     "name": "Aptura",
     "ats": "ashby",
     "slug": "aptura",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Castletontower",
     "ats": "ashby",
     "slug": "castletontower",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Odyssey",
     "ats": "ashby",
     "slug": "odyssey",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Salesjack",
     "ats": "ashby",
     "slug": "salesjack",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Neo Tax",
     "ats": "ashby",
     "slug": "neo-tax",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Charge Robotics",
     "ats": "ashby",
     "slug": "charge-robotics",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Modal",
@@ -852,14 +965,16 @@
     "slug": "modal",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "modal.com"
+    "website": "modal.com",
+    "failCount": 0
   },
   {
     "name": "Kiloforge",
     "ats": "ashby",
     "slug": "kiloforge",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Mapbox",
@@ -867,14 +982,16 @@
     "slug": "mapbox",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "mapbox.com"
+    "website": "mapbox.com",
+    "failCount": 0
   },
   {
     "name": "Luxor",
     "ats": "ashby",
     "slug": "luxor",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Kong",
@@ -882,21 +999,24 @@
     "slug": "kong",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "konghq.com"
+    "website": "konghq.com",
+    "failCount": 0
   },
   {
     "name": "Tracelabs",
     "ats": "ashby",
     "slug": "tracelabs",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "wand",
     "ats": "ashby",
     "slug": "wand",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Stream",
@@ -904,49 +1024,56 @@
     "slug": "stream",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "getstream.io"
+    "website": "getstream.io",
+    "failCount": 0
   },
   {
     "name": "Tetsuwan",
     "ats": "ashby",
     "slug": "tetsuwan",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "vvd",
     "ats": "ashby",
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Eagle",
     "ats": "ashby",
     "slug": "eagle",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Compa",
     "ats": "ashby",
     "slug": "compa",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Justpark",
     "ats": "workable",
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Seeq",
     "ats": "workable",
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Akeno",
@@ -954,7 +1081,8 @@
     "slug": "akeno",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "akeno.ai"
+    "website": "akeno.ai",
+    "failCount": 0
   },
   {
     "name": "Airship",
@@ -962,7 +1090,8 @@
     "ats": "greenhouse",
     "slug": "airship",
     "discoveredVia": "cncf-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Block",
@@ -970,21 +1099,24 @@
     "ats": "greenhouse",
     "slug": "block",
     "discoveredVia": "cncf-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Two Six Technologies",
     "ats": "greenhouse",
     "slug": "twosixtechnologies",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Vivodyne",
     "ats": "greenhouse",
     "slug": "vivodyne",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Orkes",
@@ -992,14 +1124,16 @@
     "slug": "orkes",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "orkes.io"
+    "website": "orkes.io",
+    "failCount": 0
   },
   {
     "name": "Justworks",
     "ats": "greenhouse",
     "slug": "justworks",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Cloudflare",
@@ -1007,7 +1141,8 @@
     "slug": "cloudflare",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "cloudflare.com"
+    "website": "cloudflare.com",
+    "failCount": 0
   },
   {
     "name": "Addepar",
@@ -1015,7 +1150,8 @@
     "slug": "addepar1",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "addepar.com"
+    "website": "addepar.com",
+    "failCount": 0
   },
   {
     "name": "Atomic Machines",
@@ -1023,7 +1159,8 @@
     "slug": "atomicmachines",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "atomicmachines.com"
+    "website": "atomicmachines.com",
+    "failCount": 0
   },
   {
     "name": "The New York Times",
@@ -1031,21 +1168,24 @@
     "slug": "thenewyorktimes",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "nytimes.com"
+    "website": "nytimes.com",
+    "failCount": 0
   },
   {
     "name": "Skysafe",
     "ats": "lever",
     "slug": "skysafe",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Kraken123",
     "ats": "lever",
     "slug": "kraken123",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Zippymh",
@@ -1053,14 +1193,16 @@
     "slug": "zippymh",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "zippymh.com"
+    "website": "zippymh.com",
+    "failCount": 0
   },
   {
     "name": "River",
     "ats": "ashby",
     "slug": "river",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Mercor",
@@ -1068,21 +1210,24 @@
     "slug": "mercor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "mercor.com"
+    "website": "mercor.com",
+    "failCount": 0
   },
   {
     "name": "Higharc",
     "ats": "ashby",
     "slug": "higharc",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Hyperspell",
     "ats": "ashby",
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Comity",
@@ -1090,7 +1235,8 @@
     "slug": "comity",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "comity.ai"
+    "website": "comity.ai",
+    "failCount": 0
   },
   {
     "name": "Baseten",
@@ -1098,7 +1244,8 @@
     "slug": "baseten",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "baseten.co"
+    "website": "baseten.co",
+    "failCount": 0
   },
   {
     "name": "Airops",
@@ -1106,7 +1253,8 @@
     "slug": "airops",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "airops.com"
+    "website": "airops.com",
+    "failCount": 0
   },
   {
     "name": "Sentilink",
@@ -1114,42 +1262,48 @@
     "slug": "sentilink",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "sentilink.com"
+    "website": "sentilink.com",
+    "failCount": 0
   },
   {
     "name": "Turquoise Health",
     "ats": "ashby",
     "slug": "turquoise-health",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Parabola Io",
     "ats": "ashby",
     "slug": "parabola-io",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
-    "name": "vvd",
+    "name": "Vvd",
     "ats": "workable",
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "yassi",
     "ats": "workable",
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "deducta",
     "ats": "workable",
     "slug": "deducta",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Sectigo",
@@ -1157,7 +1311,8 @@
     "slug": "sectigo",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "sectigo.com"
+    "website": "sectigo.com",
+    "failCount": 0
   },
   {
     "name": "Anduril Industries",
@@ -1165,7 +1320,8 @@
     "slug": "andurilindustries",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "anduril.com"
+    "website": "anduril.com",
+    "failCount": 0
   },
   {
     "name": "PhysicsX",
@@ -1173,21 +1329,24 @@
     "slug": "physicsx",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "physicsx.ai"
+    "website": "physicsx.ai",
+    "failCount": 0
   },
   {
     "name": "ttiinc",
     "ats": "greenhouse",
     "slug": "ttiinc",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "HumanSignal",
     "ats": "greenhouse",
     "slug": "humansignal",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Verkada",
@@ -1195,14 +1354,16 @@
     "slug": "verkada",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "verkada.com"
+    "website": "verkada.com",
+    "failCount": 0
   },
   {
     "name": "redpandadata",
     "ats": "greenhouse",
     "slug": "redpandadata",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Adyen",
@@ -1210,14 +1371,16 @@
     "slug": "adyen",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "adyen.com"
+    "website": "adyen.com",
+    "failCount": 0
   },
   {
     "name": "Coast",
     "ats": "greenhouse",
     "slug": "coast",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Cyngn",
@@ -1225,84 +1388,96 @@
     "slug": "cyngn",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "cyngn.com"
+    "website": "cyngn.com",
+    "failCount": 0
   },
   {
     "name": "Skyways",
     "ats": "lever",
     "slug": "skyways",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Project Healthy Minds",
     "ats": "lever",
     "slug": "project-healthy-minds",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Straighterline",
     "ats": "lever",
     "slug": "straighterline",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Squint.Ai",
     "ats": "ashby",
     "slug": "squint.ai",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Hike Medical",
     "ats": "ashby",
     "slug": "hike-medical",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Akur8",
     "ats": "ashby",
     "slug": "akur8",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Homevision",
     "ats": "ashby",
     "slug": "homevision",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Workwhilejobs",
     "ats": "ashby",
     "slug": "workwhilejobs",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Mechanize",
     "ats": "ashby",
     "slug": "mechanize",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Fractional Ai",
     "ats": "ashby",
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "honey",
     "ats": "ashby",
     "slug": "honey",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Supabase",
@@ -1310,105 +1485,120 @@
     "slug": "supabase",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "supabase.com"
+    "website": "supabase.com",
+    "failCount": 0
   },
   {
     "name": "Evervault",
     "ats": "ashby",
     "slug": "evervault",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Checkly",
     "ats": "ashby",
     "slug": "checkly",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Matterworks",
     "ats": "ashby",
     "slug": "matterworks",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Dimensional",
     "ats": "ashby",
     "slug": "dimensional",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Voltai.Careers",
     "ats": "ashby",
     "slug": "voltai.careers",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Mubit",
     "ats": "ashby",
     "slug": "mubit",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Prosper Ai",
     "ats": "ashby",
     "slug": "prosper-ai",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "curie",
     "ats": "ashby",
     "slug": "curie",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "revelare-networks",
     "ats": "workable",
     "slug": "revelare-networks",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Artie",
     "ats": "ashby",
     "slug": "artie",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Salespatriot",
     "ats": "ashby",
     "slug": "salespatriot",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Workweave",
     "ats": "ashby",
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Infisical",
     "ats": "ashby",
     "slug": "infisical",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Nango",
     "ats": "ashby",
     "slug": "nango",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Meticulous",
@@ -1416,28 +1606,32 @@
     "slug": "meticulous",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "meticulous.ai"
+    "website": "meticulous.ai",
+    "failCount": 0
   },
   {
     "name": "Verge Genomics",
     "ats": "ashby",
     "slug": "verge-genomics",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Legionhealth",
     "ats": "ashby",
     "slug": "legionhealth",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "maihem",
     "ats": "ashby",
     "slug": "maihem",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "Photoroom",
@@ -1445,7 +1639,8 @@
     "slug": "photoroom",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "photoroom.com"
+    "website": "photoroom.com",
+    "failCount": 0
   },
   {
     "name": "Replit",
@@ -1453,7 +1648,8 @@
     "slug": "replit",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "replit.com"
+    "website": "replit.com",
+    "failCount": 0
   },
   {
     "name": "Airtable",
@@ -1461,7 +1657,8 @@
     "ats": "greenhouse",
     "slug": "airtable",
     "discoveredVia": "hww-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Algolia",
@@ -1469,21 +1666,24 @@
     "ats": "greenhouse",
     "slug": "algolia",
     "discoveredVia": "hww-probe",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "B12",
     "ats": "greenhouse",
     "slug": "b12",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "EMARKETER",
     "ats": "greenhouse",
     "slug": "emarketer",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Scout24",
@@ -1491,62 +1691,71 @@
     "slug": "scout24",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "website": "scout24.com"
+    "website": "scout24.com",
+    "failCount": 0
   },
   {
     "name": "Seesaw",
     "ats": "greenhouse",
     "slug": "seesaw",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Meetalbert",
     "ats": "lever",
     "slug": "meetalbert",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "Beam",
     "ats": "lever",
     "slug": "beam",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 0
   },
   {
     "name": "bdg",
     "ats": "lever",
     "slug": "bdg",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "broadlume",
     "ats": "workable",
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "bayutdubizzle",
     "ats": "workable",
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "mytutor",
     "ats": "workable",
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   },
   {
     "name": "wallapop",
     "ats": "workable",
     "slug": "wallapop",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "failCount": 1
   }
 ]

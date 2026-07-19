@@ -35,8 +35,8 @@ Requires Node 20+.
 - [x] Job list UI: cards with title/company/location/tags/date, responsive, dark theme
 - [ ] Create a dedicated post-a-job email address (placeholder ships in `src/lib/site.ts` until then)
 - [x] Search and a filter bar on the jobs page: keyword, remote/location, technology tags, shareable URLs
-- [ ] Sourcing scripts: pull target companies' live jobs from Greenhouse/Lever/Ashby APIs, keyword filtering, dedupe, scheduled refresh
-- [ ] Listing verification: re-check every posting's link on a schedule; drop dead, expired, or duplicate listings
+- [x] Sourcing pipeline: discover company boards from public sources, pull live jobs from Greenhouse/Lever/Ashby APIs, title filtering, dedupe, daily scheduled refresh
+- [x] Listing verification: every listing re-verified against its company's own hiring system daily; dead, stale, and duplicate listings drop off
 - [ ] Launch: SEO basics, anonymous analytics, real domain
 - [ ] Deploy to Vercel
 

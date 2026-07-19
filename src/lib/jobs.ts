@@ -19,7 +19,7 @@ export const jobSchema = z.object({
     .optional(),
   location: z.string().min(1),
   workMode: z.enum(["remote", "hybrid", "onsite"]),
-  tags: z.array(z.enum(CANONICAL_TAGS)).min(1),
+  tags: z.array(z.enum(CANONICAL_TAGS)),
   url: z.string().url(),
   source: z.enum(["hand-picked", "greenhouse", "lever", "ashby"]),
   postedAt: z

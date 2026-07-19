@@ -4,6 +4,26 @@ Big decisions, why we made them, and what we said no to. Newest at the top.
 
 ---
 
+## 2026-07-19 — Freshness means "live", not "young": 90-day window for verified listings
+
+**Decision:** Listings re-confirmed live on the company's own system every
+morning may stay up to 90 days from their posting date (the UI still mutes
+anything older than 45 days). Hand-picked listings, which are only
+link-checked, keep the strict 45-day window.
+
+**Why:** The removal rule Lina actually set is "gone from the company's
+website → gone from the board" — liveness, not age. The flat 45-day cutoff
+was discarding roles that companies verifiably still had open (Netflix
+keeps engineering postings up for months; every one of its relevant roles
+was being dropped). Posting dates are always shown, so nobody is misled
+about age.
+
+**Rejected:** A flat 45-day cutoff for everything (deletes live jobs);
+no cutoff at all (year-old zombie reqs erode trust even if technically
+open).
+
+---
+
 ## 2026-07-18 — Companies are discovered, not curated
 
 **Decision:** The board registry (`src/data/companies.json`) grows itself.

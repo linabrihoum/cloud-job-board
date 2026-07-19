@@ -199,8 +199,12 @@ Roughly in priority order:
    for the board and strong SEO surface.
 9. More job sources: ~~USAJobs API~~ (done — key-gated; register at
    developer.usajobs.gov and add USAJOBS_EMAIL/USAJOBS_API_KEY as repo
-   secrets to switch it on), CNCF-landscape company probing, European
-   ATSes (Recruitee/Teamtailor/Personio), and community submissions via a
-   GitHub issue template.
+   secrets to switch it on), ~~CNCF-landscape probing~~ (done),
+   ~~Amazon/Netflix career portals~~ (done), European ATSes
+   (Recruitee/Teamtailor/Personio), and community submissions via a GitHub
+   issue template. Blocked for now: Microsoft (their careers API host no
+   longer resolves) and Google (public careers API retired) — both would
+   require scraping their web apps, which this project doesn't do; revisit
+   if either exposes a JSON endpoint again.
 10. Probe-progress persistence so repeated `probe-companies` runs continue
     through the directory instead of rechecking the same names.

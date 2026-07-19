@@ -16,6 +16,7 @@ import { detectTags } from "@/lib/tags";
 import { SITE } from "@/lib/site";
 import type { Job } from "@/types/job";
 import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats } from "./ats";
+import { GIANTS } from "./giants";
 import { guessWebsite, mineWebsiteFromHtml } from "./logos";
 import { fetchUsaJobs } from "./usajobs";
 import {
@@ -37,6 +38,12 @@ import { mapPool } from "./util";
 
 /** No single company may hold more than this many listings. */
 const MAX_PER_COMPANY = 12;
+
+/** Source-verified listings (re-confirmed live on the company's system
+ * every run) may stay this long; the UI mutes them visually after
+ * SITE.staleAfterDays. Hand-picked entries keep the stricter window since
+ * they're only link-checked. */
+const VERIFIED_MAX_AGE_DAYS = 90;
 
 interface CompanyEntry {
   name: string;
@@ -204,6 +211,20 @@ async function main() {
     }
   }
 
+  // 2b'. Cloud giants with custom career portals (Amazon, Netflix)
+  for (const giant of GIANTS) {
+    try {
+      const jobs = (await giant.fetch()).filter((j) => isRelevantTitle(j.title));
+      sourcedJobs.push(...jobs);
+      console.log(`${giant.source}: ${jobs.length} relevant roles`);
+    } catch (err) {
+      console.error(`${giant.source} fetch failed (keeping existing listings):`, err);
+      for (const job of existingJobs) {
+        if (job.source === giant.source) sourcedJobs.push(job);
+      }
+    }
+  }
+
   // 2b. USAJobs (federal roles) — only when API credentials are present
   const usaEmail = process.env.USAJOBS_EMAIL;
   const usaKey = process.env.USAJOBS_API_KEY;
@@ -247,7 +268,10 @@ async function main() {
   // 4. Merge, dedupe, freshness, unique slugs, sort, validate, write
   const merged = uniqueSlugs(
     capPerCompany(
-      dropStale(dedupeJobs([...handPicked, ...sourcedJobs]), SITE.staleAfterDays),
+      dedupeJobs([
+        ...dropStale(handPicked, SITE.staleAfterDays),
+        ...dropStale(sourcedJobs, VERIFIED_MAX_AGE_DAYS),
+      ]),
       MAX_PER_COMPANY
     )
   ).sort((a, b) => b.postedAt.localeCompare(a.postedAt));

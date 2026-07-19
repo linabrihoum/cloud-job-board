@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { nextBatch, parseLandscape } from "./directories";
+import { nextBatch, parseLandscape, parseMarkdownCompanies } from "./directories";
 
 describe("nextBatch", () => {
   const list = ["a", "b", "c", "d", "e"];
@@ -16,6 +16,26 @@ describe("nextBatch", () => {
   it("handles empty lists and oversized batches", () => {
     expect(nextBatch([], 3, 10)).toEqual({ batch: [], next: 0 });
     expect(nextBatch(list, 1, 99).batch).toHaveLength(5);
+  });
+});
+
+describe("parseMarkdownCompanies", () => {
+  it("extracts company name + website from list and table entries", () => {
+    const md = [
+      "- [Acme Cloud](https://acmecloud.com) | NYC | Platform stuff",
+      "| [Globex](https://www.globex.io/) | Remote | SRE |",
+      "[Contributing](CONTRIBUTING.md) [Badge](https://shields.io/x.svg)",
+      "- [Back to top](https://example.com#top)",
+    ].join("\n");
+    const companies = parseMarkdownCompanies(md);
+    expect(companies).toContainEqual({ name: "Acme Cloud", website: "acmecloud.com" });
+    expect(companies).toContainEqual({ name: "Globex", website: "globex.io" });
+    expect(companies).toHaveLength(2);
+  });
+
+  it("handles remote-jobs style rows (relative profile link + bare URL cell)", () => {
+    const md = "| [Initech](/company-profiles/initech.md) | https://initech.dev | Worldwide |";
+    expect(parseMarkdownCompanies(md)).toContainEqual({ name: "Initech", website: "initech.dev" });
   });
 });
 

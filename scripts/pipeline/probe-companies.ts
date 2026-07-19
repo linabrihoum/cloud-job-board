@@ -14,6 +14,8 @@ import { fileURLToPath } from "node:url";
 import { fetchBoard, type Ats } from "./ats";
 import {
   fetchCncfDirectory,
+  fetchHwwDirectory,
+  fetchRemoteJobsDirectory,
   fetchYcDirectory,
   nextBatch,
   type DirectoryCompany,
@@ -29,6 +31,8 @@ const ATSES: Ats[] = ["greenhouse", "lever", "ashby", "workable", "smartrecruite
 const DIRECTORIES: { key: string; load: () => Promise<DirectoryCompany[]> }[] = [
   { key: "yc", load: fetchYcDirectory },
   { key: "cncf", load: fetchCncfDirectory },
+  { key: "hww", load: fetchHwwDirectory },
+  { key: "remotejobs", load: fetchRemoteJobsDirectory },
 ];
 
 function slugCandidates(company: DirectoryCompany): string[] {

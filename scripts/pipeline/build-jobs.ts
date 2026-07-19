@@ -19,6 +19,7 @@ import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats }
 import { guessWebsite, mineWebsiteFromHtml } from "./logos";
 import { fetchUsaJobs } from "./usajobs";
 import {
+  discoverFromGithubLists,
   discoverFromHackerNews,
   discoverFromHackerNewsJobPosts,
   type DiscoveredBoard,
@@ -70,6 +71,11 @@ async function main() {
     discovered.push(...(await discoverFromHackerNewsJobPosts()));
   } catch (err) {
     console.error("HN job-post discovery failed (continuing):", err);
+  }
+  try {
+    discovered.push(...(await discoverFromGithubLists()));
+  } catch (err) {
+    console.error("GitHub-list discovery failed (continuing):", err);
   }
   const known = new Set(companies.map((c) => `${c.ats}:${c.slug}`));
   let added = 0;

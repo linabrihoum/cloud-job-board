@@ -185,8 +185,10 @@ Roughly in priority order:
 6. Company profile pages.
 7. Category landing pages (Cloud, SRE, DevOps, Platform).
 8. Blog/industry content for credibility.
-9. More job sources: USAJobs API (federal cloud/DevSecOps roles; applying
-   on USAJobs is the official path), CNCF-landscape company probing, and
-   community submissions via a GitHub issue template.
+9. More job sources: ~~USAJobs API~~ (done — key-gated; register at
+   developer.usajobs.gov and add USAJOBS_EMAIL/USAJOBS_API_KEY as repo
+   secrets to switch it on), CNCF-landscape company probing, European
+   ATSes (Recruitee/Teamtailor/Personio), and community submissions via a
+   GitHub issue template.
 10. Probe-progress persistence so repeated `probe-companies` runs continue
     through the directory instead of rechecking the same names.

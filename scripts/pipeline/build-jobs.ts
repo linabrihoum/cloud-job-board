@@ -12,9 +12,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { jobsFileSchema } from "@/lib/jobs";
+import { detectTags } from "@/lib/tags";
 import { SITE } from "@/lib/site";
 import type { Job } from "@/types/job";
 import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats } from "./ats";
+import { fetchUsaJobs } from "./usajobs";
 import { discoverFromHackerNews, type DiscoveredBoard } from "./discover";
 import { htmlToMd } from "./html";
 import {
@@ -126,6 +128,31 @@ async function main() {
         sourcedJobs.push(job);
         break;
       }
+    }
+  }
+
+  // 2b. USAJobs (federal roles) — only when API credentials are present
+  const usaEmail = process.env.USAJOBS_EMAIL;
+  const usaKey = process.env.USAJOBS_API_KEY;
+  if (usaEmail && usaKey) {
+    try {
+      const jobs = (await fetchUsaJobs(usaEmail, usaKey)).filter((j) => isRelevantTitle(j.title));
+      for (const job of jobs) {
+        job.tags = detectTags(`${job.title}\n${job.description ?? ""}`);
+        sourcedJobs.push(job);
+      }
+      console.log(`USAJobs: ${jobs.length} relevant federal roles`);
+    } catch (err) {
+      console.error("USAJobs fetch failed (continuing):", err);
+      for (const job of existingJobs) {
+        if (job.source === "usajobs") sourcedJobs.push(job);
+      }
+    }
+  } else {
+    console.log("USAJobs: skipped (set USAJOBS_EMAIL and USAJOBS_API_KEY to enable)");
+    // keep any existing federal listings while the source is unconfigured
+    for (const job of existingJobs) {
+      if (job.source === "usajobs") sourcedJobs.push(job);
     }
   }
 

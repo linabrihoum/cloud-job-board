@@ -1,0 +1,329 @@
+[
+  {
+    "name": "Honeycomb.io",
+    "website": "honeycomb.io",
+    "ats": "greenhouse",
+    "slug": "honeycomb",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Natera",
+    "website": "natera.com",
+    "ats": "greenhouse",
+    "slug": "natera",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "saas.group",
+    "website": "saas.group",
+    "ats": "greenhouse",
+    "slug": "saasgroup",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Andromeda Cluster",
+    "website": "andromedacluster.com",
+    "ats": "ashby",
+    "slug": "andromeda",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Caylent",
+    "website": "caylent.com",
+    "ats": "greenhouse",
+    "slug": "caylent",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Pave Bank",
+    "website": "pavebank.com",
+    "ats": "ashby",
+    "slug": "pavebank",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "DV Trading",
+    "website": "dvtrading.co",
+    "ats": "greenhouse",
+    "slug": "dvtrading",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "UJET",
+    "website": "ujet.co",
+    "ats": "greenhouse",
+    "slug": "ujet",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "540",
+    "website": "540.co",
+    "ats": "greenhouse",
+    "slug": "540",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "DoiT",
+    "website": "doit.com",
+    "ats": "greenhouse",
+    "slug": "doitintl",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "CloudWalk",
+    "website": "cloudwalk.io",
+    "ats": "lever",
+    "slug": "cloudwalk",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "MinIO",
+    "website": "min.io",
+    "ats": "greenhouse",
+    "slug": "minio",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "iCapital",
+    "website": "icapital.com",
+    "ats": "greenhouse",
+    "slug": "icapitalnetwork",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Life360",
+    "website": "life360.com",
+    "ats": "greenhouse",
+    "slug": "life360",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Graphcore",
+    "website": "graphcore.ai",
+    "ats": "greenhouse",
+    "slug": "graphcore",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Palantir Technologies",
+    "website": "palantir.com",
+    "ats": "lever",
+    "slug": "palantir",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Tiger Data",
+    "website": "tigerdata.com",
+    "ats": "ashby",
+    "slug": "tigerdata",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Signifyd",
+    "website": "signifyd.com",
+    "ats": "greenhouse",
+    "slug": "signifyd",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Equip Health",
+    "website": "equip.health",
+    "ats": "ashby",
+    "slug": "equip",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-18"
+  },
+  {
+    "name": "Nova Credit",
+    "ats": "greenhouse",
+    "slug": "novacredit",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "DoubleVerify",
+    "ats": "greenhouse",
+    "slug": "doubleverify",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Prolific",
+    "ats": "greenhouse",
+    "slug": "prolific",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Kinelo",
+    "ats": "greenhouse",
+    "slug": "kinelo",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Grafana Labs",
+    "ats": "greenhouse",
+    "slug": "grafanalabs",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Obsidian Security",
+    "ats": "greenhouse",
+    "slug": "obsidiansecurity",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "FINN",
+    "ats": "greenhouse",
+    "slug": "finnapp",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Mentimeter",
+    "ats": "greenhouse",
+    "slug": "mentimeter",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Oklo",
+    "ats": "greenhouse",
+    "slug": "oklo",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Beautiful.ai",
+    "ats": "greenhouse",
+    "slug": "beautifulai",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Weave",
+    "ats": "greenhouse",
+    "slug": "weave",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Proton",
+    "ats": "greenhouse",
+    "slug": "proton",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Distru",
+    "ats": "lever",
+    "slug": "distru",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Ro",
+    "ats": "lever",
+    "slug": "ro",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Electric Twin",
+    "ats": "lever",
+    "slug": "electric-twin",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Findigs",
+    "ats": "lever",
+    "slug": "findigs",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Wirescreen",
+    "ats": "ashby",
+    "slug": "wirescreen",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Rho",
+    "ats": "ashby",
+    "slug": "rho",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Duck Duck Go",
+    "ats": "ashby",
+    "slug": "duck-duck-go",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Antithesis",
+    "ats": "ashby",
+    "slug": "antithesis",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Aureliussystems",
+    "ats": "ashby",
+    "slug": "aureliussystems",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Onecrew",
+    "ats": "ashby",
+    "slug": "onecrew",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Middesk",
+    "ats": "ashby",
+    "slug": "middesk",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Hiya",
+    "ats": "ashby",
+    "slug": "hiya",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Oneleet",
+    "ats": "ashby",
+    "slug": "oneleet",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  }
+]

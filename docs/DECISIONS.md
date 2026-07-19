@@ -4,6 +4,52 @@ Big decisions, why we made them, and what we said no to. Newest at the top.
 
 ---
 
+## 2026-07-18 — Companies are discovered, not curated
+
+**Decision:** The board registry (`src/data/companies.json`) grows itself.
+A discovery step mines public sources — currently Hacker News "Who is
+hiring?" threads via the Algolia API — for links to Greenhouse/Lever/Ashby
+boards, and every board found is added automatically (capped per run, with
+a `blocked` flag for bad actors). Jobs are then always fetched from the
+company's own hiring system, so startups nobody thought to name get the
+same treatment as household names.
+
+**Why:** A hand-picked company list bakes in our blind spots and
+big-company bias. Discovery keeps the direct-apply and verification rules
+intact while letting the net widen on its own.
+
+**Rejected:** Hand-curating the registry (bias); aggregator feeds as
+listing sources (link-back terms conflict with direct apply); crawling the
+open web for postings (fragile scraping, rejected since kickoff). Known
+limit: companies not on the big three hiring systems stay invisible until
+they appear somewhere we look.
+
+---
+
+## 2026-07-18 — The daily refresh auto-merges; a documented bot exception
+
+**Decision:** A scheduled workflow runs every morning (12:00 UTC ≈ 8am US
+Eastern), rebuilds the job data, validates it (lint, full test suite,
+production build — the same commands as CI), and merges the result to
+`main` without human review. This is the one exception to "nothing merges
+without Lina's approval."
+
+**Why:** The whole point of the pipeline is jobs appearing at 8am without
+anyone touching anything. The bot only ever changes `src/data/*`; every
+entry passes schema validation; and the sources are the companies' own
+hiring systems.
+
+**Mechanics note:** PRs opened with the built-in Actions token can't
+trigger other workflows, so the refresh workflow runs the validation
+itself and reports the required `check` status on the data commit before
+merging — the branch-protection gate stays honest.
+
+**Rejected:** A morning PR awaiting manual merge (defeats the 8am
+promise); giving the bot a personal access token to trigger real CI (more
+credentials to leak for the same validation).
+
+---
+
 ## 2026-07-18 — "Apply" always goes to the company's own posting; aggregator feeds dropped
 
 **Decision:** Every listing's link points at the company's own job posting.

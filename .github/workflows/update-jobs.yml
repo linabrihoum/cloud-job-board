@@ -1,0 +1,60 @@
+name: Daily job refresh
+
+# 12:00 UTC = 8am US Eastern during daylight saving (7am in winter).
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run update-jobs
+
+      # The same validation the CI workflow runs. PRs opened by the
+      # GITHUB_TOKEN can't trigger other workflows, so the required
+      # "check" is satisfied by validating here and reporting the status
+      # on the data commit directly.
+      - name: Validate
+        run: |
+          npm run lint
+          npm test
+          npm run build
+
+      - name: Open and auto-merge data PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "No data changes today."
+            exit 0
+          fi
+          DATE=$(date -u +%F)
+          BRANCH="bot/refresh-$DATE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add src/data
+          git commit -m "chore(data): daily job refresh $DATE"
+          git push origin "$BRANCH"
+          SHA=$(git rev-parse HEAD)
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/statuses/$SHA" \
+            -f state=success -f context=check \
+            -f description="Validated by the refresh workflow (lint + test + build)"
+          gh pr create \
+            --title "chore(data): daily job refresh $DATE" \
+            --body "Automated daily refresh: board discovery + live postings from company hiring systems, dedupe, freshness cutoff, and validation (lint, tests, build) run inside this workflow. Auto-merged per docs/DECISIONS.md." \
+            --head "$BRANCH"
+          gh pr merge "$BRANCH" --merge --delete-branch

@@ -92,40 +92,38 @@ subtasks. "Session" here means one focused working sitting.
 
 ## 4. Automated freshness & verification (~3–4 sessions)
 
-- [ ] Script scaffolding: `scripts/update-jobs.ts`, run via `npm run
+- [x] Script scaffolding: `scripts/pipeline/`, run via `npm run
       update-jobs`
-- [ ] Company registry: `src/data/companies.json` — each target company's
-      name, website, hiring system (greenhouse/lever/ashby), and board slug
-- [ ] ATS fetchers — pull each company's live jobs from its own hiring
+- [x] Self-growing company registry: `src/data/companies.json` — boards
+      are *discovered* from public sources (HN "Who is hiring?" threads),
+      not hand-curated, so startups get found organically; capped
+      additions per run and a `blocked` flag for bad boards
+- [x] ATS fetchers — pull each company's live jobs from its own hiring
       system, so every URL is the company's real posting
-  - [ ] Greenhouse public board API (`boards-api.greenhouse.io`)
-  - [ ] Lever public postings API (`api.lever.co/v0/postings/...`)
-  - [ ] Ashby public job board API
-  - [ ] Map each onto the `Job` type
+  - [x] Greenhouse public board API (`boards-api.greenhouse.io`)
+  - [x] Lever public postings API (`api.lever.co/v0/postings/...`)
+  - [x] Ashby public job board API (with compensation where published)
+  - [x] Map each onto the `Job` type (description → markdown-lite, tech
+        tags detected from text, employment type + salary when provided)
 - [ ] Relevance filter: reuse the canonical tag/keyword list from Phase 1 —
       one list, not three copies
-- [ ] Dedupe: normalize company + title; when two sources (or a source and
-      a hand-picked entry) have the same job, keep exactly one — the one
-      closest to the original posting. No duplicate ever appears on the site
-- [ ] Freshness cutoff: drop listings older than ~45 days
-- [ ] Verification pass (`npm run verify-jobs`) — no dead or fake listings
-  - [ ] Every listing links to the company's own posting, so re-visiting
-        the URL validates the job against the company site directly; drop
-        listings whose page is gone (404/410 or redirected away)
-  - [ ] ATS-sourced jobs re-verify for free: if the job leaves the
-        company's board API, it leaves ours
-  - [ ] Catch "zombie" postings: pages that still load but say the role is
-        closed ("no longer accepting applications" and similar phrases)
-  - [ ] Filter by job title, not source tags (the seed run proved tags
+- [x] Dedupe: normalized company + title; the newest wins. No duplicate
+      ever appears on the site
+- [x] Freshness cutoff: listings older than 45 days drop off
+- [x] Verification — no dead or fake listings
+  - [x] ATS-sourced jobs re-verify every run: if the job leaves the
+        company's own board API, it leaves ours
+  - [x] Hand-picked jobs get their URL re-checked; gone pages (404/410)
+        are dropped
+  - [x] Filter by job title, not source tags (the seed run proved tags
         can't be trusted)
-- [ ] Merge ATS-sourced with hand-picked entries and write `jobs.json`
-      (hand-picked ones are never auto-deleted by the refresh, but they are
-      subject to the verification pass like everything else)
-- [ ] Tests: mapping, filtering, dedupe, and verification against saved
-      sample ATS responses and mocked link responses
-- [ ] Scheduled GitHub Action (weekly to start) that runs refresh +
-      verification and opens a PR with the changes — a human still reviews
-      what got added and removed before it goes live
+- [x] Merge ATS-sourced with hand-picked entries, validate against the
+      schema, and write `jobs.json` (validation failure aborts the write)
+- [x] Tests: relevance gate, mapping, dedupe, staleness, slug collisions,
+      and board-link extraction (including HN's entity-encoded URLs)
+- [x] Scheduled GitHub Action, daily at 12:00 UTC (~8am ET): refresh,
+      validate (lint + tests + build inside the workflow), and auto-merge —
+      the documented bot exception in DECISIONS.md
 
 ## 5. Launch (~1–2 sessions)
 

@@ -53,9 +53,9 @@ describe("parseJobs validation", () => {
     expect(() => parseJobs(asFile([bad]))).toThrow(/postedAt/);
   });
 
-  it("rejects an empty tag list", () => {
-    const bad = { ...validJob, tags: [] };
-    expect(() => parseJobs(asFile([bad]))).toThrow(/entry 0/);
+  it("accepts an empty tag list (tags are best-effort)", () => {
+    const untagged = { ...validJob, tags: [] };
+    expect(parseJobs(asFile([untagged]))).toHaveLength(1);
   });
 
   it("rejects duplicate ids", () => {

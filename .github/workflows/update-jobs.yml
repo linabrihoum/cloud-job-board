@@ -21,6 +21,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Probe company directories (advances the sweep cursor daily)
+        run: npm run probe-companies -- 150 || echo "probe failed; continuing with known boards"
       - run: npm run update-jobs
         env:
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}

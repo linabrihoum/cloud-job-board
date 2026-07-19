@@ -4,6 +4,22 @@ Phases in order. Each one ends with something you can click. The condensed
 version lives in the README's TODO section; this file breaks each item into
 subtasks. "Session" here means one focused working sitting.
 
+## Next session
+
+**Where we left off (2026-07-19):** Phases 0–4 are done. The board is live
+with 134 verified listings across 41 companies, and the daily pipeline
+(discovery → five hiring-system APIs → validate → auto-merge) runs at
+~8am ET. Its first unattended run is the morning of 2026-07-20.
+
+**Start next time with:**
+1. Check the first unattended pipeline run: repo → Actions → "Daily job
+   refresh" (and whether the two rate-limited Workable boards populated).
+2. Phase 5 — Launch: SEO basics, cookie-free analytics, real domain,
+   Lighthouse, announce.
+3. Standing personal TODOs: create the dedicated post-a-job email (replace
+   the placeholder in `src/lib/site.ts`), load the live site on a phone,
+   and re-enable required PR reviews before making the repo public.
+
 ## 0. Setup (~1 session)
 
 - [x] GitHub repo and CI (lint + build on every PR)

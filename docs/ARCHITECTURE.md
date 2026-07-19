@@ -8,11 +8,15 @@ time. There is no database, no server code, and no user data.
 ```
   Job sources                        GitHub repo                     Visitors
   ───────────                        ───────────                     ────────
-  Company hiring    ┐
-  systems, via      ├─► update script ─► src/data/jobs.json
-  Greenhouse/Lever/ ┘   (Phase 4)              │
-  Ashby public APIs                            │
-  Hand-picked jobs ──── edited directly ───────┤
+  Discovery (HN threads,  ┐
+  YC-directory probing)   │
+        │                 ├─► daily pipeline ─► src/data/jobs.json
+        ▼                 │   (8am ET, auto-       │
+  Company hiring systems: │    merged when         │
+  Greenhouse, Lever,      │    validation passes)  │
+  Ashby, Workable,        ┘                        │
+  SmartRecruiters APIs                             │
+  Hand-picked jobs ──────── edited directly ───────┤
                                                ▼
                                      Next.js build (on push)
                                                │
@@ -42,7 +46,8 @@ time. There is no database, no server code, and no user data.
 | Job data | `src/data/jobs.json` | The single source of truth for listings |
 | Types | `src/types/` | The `Job` TypeScript shape — defined once, used everywhere |
 | Data loading | `src/lib/` | Reads + validates jobs.json at build time |
-| Feed scripts | `scripts/` | Pull target companies' live jobs from Greenhouse/Lever/Ashby APIs, filter for cloud/SRE relevance, dedupe, verify, merge into jobs.json (Phase 4) |
+| Pipeline | `scripts/pipeline/` | Discover boards (HN threads, YC probing), pull live jobs from five hiring-system APIs, title-filter with a hardware/aerospace negative gate, dedupe, cap per company, drop stale, verify, merge into jobs.json — daily at ~8am ET |
+| Company registry | `src/data/companies.json` | Self-growing list of known boards (discovery adds entries; `blocked` flag excludes bad ones) |
 | CI | `.github/workflows/` | Lint + build (+ tests) on every PR |
 
 ## Search and filters without a server

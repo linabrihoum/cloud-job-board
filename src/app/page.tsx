@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       <WaveDivider />
-      <section className="relative bg-paper">
+      <section className="paper-stars relative">
         <div
           aria-hidden
           className="orb right-[5%] top-40 h-72 w-72"

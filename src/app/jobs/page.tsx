@@ -25,7 +25,7 @@ export default function JobsPage() {
       </div>
 
       <WaveDivider />
-      <div className="bg-paper">
+      <div className="paper-stars">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
           <JobBoard jobs={jobs} allTags={tagsInUse(jobs)} />
         </div>

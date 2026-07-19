@@ -66,28 +66,6 @@ export function Effects() {
     });
     document.querySelectorAll("[data-count]").forEach((el) => countObserver.observe(el));
 
-    // Card tilt — one delegated listener, pointer devices only
-    const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-    const onMove = (e: PointerEvent) => {
-      const card = (e.target as Element | null)?.closest?.("[data-tilt]") as HTMLElement | null;
-      if (!card) return;
-      const rect = card.getBoundingClientRect();
-      const px = (e.clientX - rect.left) / rect.width - 0.5;
-      const py = (e.clientY - rect.top) / rect.height - 0.5;
-      card.style.setProperty("--rx", String(-py * 4));
-      card.style.setProperty("--ry", String(px * 5));
-    };
-    const onOut = (e: PointerEvent) => {
-      const card = (e.target as Element | null)?.closest?.("[data-tilt]") as HTMLElement | null;
-      if (!card || card.contains(e.relatedTarget as Node)) return;
-      card.style.setProperty("--rx", "0");
-      card.style.setProperty("--ry", "0");
-    };
-    if (fine) {
-      document.addEventListener("pointermove", onMove, { passive: true });
-      document.addEventListener("pointerout", onOut, { passive: true });
-    }
-
     // A shooting star every so often, top third of the viewport
     const spawnStar = () => {
       if (document.hidden) return;
@@ -105,8 +83,6 @@ export function Effects() {
       window.removeEventListener("scroll", onScroll);
       revealObserver.disconnect();
       countObserver.disconnect();
-      document.removeEventListener("pointermove", onMove);
-      document.removeEventListener("pointerout", onOut);
       clearInterval(starTimer);
     };
   }, []);

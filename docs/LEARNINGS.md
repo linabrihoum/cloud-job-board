@@ -4,6 +4,26 @@ Mistakes, gotchas, and surprises from building this project — written down
 so we don't repeat them. Add an entry whenever something cost real time or
 changed our approach.
 
+## 2026-07-19 — Generic infra words match hardware jobs; keep a negative filter
+
+Widening the title relevance gate immediately let SpaceX's board flood us
+with ~70 "Reliability Engineers" and "Systems Engineers" that turned out
+to be rocket-valve, PCB, and solar-cell manufacturing roles. Positive
+keywords alone can't tell a Kubernetes SRE from an Equipment Reliability
+Engineer — the gate needs an explicit negative filter for hardware/
+aerospace/manufacturing vocabulary, plus a per-company cap (12) so no
+single employer dominates the board. Lesson: whenever the relevance gate
+widens, spot-check the top contributing companies before shipping.
+
+## 2026-07-19 — Public ATS APIs rate-limit; probing needs manners
+
+Probing hundreds of companies against Workable's API earned a 429 that
+outlived an 8-second backoff. Mitigations now in place: a delay between
+probes, one retry with backoff on 429, and — most importantly — the
+pipeline treats an unreachable board as "keep yesterday's listings," never
+"the jobs are gone." Only a posting missing from a *successful* board
+fetch counts as removed.
+
 ## 2026-07-18 — Never install Node with winget on an nvm-managed machine
 
 This machine manages Node with nvm-windows, which makes `C:\Program

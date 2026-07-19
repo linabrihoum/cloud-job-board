@@ -10,7 +10,7 @@ rejected and why.
 | Language | TypeScript | 5.x |
 | Styling | Tailwind CSS | 4.x |
 | Job data | JSON file in the repo (`src/data/jobs.json`) | — |
-| Job sourcing | Company ATS public APIs (Greenhouse, Lever, Ashby) + hand-picking | — |
+| Job sourcing | Company hiring-system APIs (Greenhouse, Lever, Ashby, Workable, SmartRecruiters) + discovery (HN, YC probing) + hand-picking | — |
 | Hosting | Vercel (free Hobby tier) | — |
 | CI | GitHub Actions (lint + build, tests when they exist) | — |
 | Tests | Vitest + React Testing Library | added Phase 1 |
@@ -46,9 +46,11 @@ actively block scrapers. Aggregator feeds (RemoteOK, We Work Remotely,
 Remotive) were considered next, but their terms require linking back to
 their own listing pages, which conflicts with the rule that "Apply" always
 lands on the company's posting. Instead: most tech companies run hiring on
-Greenhouse, Lever, or Ashby, and all three expose free public APIs of each
-company's live jobs. We maintain a registry of target companies and pull
-from their own systems — direct company URLs, inherently real and current —
+Greenhouse, Lever, Ashby, Workable, or SmartRecruiters — all five expose
+free public APIs of each company's live jobs. The registry of boards grows
+itself (links mined from HN "Who is hiring?" threads, plus probing public
+company directories like YC's), and jobs are always pulled from the
+company's own system — direct company URLs, inherently real and current —
 plus hand-picked listings from career pages.
 
 **Vercel.** Made by the Next.js team, so deploys are near-zero-config: push

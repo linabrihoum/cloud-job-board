@@ -22,6 +22,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run update-jobs
+        env:
+          USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
 
       # The same validation the CI workflow runs. PRs opened by the
       # GITHUB_TOKEN can't trigger other workflows, so the required

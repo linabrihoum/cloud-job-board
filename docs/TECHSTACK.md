@@ -10,7 +10,7 @@ rejected and why.
 | Language | TypeScript | 5.x |
 | Styling | Tailwind CSS | 4.x |
 | Job data | JSON file in the repo (`src/data/jobs.json`) | — |
-| Job sourcing | Company hiring-system APIs (Greenhouse, Lever, Ashby, Workable, SmartRecruiters) + discovery (HN, YC probing) + hand-picking | — |
+| Job sourcing | Company hiring-system APIs (Greenhouse, Lever, Ashby, Workable, SmartRecruiters) + USAJobs (federal, key-gated) + discovery (HN, YC probing) + hand-picking | — |
 | Hosting | Vercel (free Hobby tier) | — |
 | CI | GitHub Actions (lint + build, tests when they exist) | — |
 | Tests | Vitest + React Testing Library | added Phase 1 |

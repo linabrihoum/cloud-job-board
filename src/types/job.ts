@@ -8,7 +8,8 @@ export type JobSource =
   | "lever"
   | "ashby"
   | "workable"
-  | "smartrecruiters";
+  | "smartrecruiters"
+  | "usajobs";
 
 export interface Job {
   /** Stable unique id, prefixed by source, e.g. "greenhouse-ujet-4709322005" */

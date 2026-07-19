@@ -21,7 +21,15 @@ export const jobSchema = z.object({
   workMode: z.enum(["remote", "hybrid", "onsite"]),
   tags: z.array(z.enum(CANONICAL_TAGS)),
   url: z.string().url(),
-  source: z.enum(["hand-picked", "greenhouse", "lever", "ashby", "workable", "smartrecruiters"]),
+  source: z.enum([
+    "hand-picked",
+    "greenhouse",
+    "lever",
+    "ashby",
+    "workable",
+    "smartrecruiters",
+    "usajobs",
+  ]),
   postedAt: z
     .string()
     .regex(ISO_DATE, "postedAt must be an ISO date like 2026-07-18")

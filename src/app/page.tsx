@@ -87,6 +87,39 @@ export default function Home() {
             </Link>
           </div>
           <HomeJobFeed jobs={jobs} />
+
+          <section className="mx-auto mt-14 max-w-4xl border-t border-paper-line pt-10">
+            <h2 className="font-display text-xl font-bold text-paper-ink">
+              Find your specialty
+            </h2>
+            <p className="mt-2 text-sm text-paper-muted">
+              Every listing here is a cloud infrastructure role — browse by
+              what you do: DevOps engineer jobs, site reliability engineer
+              (SRE) jobs, platform engineering roles, cloud security, and
+              remote-first cloud engineer positions across AWS, Azure, and
+              Google Cloud.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {[
+                { label: "Remote cloud jobs", href: "/jobs?mode=remote" },
+                { label: "AWS jobs", href: "/jobs?tags=AWS" },
+                { label: "Azure jobs", href: "/jobs?tags=Azure" },
+                { label: "GCP jobs", href: "/jobs?tags=GCP" },
+                { label: "Kubernetes jobs", href: "/jobs?tags=Kubernetes" },
+                { label: "Terraform jobs", href: "/jobs?tags=Terraform" },
+                { label: "Senior roles", href: "/jobs?level=senior" },
+                { label: "US-based roles", href: "/jobs?region=US" },
+              ].map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="rounded-full border border-paper-line bg-paper-card px-3 py-1.5 text-sm text-paper-muted transition hover:border-accent hover:text-accent-soft"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </section>
         </div>
       </section>
     </div>

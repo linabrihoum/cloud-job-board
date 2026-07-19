@@ -1,7 +1,6 @@
 "use client";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { FilterDropdown, type DropdownOption } from "@/components/FilterDropdown";
 import { JobCard } from "@/components/JobCard";
 import {
@@ -36,11 +35,15 @@ const MODE_OPTIONS: DropdownOption[] = [
  * shareable link.
  */
 export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+  // The first render (including on the server, where crawlers look) shows
+  // the full unfiltered list; any filter in the URL applies after mount.
+  // Filter changes use history.replaceState so filtered views stay
+  // shareable links without re-running the router.
+  const [filter, setFilter] = useState(EMPTY_FILTER);
+  useEffect(() => {
+    setFilter(parseFilter(new URLSearchParams(window.location.search)));
+  }, []);
 
-  const filter = useMemo(() => parseFilter(new URLSearchParams(searchParams)), [searchParams]);
   const results = useMemo(() => filterJobs(jobs, filter), [jobs, filter]);
 
   // Only offer level/region options that actually exist in the data.
@@ -64,7 +67,8 @@ export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) 
   );
 
   const apply = (next: JobFilter) => {
-    router.replace(`${pathname}${toQueryString(next)}`, { scroll: false });
+    setFilter(next);
+    window.history.replaceState(null, "", `${window.location.pathname}${toQueryString(next)}`);
   };
 
   const toggleTag = (tag: string) => {

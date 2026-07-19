@@ -77,18 +77,18 @@ subtasks. "Session" here means one focused working sitting.
 
 ## 3. Search and filters on the jobs page (~2 sessions)
 
-- [ ] Decide the URL shape first (e.g. `/jobs?q=sre&mode=remote&tags=aws`)
-      so every filter state is a shareable link
-- [ ] Filter bar at the top of the jobs page
-- [ ] Keyword search over title, company, and tags (case-insensitive)
-- [ ] Work-mode filter (remote / hybrid / onsite)
-- [ ] Technology filter: chips built from the tags actually present in the
+- [x] URL shape decided: `/jobs?q=sre&mode=remote&tags=AWS,Go` — every
+      filter state is a shareable link
+- [x] Filter bar at the top of the jobs page
+- [x] Keyword search over title, company, and tags (case-insensitive)
+- [x] Work-mode filter (remote / hybrid / onsite)
+- [x] Technology filter: chips built from the tags actually present in the
       data (tags are concrete technologies only — AWS, Kubernetes,
       Jenkins... — never vague role words), multi-select
-- [ ] All filters combine (AND), with a clear-all button
-- [ ] "No matches" state that suggests removing a filter
-- [ ] Tests: filter logic as pure functions, plus a component test that
-      typing a keyword narrows the list
+- [x] All filters combine (AND), with a clear-all button
+- [x] "No matches" state that suggests removing a filter
+- [x] Tests: filter logic as pure functions, plus component tests covering
+      keyword narrowing, work-mode filtering, and clear-all
 
 ## 4. Automated freshness & verification (~3–4 sessions)
 

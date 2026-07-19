@@ -4,6 +4,19 @@ Mistakes, gotchas, and surprises from building this project — written down
 so we don't repeat them. Add an entry whenever something cost real time or
 changed our approach.
 
+## 2026-07-19 — GitHub Actions can't open PRs until a repo setting allows it
+
+The pipeline's first unattended run did everything right — discovered
+boards, fetched jobs, validated, pushed the data branch — then failed with
+"GitHub Actions is not permitted to create or approve pull requests." That
+permission is a repo-level toggle (Settings → Actions → General → Workflow
+permissions) and it defaults to OFF; nothing warns you when you write a
+workflow that needs it. Fixed via
+`gh api -X PUT repos/{repo}/actions/permissions/workflow` with
+`can_approve_pull_request_reviews=true`. Lesson: a workflow that creates
+PRs isn't done until it has run once *from the scheduler* — permissions
+differ between local testing, manual dispatch, and scheduled runs.
+
 ## 2026-07-19 — Generic infra words match hardware jobs; keep a negative filter
 
 Widening the title relevance gate immediately let SpaceX's board flood us

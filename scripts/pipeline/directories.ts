@@ -74,3 +74,45 @@ function domainOf(website?: string): string | undefined {
     return undefined;
   }
 }
+
+/** Pull company entries out of a list-style GitHub README: every
+ * `[Name](https://...)` bullet or table cell that plausibly names a
+ * company. Pure — fixture-tested. */
+export function parseMarkdownCompanies(md: string): DirectoryCompany[] {
+  const out = new Map<string, DirectoryCompany>();
+  const add = (rawName: string, url: string) => {
+    const name = rawName.trim();
+    if (/contribut|license|readme|badge|\.md$|\.png|\.svg|shields\.io|github\.com/i.test(url)) return;
+    if (/^(back to top|table of contents|see more|website|careers?|jobs?|blog|here)$/i.test(name)) return;
+    const website = domainOf(url);
+    if (!website) return;
+    const key = name.toLowerCase();
+    if (!out.has(key)) out.set(key, { name, website });
+  };
+  // `[Name](https://company.com)` bullets and cells
+  for (const m of md.matchAll(/\[([^\]\n]{2,60})\]\((https?:\/\/[^)\s]+)\)/g)) {
+    add(m[1], m[2]);
+  }
+  // remote-jobs style rows: `| [Name](/profiles/x.md) | https://company.com |`
+  for (const m of md.matchAll(/\|\s*\[([^\]\n]{2,60})\]\([^)]*\)\s*\|\s*<?(https?:\/\/[^\s|>]+)/g)) {
+    add(m[1], m[2]);
+  }
+  return [...out.values()];
+}
+
+/** Hiring Without Whiteboards — ~1,000 tech companies with sane interview
+ * processes; heavily overlapping with cloud-native employers. */
+export async function fetchHwwDirectory(): Promise<DirectoryCompany[]> {
+  const md = await (
+    await fetch("https://raw.githubusercontent.com/poteto/hiring-without-whiteboards/main/README.md")
+  ).text();
+  return parseMarkdownCompanies(md);
+}
+
+/** remoteintech/remote-jobs — hundreds of remote-friendly tech companies. */
+export async function fetchRemoteJobsDirectory(): Promise<DirectoryCompany[]> {
+  const md = await (
+    await fetch("https://raw.githubusercontent.com/remoteintech/remote-jobs/main/README.md")
+  ).text();
+  return parseMarkdownCompanies(md);
+}

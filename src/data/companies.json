@@ -1089,7 +1089,8 @@
     "ats": "ashby",
     "slug": "comity",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "comity.ai"
   },
   {
     "name": "Baseten",
@@ -1104,7 +1105,8 @@
     "ats": "ashby",
     "slug": "airops",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "airops.com"
   },
   {
     "name": "Sentilink",
@@ -1154,7 +1156,8 @@
     "ats": "smartrecruiters",
     "slug": "sectigo",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "sectigo.com"
   },
   {
     "name": "Anduril Industries",
@@ -1221,7 +1224,8 @@
     "ats": "lever",
     "slug": "cyngn",
     "discoveredVia": "hn-who-is-hiring",
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "website": "cyngn.com"
   },
   {
     "name": "Skyways",
@@ -1450,5 +1454,99 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "replit.com"
+  },
+  {
+    "name": "Airtable",
+    "website": "airtable.com",
+    "ats": "greenhouse",
+    "slug": "airtable",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Algolia",
+    "website": "algolia.com",
+    "ats": "greenhouse",
+    "slug": "algolia",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "B12",
+    "ats": "greenhouse",
+    "slug": "b12",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "EMARKETER",
+    "ats": "greenhouse",
+    "slug": "emarketer",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Scout24",
+    "ats": "greenhouse",
+    "slug": "scout24",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19",
+    "website": "scout24.com"
+  },
+  {
+    "name": "Seesaw",
+    "ats": "greenhouse",
+    "slug": "seesaw",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Meetalbert",
+    "ats": "lever",
+    "slug": "meetalbert",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "Beam",
+    "ats": "lever",
+    "slug": "beam",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "bdg",
+    "ats": "lever",
+    "slug": "bdg",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "broadlume",
+    "ats": "workable",
+    "slug": "broadlume",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "bayutdubizzle",
+    "ats": "workable",
+    "slug": "bayutdubizzle",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "mytutor",
+    "ats": "workable",
+    "slug": "mytutor",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "name": "wallapop",
+    "ats": "workable",
+    "slug": "wallapop",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-19"
   }
 ]

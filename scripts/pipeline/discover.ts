@@ -64,6 +64,22 @@ export async function discoverFromHackerNews(threadCount = 4): Promise<Discovere
   return boards;
 }
 
+/** Community GitHub lists whose READMEs contain direct hiring-board
+ * links (the company-name entries are handled by directory probing). */
+export async function discoverFromGithubLists(): Promise<DiscoveredBoard[]> {
+  const urls = [
+    "https://raw.githubusercontent.com/poteto/hiring-without-whiteboards/main/README.md",
+    "https://raw.githubusercontent.com/remoteintech/remote-jobs/main/README.md",
+  ];
+  const boards: DiscoveredBoard[] = [];
+  for (const url of urls) {
+    const res = await fetch(url);
+    if (!res.ok) continue;
+    boards.push(...extractBoards(await res.text()));
+  }
+  return boards;
+}
+
 /** HN also carries individual "X is hiring" job posts (YC companies).
  * Their URLs and text often point straight at hiring-system boards. */
 export async function discoverFromHackerNewsJobPosts(pages = 2): Promise<DiscoveredBoard[]> {

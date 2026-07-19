@@ -3,7 +3,21 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo } from "react";
 import { JobCard } from "@/components/JobCard";
-import { filterJobs, isEmptyFilter, parseFilter, toQueryString, type JobFilter } from "@/lib/filter";
+import {
+  EMPTY_FILTER,
+  LEVELS,
+  LEVEL_LABEL,
+  REGIONS,
+  filterJobs,
+  isEmptyFilter,
+  levelOf,
+  parseFilter,
+  regionOf,
+  toQueryString,
+  type JobFilter,
+  type Level,
+  type Region,
+} from "@/lib/filter";
 import type { Job, WorkMode } from "@/types/job";
 
 const MODES: { value: WorkMode | "all"; label: string }[] = [
@@ -12,6 +26,42 @@ const MODES: { value: WorkMode | "all"; label: string }[] = [
   { value: "hybrid", label: "Hybrid" },
   { value: "onsite", label: "On-site" },
 ];
+
+function PillGroup<T extends string>({
+  label,
+  options,
+  active,
+  onSelect,
+}: {
+  label: string;
+  options: { value: T; label: string }[];
+  active: T;
+  onSelect: (value: T) => void;
+}) {
+  return (
+    <div className="flex items-center gap-2">
+      <span className="text-xs font-semibold uppercase tracking-wide text-paper-muted">
+        {label}
+      </span>
+      <div className="flex flex-wrap gap-1 rounded-xl border border-paper-line bg-paper p-1">
+        {options.map((o) => (
+          <button
+            key={o.value}
+            type="button"
+            onClick={() => onSelect(o.value)}
+            className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+              active === o.value
+                ? "bg-accent text-night"
+                : "text-paper-muted hover:text-paper-ink"
+            }`}
+          >
+            {o.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 /**
  * The interactive jobs list: filter bar + results. Filter state lives in
@@ -24,6 +74,28 @@ export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) 
 
   const filter = useMemo(() => parseFilter(new URLSearchParams(searchParams)), [searchParams]);
   const results = useMemo(() => filterJobs(jobs, filter), [jobs, filter]);
+
+  // Only offer level/region options that actually exist in the data.
+  const levelOptions = useMemo(() => {
+    const present = new Set(jobs.map((j) => levelOf(j.title)));
+    return [
+      { value: "all" as Level | "all", label: "All" },
+      ...LEVELS.filter((l) => present.has(l)).map((l) => ({
+        value: l as Level | "all",
+        label: LEVEL_LABEL[l],
+      })),
+    ];
+  }, [jobs]);
+  const regionOptions = useMemo(() => {
+    const present = new Set(jobs.map((j) => regionOf(j.location)));
+    return [
+      { value: "all" as Region | "all", label: "All" },
+      ...REGIONS.filter((r) => present.has(r)).map((r) => ({
+        value: r as Region | "all",
+        label: r,
+      })),
+    ];
+  }, [jobs]);
 
   const apply = (next: JobFilter) => {
     router.replace(`${pathname}${toQueryString(next)}`, { scroll: false });
@@ -66,7 +138,22 @@ export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) 
           </div>
         </div>
 
-        <div className="mt-3 flex flex-wrap items-center gap-1.5">
+        <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2">
+          <PillGroup
+            label="Level"
+            options={levelOptions}
+            active={filter.level}
+            onSelect={(level) => apply({ ...filter, level })}
+          />
+          <PillGroup
+            label="Region"
+            options={regionOptions}
+            active={filter.region}
+            onSelect={(region) => apply({ ...filter, region })}
+          />
+        </div>
+
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5">
           {allTags.map((tag) => {
             const active = filter.tags.includes(tag);
             return (
@@ -85,16 +172,19 @@ export function JobBoard({ jobs, allTags }: { jobs: Job[]; allTags: string[] }) 
               </button>
             );
           })}
-          {!isEmptyFilter(filter) && (
+        </div>
+
+        {!isEmptyFilter(filter) && (
+          <div className="mt-3 text-center">
             <button
               type="button"
-              onClick={() => apply({ q: "", mode: "all", tags: [] })}
-              className="ml-auto text-xs font-semibold text-accent-soft hover:underline"
+              onClick={() => apply(EMPTY_FILTER)}
+              className="text-xs font-semibold text-accent-soft hover:underline"
             >
               Clear filters ✕
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       <p className="mt-4 text-sm text-paper-muted" role="status">

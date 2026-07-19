@@ -14,6 +14,14 @@
   --color-accent-soft: #0ea5e9;
   --color-violet: #a78bfa;
 
+  /* Light "paper" band for content sections (Space Crew-style: dark hero
+     up top, readable off-white below) */
+  --color-paper: #f5f6f8;
+  --color-paper-card: #ffffff;
+  --color-paper-line: #e2e8f0;
+  --color-paper-ink: #0f172a;
+  --color-paper-muted: #55657e;
+
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif,
     system-ui, sans-serif;

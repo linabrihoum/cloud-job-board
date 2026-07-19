@@ -9,7 +9,7 @@ const validJob: Job = {
   company: "Example Corp",
   location: "Anywhere",
   workMode: "remote",
-  tags: ["SRE", "Kubernetes"],
+  tags: ["AWS", "Kubernetes"],
   url: "https://example.com/careers/sre",
   source: "hand-picked",
   postedAt: "2026-07-18",

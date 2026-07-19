@@ -13,6 +13,10 @@ export const jobSchema = z.object({
     .regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "slug must be lowercase words joined by dashes"),
   title: z.string().min(1),
   company: z.string().min(1),
+  companyWebsite: z
+    .string()
+    .regex(/^[a-z0-9.-]+\.[a-z]{2,}$/, "companyWebsite must be a bare domain like acme.com")
+    .optional(),
   location: z.string().min(1),
   workMode: z.enum(["remote", "hybrid", "onsite"]),
   tags: z.array(z.enum(CANONICAL_TAGS)).min(1),
@@ -23,6 +27,8 @@ export const jobSchema = z.object({
     .regex(ISO_DATE, "postedAt must be an ISO date like 2026-07-18")
     .refine((d) => !Number.isNaN(Date.parse(d)), "postedAt is not a real date"),
   description: z.string().optional(),
+  employmentType: z.string().min(1).optional(),
+  salary: z.string().min(1).optional(),
 });
 
 export const jobsFileSchema = z.array(jobSchema);

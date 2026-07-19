@@ -75,14 +75,16 @@ subtasks. "Session" here means one focused working sitting.
       placeholder in `src/lib/site.ts`
 - [ ] Responsive check on real phone + laptop, not just the dev tools
 
-## 3. Search and filters (~2 sessions)
+## 3. Search and filters on the jobs page (~2 sessions)
 
 - [ ] Decide the URL shape first (e.g. `/jobs?q=sre&mode=remote&tags=aws`)
       so every filter state is a shareable link
+- [ ] Filter bar at the top of the jobs page
 - [ ] Keyword search over title, company, and tags (case-insensitive)
 - [ ] Work-mode filter (remote / hybrid / onsite)
-- [ ] Tag filter: chips built from the tags actually present in the data,
-      multi-select
+- [ ] Technology filter: chips built from the tags actually present in the
+      data (tags are concrete technologies only — AWS, Kubernetes,
+      Jenkins... — never vague role words), multi-select
 - [ ] All filters combine (AND), with a clear-all button
 - [ ] "No matches" state that suggests removing a filter
 - [ ] Tests: filter logic as pure functions, plus a component test that
@@ -142,8 +144,10 @@ subtasks. "Session" here means one focused working sitting.
 
 Roughly in priority order:
 
-1. Email job alerts — the retention feature every serious niche board has.
-   May come before full accounts (a plain signup form is enough to start).
+1. Email newsletter / job alerts — subscribers get new jobs by email (a
+   digest of what's fresh, eventually filtered to their interests). The
+   retention feature every serious niche board has. May come before full
+   accounts (a plain signup form is enough to start).
 2. User accounts and saved jobs. This is what finally justifies a database
    (for user data only — jobs stay in JSON).
 3. ~~Job detail pages~~ — done in Phase 2 (pulled forward by request).

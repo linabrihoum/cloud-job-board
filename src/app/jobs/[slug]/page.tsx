@@ -41,100 +41,107 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
     "@type": "JobPosting",
     title: job.title,
     datePosted: job.postedAt,
+    employmentType: job.employmentType,
     hiringOrganization: { "@type": "Organization", name: job.company },
     jobLocation: { "@type": "Place", address: job.location },
     directApply: true,
     url: job.url,
   };
 
+  // The one-line role facts, Space Crew style: plain details, spaced out.
+  const facts = [
+    `📍 ${job.location}`,
+    WORK_MODE_LABEL[job.workMode],
+    job.employmentType,
+    job.salary && `💰 ${job.salary}`,
+    `Posted ${formatRelativeDate(job.postedAt)}`,
+  ].filter(Boolean) as string[];
+
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <Link href="/jobs" className="text-sm font-medium text-muted transition hover:text-accent">
-        ← All roles
-      </Link>
+      <div className="mx-auto max-w-3xl px-4 pt-10 pb-12 sm:px-6">
+        <Link href="/jobs" className="text-sm font-medium text-muted transition hover:text-accent">
+          ← All roles
+        </Link>
 
-      <header className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-start">
-        <CompanyAvatar company={job.company} size="lg" />
-        <div className="min-w-0 flex-1">
-          <h1 className="font-display text-3xl font-bold leading-tight text-white">
-            {job.title}
-          </h1>
-          <p className="mt-1 text-lg text-muted">{job.company}</p>
-          <div className="mt-3 flex flex-wrap gap-2 text-xs">
-            <span className="rounded-full border border-line bg-surface px-2.5 py-1 text-muted">
-              {job.location}
-            </span>
-            <span className="rounded-full border border-line bg-surface px-2.5 py-1 text-muted">
-              {WORK_MODE_LABEL[job.workMode]}
-            </span>
-            <span className="rounded-full border border-line bg-surface px-2.5 py-1 text-muted">
-              Posted {formatRelativeDate(job.postedAt)}
-            </span>
-            <span className="rounded-full border border-accent/40 bg-accent/10 px-2.5 py-1 font-semibold text-accent">
-              ✓ Verified listing
-            </span>
+        <header className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-start">
+          <CompanyAvatar company={job.company} website={job.companyWebsite} size="lg" />
+          <div className="min-w-0 flex-1">
+            <p className="text-lg font-medium text-muted">{job.company}</p>
+            <h1 className="font-display mt-1 text-3xl font-bold leading-tight text-white">
+              {job.title}
+            </h1>
+            <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted">
+              {facts.map((fact, i) => (
+                <span key={fact} className="flex items-center gap-x-3">
+                  {i > 0 && (
+                    <span aria-hidden className="text-faint">
+                      ·
+                    </span>
+                  )}
+                  {fact}
+                </span>
+              ))}
+            </p>
           </div>
+          <a
+            href={job.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glow-accent font-display shrink-0 rounded-xl bg-accent px-5 py-2.5 text-center font-semibold text-night transition hover:bg-accent-soft"
+          >
+            Apply now →
+          </a>
+        </header>
+      </div>
+
+      <div className="bg-paper">
+        <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+          <article>
+            {job.description ? (
+              <Description text={job.description} />
+            ) : (
+              <p className="text-paper-muted">
+                Full details are on the company&apos;s posting — hit apply to
+                read everything straight from the source.
+              </p>
+            )}
+          </article>
+
+          <div className="mt-10 rounded-2xl border border-paper-line bg-paper-card p-6 text-center shadow-sm">
+            <p className="text-sm text-paper-muted">
+              Applying takes you straight to {job.company}&apos;s own posting —
+              no middlemen, no reposts.
+            </p>
+            <a
+              href={job.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-accent font-display mt-4 inline-block rounded-xl bg-accent px-8 py-3 font-semibold text-night transition hover:bg-accent-soft"
+            >
+              Apply at {job.company} →
+            </a>
+          </div>
+
+          {related.length > 0 && (
+            <section className="mt-12">
+              <h2 className="font-display mb-4 text-xl font-bold text-paper-ink">
+                Similar roles
+              </h2>
+              <div className="flex flex-col gap-3">
+                {related.map((r) => (
+                  <JobCard key={r.id} job={r} />
+                ))}
+              </div>
+            </section>
+          )}
         </div>
-        <a
-          href={job.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="glow-accent shrink-0 rounded-xl bg-accent px-5 py-2.5 text-center font-display font-semibold text-night transition hover:bg-accent-soft"
-        >
-          Apply now →
-        </a>
-      </header>
-
-      <div className="mt-4 flex flex-wrap gap-1.5">
-        {job.tags.map((tag) => (
-          <span key={tag} className="rounded-full border border-line px-2 py-0.5 text-xs text-muted">
-            {tag}
-          </span>
-        ))}
       </div>
-
-      <article className="mt-8 border-t border-line pt-8">
-        {job.description ? (
-          <Description text={job.description} />
-        ) : (
-          <p className="text-muted">
-            Full details are on the company&apos;s posting — hit apply to read
-            everything straight from the source.
-          </p>
-        )}
-      </article>
-
-      <div className="mt-10 rounded-2xl border border-line bg-surface p-6 text-center">
-        <p className="text-sm text-muted">
-          Applying takes you straight to {job.company}&apos;s own posting — no
-          middlemen, no reposts. This listing was verified against their hiring
-          system.
-        </p>
-        <a
-          href={job.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="glow-accent mt-4 inline-block rounded-xl bg-accent px-8 py-3 font-display font-semibold text-night transition hover:bg-accent-soft"
-        >
-          Apply at {job.company} →
-        </a>
-      </div>
-
-      {related.length > 0 && (
-        <section className="mt-12">
-          <h2 className="font-display mb-4 text-xl font-bold text-white">Similar roles</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {related.map((r) => (
-              <JobCard key={r.id} job={r} />
-            ))}
-          </div>
-        </section>
-      )}
     </div>
   );
 }

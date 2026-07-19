@@ -11,7 +11,7 @@ const job: Job = {
   company: "Example Corp",
   location: "Remote - US",
   workMode: "remote",
-  tags: ["SRE", "Kubernetes"],
+  tags: ["AWS", "Kubernetes"],
   url: "https://example.com/careers/sre",
   source: "hand-picked",
   postedAt: new Date().toISOString().slice(0, 10),
@@ -25,7 +25,7 @@ describe("JobCard", () => {
     expect(screen.getByText("Site Reliability Engineer")).toBeTruthy();
     expect(screen.getByText("Example Corp")).toBeTruthy();
     expect(screen.getByText("Remote - US")).toBeTruthy();
-    expect(screen.getByText("SRE")).toBeTruthy();
+    expect(screen.getByText("AWS")).toBeTruthy();
     expect(screen.getByText("Kubernetes")).toBeTruthy();
   });
 

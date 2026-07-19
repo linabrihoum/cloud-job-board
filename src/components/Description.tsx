@@ -14,7 +14,7 @@ export function Description({ text }: { text: string }) {
   const flushList = () => {
     if (list.length === 0) return;
     blocks.push(
-      <ul key={key++} className="my-3 list-disc space-y-1.5 pl-5 marker:text-accent">
+      <ul key={key++} className="my-3 list-disc space-y-1.5 pl-5 marker:text-accent-soft">
         {list.map((item, i) => (
           <li key={i}>{bold(item)}</li>
         ))}
@@ -32,7 +32,7 @@ export function Description({ text }: { text: string }) {
       if (!line) continue;
       if (line.startsWith("## ")) {
         blocks.push(
-          <h2 key={key++} className="font-display mt-8 mb-3 text-xl font-bold text-white">
+          <h2 key={key++} className="font-display mt-8 mb-3 text-xl font-bold text-paper-ink">
             {line.slice(3)}
           </h2>
         );
@@ -47,14 +47,14 @@ export function Description({ text }: { text: string }) {
   }
   flushList();
 
-  return <div className="text-ink/90">{blocks}</div>;
+  return <div className="text-paper-ink/85">{blocks}</div>;
 }
 
 /** Turns **bold** spans into <strong> elements. */
 function bold(text: string): ReactNode[] {
   return text.split(/\*\*([^*]+)\*\*/g).map((part, i) =>
     i % 2 === 1 ? (
-      <strong key={i} className="font-semibold text-white">
+      <strong key={i} className="font-semibold text-paper-ink">
         {part}
       </strong>
     ) : (

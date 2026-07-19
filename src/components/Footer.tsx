@@ -8,33 +8,36 @@ export function Footer() {
           Every listing links straight to the company&apos;s own posting and is
           verified against it. No accounts, no tracking, no paywall.
         </p>
-        <p>
-          Open source under{" "}
-          <a
-            href={`${SITE.githubUrl}/blob/main/LICENSE`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline transition hover:text-muted"
-          >
-            AGPL-3.0
-          </a>{" "}
-          ·{" "}
-          <a
-            href={SITE.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline transition hover:text-muted"
-          >
-            Contribute on GitHub
-          </a>{" "}
-          ·{" "}
-          <a
-            href={`mailto:${SITE.postJobEmail}`}
-            className="underline transition hover:text-muted"
-          >
-            Post a job
-          </a>
-        </p>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <p>
+            Open source under{" "}
+            <a
+              href={`${SITE.githubUrl}/blob/main/LICENSE`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition hover:text-muted"
+            >
+              AGPL-3.0
+            </a>{" "}
+            ·{" "}
+            <a
+              href={SITE.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition hover:text-muted"
+            >
+              Contribute on GitHub
+            </a>{" "}
+            ·{" "}
+            <a
+              href={`mailto:${SITE.postJobEmail}`}
+              className="underline transition hover:text-muted"
+            >
+              Post a job
+            </a>
+          </p>
+          <p className="ml-auto">Made by Lina Brihoum</p>
+        </div>
       </div>
     </footer>
   );

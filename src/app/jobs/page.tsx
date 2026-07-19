@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JobBoard } from "@/components/JobBoard";
+import { WaveDivider } from "@/components/WaveDivider";
 import { loadJobs, tagsInUse } from "@/lib/jobs";
 
 export function generateMetadata(): Metadata {
@@ -23,6 +24,7 @@ export default function JobsPage() {
         </p>
       </div>
 
+      <WaveDivider />
       <div className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
           <JobBoard jobs={jobs} allTags={tagsInUse(jobs)} />

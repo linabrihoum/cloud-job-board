@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { CompanyAvatar } from "@/components/CompanyAvatar";
 import { Description } from "@/components/Description";
 import { JobCard } from "@/components/JobCard";
+import { WaveDivider } from "@/components/WaveDivider";
 import { formatRelativeDate } from "@/lib/dates";
 import { getJobBySlug, loadJobs, relatedJobs } from "@/lib/jobs";
 
@@ -137,6 +138,7 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
         </header>
       </div>
 
+      <WaveDivider />
       <div className="bg-paper">
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
           <article>

@@ -19,6 +19,7 @@ export function JobCard({ job }: { job: Job }) {
   return (
     <Link
       href={`/jobs/${job.slug}`}
+      data-tilt
       className={`group flex w-full items-center gap-4 rounded-2xl border border-paper-line bg-paper-card p-4 shadow-sm transition
         duration-200 hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_8px_30px_rgba(56,189,248,0.25)]
         sm:p-5 ${stale ? "opacity-60" : ""}`}

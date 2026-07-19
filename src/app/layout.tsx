@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { Effects } from "@/components/Effects";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SITE } from "@/lib/site";
@@ -59,6 +60,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         <div className="starfield" aria-hidden />
+        <Effects />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

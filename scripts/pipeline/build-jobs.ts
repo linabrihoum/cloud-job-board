@@ -14,16 +14,20 @@ import { fileURLToPath } from "node:url";
 import { jobsFileSchema } from "@/lib/jobs";
 import { SITE } from "@/lib/site";
 import type { Job } from "@/types/job";
-import { fetchBoard, type Ats } from "./ats";
+import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats } from "./ats";
 import { discoverFromHackerNews, type DiscoveredBoard } from "./discover";
 import { htmlToMd } from "./html";
 import {
+  capPerCompany,
   dedupeJobs,
   dropStale,
   isRelevantTitle,
   mapPostingToJob,
   uniqueSlugs,
 } from "./transform";
+
+/** No single company may hold more than this many listings. */
+const MAX_PER_COMPANY = 12;
 
 interface CompanyEntry {
   name: string;
@@ -74,6 +78,7 @@ async function main() {
 
   // 2. Fetch every non-blocked board
   const sourcedJobs: Job[] = [];
+  const failedBoards = new Set<string>();
   for (const company of companies) {
     if (company.blocked) continue;
     try {
@@ -83,6 +88,16 @@ async function main() {
       }
       const relevant = board.postings.filter((p) => isRelevantTitle(p.title));
       for (const posting of relevant) {
+        // Workable/SmartRecruiters need a per-job detail call — done only
+        // for postings that survived the relevance gate.
+        if (company.ats === "workable" && posting._shortcode) {
+          posting.html = await fetchWorkableDetail(company.slug, posting._shortcode);
+        } else if (company.ats === "smartrecruiters" && posting._detailId) {
+          const detail = await fetchSmartRecruitersDetail(company.slug, posting._detailId);
+          posting.html = detail.html;
+          if (detail.url) posting.url = detail.url;
+          if (detail.employmentType) posting.employmentType = detail.employmentType;
+        }
         sourcedJobs.push(
           mapPostingToJob(posting, {
             ats: company.ats,
@@ -95,9 +110,22 @@ async function main() {
       }
       if (relevant.length) console.log(`${company.name}: ${relevant.length} relevant roles`);
     } catch {
-      // Board gone or unreachable — its previously sourced jobs simply
-      // don't come back this run, which is the verification working.
-      console.error(`fetch failed: ${company.ats}/${company.slug}`);
+      // Unreachable ≠ removed: remember the failure so this board's
+      // existing listings survive the run (they still age out via the
+      // freshness cutoff if the board stays broken).
+      failedBoards.add(`${company.ats}-${company.slug}-`);
+      console.error(`fetch failed (keeping existing listings): ${company.ats}/${company.slug}`);
+    }
+  }
+
+  // Carry over listings from boards that merely failed to respond today.
+  for (const job of existingJobs) {
+    if (job.source === "hand-picked") continue;
+    for (const prefix of failedBoards) {
+      if (job.id.startsWith(prefix)) {
+        sourcedJobs.push(job);
+        break;
+      }
     }
   }
 
@@ -118,7 +146,10 @@ async function main() {
 
   // 4. Merge, dedupe, freshness, unique slugs, sort, validate, write
   const merged = uniqueSlugs(
-    dropStale(dedupeJobs([...handPicked, ...sourcedJobs]), SITE.staleAfterDays)
+    capPerCompany(
+      dropStale(dedupeJobs([...handPicked, ...sourcedJobs]), SITE.staleAfterDays),
+      MAX_PER_COMPANY
+    )
   ).sort((a, b) => b.postedAt.localeCompare(a.postedAt));
 
   const validated = jobsFileSchema.safeParse(merged);

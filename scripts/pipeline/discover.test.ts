@@ -18,6 +18,18 @@ describe("extractBoards", () => {
     expect(boards).toContainEqual({ ats: "ashby", slug: "tinycloud" });
   });
 
+  it("finds workable and smartrecruiters board links", () => {
+    const text = `
+      https://apply.workable.com/atria-health/j/AB12CD/ and
+      https://jobs.smartrecruiters.com/Devoteam/744000138339929
+      but not https://apply.workable.com/api/v3/accounts/x/jobs
+    `;
+    const boards = extractBoards(text);
+    expect(boards).toContainEqual({ ats: "workable", slug: "atria-health" });
+    expect(boards).toContainEqual({ ats: "smartrecruiters", slug: "devoteam" });
+    expect(boards.filter((b) => b.slug === "api" || b.slug === "j")).toEqual([]);
+  });
+
   it("dedupes and skips non-slug path segments", () => {
     const text = `
       https://boards.greenhouse.io/acme https://boards.greenhouse.io/acme

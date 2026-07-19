@@ -18,11 +18,39 @@ describe("isRelevantTitle", () => {
     expect(isRelevantTitle("Cloud Infrastructure Engineer")).toBe(true);
   });
 
+  it("accepts the adjacent infra roles added by request", () => {
+    expect(isRelevantTitle("Cloud Security Engineer")).toBe(true);
+    expect(isRelevantTitle("DevSecOps Engineer")).toBe(true);
+    expect(isRelevantTitle("Observability Engineer")).toBe(true);
+    expect(isRelevantTitle("Senior Network Engineer")).toBe(true);
+    expect(isRelevantTitle("Release Engineer")).toBe(true);
+  });
+
   it("rejects unrelated roles even from tech companies", () => {
     expect(isRelevantTitle("Product Designer")).toBe(false);
     expect(isRelevantTitle("Account Executive")).toBe(false);
     expect(isRelevantTitle("Pool Technician I")).toBe(false);
     expect(isRelevantTitle("Frontend Engineer")).toBe(false);
+  });
+
+  it("rejects hardware/aerospace roles that reuse infra words", () => {
+    expect(isRelevantTitle("Lead Hardware Reliability Engineer, Electrical")).toBe(false);
+    expect(isRelevantTitle("Data & Control Systems Engineer")).toBe(false);
+    expect(isRelevantTitle("Avionics Systems Engineer")).toBe(false);
+    expect(isRelevantTitle("Specialist Solutions Architect, Radar (Fraud/Risk)")).toBe(false);
+    expect(isRelevantTitle("Equipment Reliability Engineer (Starlink)")).toBe(false);
+    expect(isRelevantTitle("Sr. Fluids Systems Engineer, Solar Cell Factory")).toBe(false);
+    expect(isRelevantTitle("Launch Reliability Engineer (Launch Pads & Recovery)")).toBe(false);
+    expect(isRelevantTitle("IT Windows Systems Engineer")).toBe(false);
+    expect(isRelevantTitle("Reliability Engineer, Facilities")).toBe(false);
+  });
+
+  it("still accepts real SRE roles at hardware companies", () => {
+    expect(isRelevantTitle("Sr. Site Reliability Engineer (Application Software)")).toBe(true);
+    expect(isRelevantTitle("Sr. Kubernetes Engineer")).toBe(true);
+    expect(isRelevantTitle("Software Engineer, DevOps (Starlink)")).toBe(true);
+    expect(isRelevantTitle("Field Reliability Engineer- LATAM")).toBe(true);
+    expect(isRelevantTitle("Sr. Database Reliability Engineer")).toBe(true);
   });
 });
 

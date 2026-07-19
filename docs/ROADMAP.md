@@ -124,6 +124,20 @@ subtasks. "Session" here means one focused working sitting.
 - [x] Scheduled GitHub Action, daily at 12:00 UTC (~8am ET): refresh,
       validate (lint + tests + build inside the workflow), and auto-merge —
       the documented bot exception in DECISIONS.md
+- [x] Source expansion (post-launch of the pipeline)
+  - [x] Workable and SmartRecruiters fetchers — two more hiring systems
+        with public APIs and direct company-board URLs
+  - [x] Discovery recognizes Workable/SmartRecruiters links too
+  - [x] YC-directory probe script (`scripts/pipeline/probe-companies.ts`)
+        — checks public company lists for boards on all five systems;
+        only registers boards with relevant open roles
+  - [x] Relevance gate v2: adjacent roles added (cloud security,
+        DevSecOps, observability, network, release) plus a negative
+        filter for hardware/aerospace/manufacturing titles that reuse
+        infra words (tuned against SpaceX's board)
+  - [x] Per-company cap (12) so no employer floods the board
+  - [x] Transient fetch failures keep yesterday's listings (unreachable ≠
+        removed); genuinely removed postings still vanish next morning
 
 ## 5. Launch (~1–2 sessions)
 
@@ -155,3 +169,8 @@ Roughly in priority order:
 6. Company profile pages.
 7. Category landing pages (Cloud, SRE, DevOps, Platform).
 8. Blog/industry content for credibility.
+9. More job sources: USAJobs API (federal cloud/DevSecOps roles; applying
+   on USAJobs is the official path), CNCF-landscape company probing, and
+   community submissions via a GitHub issue template.
+10. Probe-progress persistence so repeated `probe-companies` runs continue
+    through the directory instead of rechecking the same names.

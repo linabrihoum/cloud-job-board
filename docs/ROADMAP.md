@@ -6,21 +6,27 @@ subtasks. "Session" here means one focused working sitting.
 
 ## Next session
 
-**Where we left off (2026-07-19):** Phases 0–4 done and the board is well
-past 250 verified listings. Sources: Greenhouse, Lever, Ashby, Workable,
-SmartRecruiters, Workday, Amazon, Netflix, USAJobs (key-gated), plus
-discovery (HN threads + job posts, GitHub lists) and directory probing
-(YC, CNCF, HWW, remote-jobs) with a persistent cursor. The daily pipeline
-fetches concurrently, auto-blocks dead boards, and auto-merges at ~8am ET.
+**Where we left off (2026-07-20):** Phases 0–4 done; the live board holds
+**342 verified listings across 222 boards**. Sources: Greenhouse, Lever,
+Ashby, Workable, SmartRecruiters, Workday, Amazon, Netflix, USAJobs
+(key-gated), plus discovery (HN threads + job posts, GitHub lists) and
+directory probing (YC, CNCF, HWW, remote-jobs) with a persistent cursor.
+The daily pipeline fetches concurrently, auto-blocks dead boards, verifies
+liveness, and auto-merges at ~8am ET. SEO foundation, the cosmic design
+pass, and company-logo resolution are all shipped.
 
 **Start next time with:**
-1. Phase 5 — Launch: cookie-free analytics, real domain (swap `SITE.url`
-   then submit the sitemap in Search Console), Lighthouse, announce.
-2. Standing personal TODOs: buy the domain, add the USAJobs API key as repo
-   secrets when it arrives, load the live site on a phone, and re-enable
-   required PR reviews before making the repo public.
-3. Optional further growth: see the source-expansion recommendation in the
-   "Later" list.
+1. Phase 5 — Launch: cookie-free analytics, then the real domain (buy it →
+   swap `SITE.url` → connect in Vercel → submit sitemap in Google Search
+   Console), Lighthouse pass, announce (CNCF Slack #jobs, r/devops).
+2. Standing personal TODOs (no code needed from Claude): buy the domain,
+   add USAJOBS_EMAIL/USAJOBS_API_KEY as repo secrets when the key arrives,
+   load the live site on a phone, re-enable required PR reviews before going
+   public.
+3. Optional growth toward 1,000+: the source-expansion recommendation in
+   the "Later" list (aggregator-feeds-as-discovery is the cheap next step).
+4. A blog post about building this lives at `../building-cloud-job-board.mdx`
+   (outside the repo) for Lina's portfolio, whenever she wants it.
 
 ## 0. Setup (~1 session)
 

@@ -667,7 +667,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1072,7 +1072,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Seeq",
@@ -1080,7 +1080,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Akeno",
@@ -1089,7 +1089,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Airship",
@@ -1294,7 +1294,8 @@
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Yassi",
@@ -1302,7 +1303,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "deducta",
@@ -1747,7 +1748,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Bayutdubizzle",
@@ -1755,7 +1756,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Mytutor",
@@ -1763,7 +1764,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "wallapop",
@@ -1884,6 +1885,69 @@
     "ats": "workday",
     "slug": "23andme:wd5:23",
     "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Black Duck Software, Inc.",
+    "website": "synopsys.com",
+    "ats": "greenhouse",
+    "slug": "blackduck",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Applied",
+    "website": "beapplied.com",
+    "ats": "ashby",
+    "slug": "applied",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "ASOS",
+    "website": "asoscareers.com",
+    "ats": "smartrecruiters",
+    "slug": "asos",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Backbase",
+    "website": "workatbackbase.com",
+    "ats": "greenhouse",
+    "slug": "workatbackbase",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Betterment",
+    "website": "betterment.com",
+    "ats": "greenhouse",
+    "slug": "betterment",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Bitpanda",
+    "website": "bitpanda.com",
+    "ats": "greenhouse",
+    "slug": "bitpanda",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Bitso",
+    "website": "bitso.com",
+    "ats": "greenhouse",
+    "slug": "bitso",
+    "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
     "failCount": 0
   }

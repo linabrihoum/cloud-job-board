@@ -10,13 +10,19 @@ export interface DiscoveredBoard {
   slug: string;
 }
 
-const BOARD_PATTERNS: { ats: Ats; re: RegExp }[] = [
+const BOARD_PATTERNS: { ats: Ats; re: RegExp; build?: (m: RegExpMatchArray) => string }[] = [
   { ats: "greenhouse", re: /(?:boards|job-boards)(?:\.eu)?\.greenhouse\.io\/([A-Za-z0-9_-]+)/g },
   { ats: "greenhouse", re: /greenhouse\.io\/embed\/job_board\?[^"'\s]*for=([A-Za-z0-9_-]+)/g },
   { ats: "lever", re: /jobs(?:\.eu)?\.lever\.co\/([A-Za-z0-9_-]+)/g },
   { ats: "ashby", re: /jobs\.ashbyhq\.com\/([A-Za-z0-9_.-]+)/g },
   { ats: "workable", re: /apply\.workable\.com\/(?:api\/[^\s"']+\/)?([A-Za-z0-9_-]+)/g },
   { ats: "smartrecruiters", re: /(?:jobs|careers)\.smartrecruiters\.com\/([A-Za-z0-9_-]+)/g },
+  {
+    // Workday: tenant.host.myworkdayjobs.com/[locale/]Site — composite slug
+    ats: "workday",
+    re: /([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com\/(?:[a-z]{2}-[A-Z]{2}\/)?([A-Za-z0-9_-]+)/g,
+    build: (m) => `${m[1].toLowerCase()}:${m[2].toLowerCase()}:${m[3]}`,
+  },
 ];
 
 /** Pull board references out of arbitrary text/HTML. Pure — testable.
@@ -25,9 +31,9 @@ const BOARD_PATTERNS: { ats: Ats; re: RegExp }[] = [
 export function extractBoards(text: string): DiscoveredBoard[] {
   const decoded = text.replace(/&#x2F;/gi, "/").replace(/&amp;/g, "&");
   const found = new Map<string, DiscoveredBoard>();
-  for (const { ats, re } of BOARD_PATTERNS) {
+  for (const { ats, re, build } of BOARD_PATTERNS) {
     for (const match of decoded.matchAll(re)) {
-      const slug = decodeURIComponent(match[1]).toLowerCase();
+      const slug = build ? build(match) : decodeURIComponent(match[1]).toLowerCase();
       // Path segments that aren't board slugs
       if (["jobs", "embed", "job", "careers", "api", "j", "widget"].includes(slug)) continue;
       found.set(`${ats}:${slug}`, { ats, slug });

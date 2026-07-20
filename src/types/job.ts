@@ -9,6 +9,7 @@ export type JobSource =
   | "ashby"
   | "workable"
   | "smartrecruiters"
+  | "workday"
   | "usajobs"
   | "amazon"
   | "netflix";

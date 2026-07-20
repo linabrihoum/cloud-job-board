@@ -1,7 +1,14 @@
-/** Fetchers for the three supported hiring systems. Each returns the
- * company's live postings in one normalized raw shape. */
+/** Fetchers for the supported hiring systems (Greenhouse, Lever, Ashby,
+ * Workable, SmartRecruiters, Workday). Each returns the company's live
+ * postings in one normalized raw shape. */
 
-export type Ats = "greenhouse" | "lever" | "ashby" | "workable" | "smartrecruiters";
+export type Ats =
+  | "greenhouse"
+  | "lever"
+  | "ashby"
+  | "workable"
+  | "smartrecruiters"
+  | "workday";
 
 export interface RawPosting {
   /** Direct URL of the posting on the company's own board. */
@@ -18,7 +25,31 @@ export interface RawPosting {
   _shortcode?: string;
   /** SmartRecruiters: posting id for the per-job detail fetch. */
   _detailId?: string;
+  /** Workday: externalPath (e.g. "/job/RI/Foo_R012") for the detail fetch. */
+  _workdayPath?: string;
 }
+
+/** Workday tenants are identified by tenant + host + site, encoded in the
+ * registry slug as "tenant:host:site" (e.g. "cvshealth:wd1:CVS_Health_Careers"). */
+export function parseWorkdaySlug(slug: string): { tenant: string; host: string; site: string } | null {
+  const [tenant, host, site] = slug.split(":");
+  return tenant && host && site ? { tenant, host, site } : null;
+}
+
+/** Turn Workday's relative "Posted N Days Ago" text into an ISO date. Used
+ * as a fallback; the detail fetch supplies a precise startDate. */
+export function parseWorkdayPostedOn(text: string, now: Date = new Date()): string {
+  const t = (text ?? "").toLowerCase();
+  let daysAgo = 0;
+  if (/yesterday/.test(t)) daysAgo = 1;
+  else {
+    const m = t.match(/(\d+)\+?\s*days?\s*ago/);
+    if (m) daysAgo = Number(m[1]);
+  }
+  return new Date(now.getTime() - daysAgo * 86400000).toISOString().slice(0, 10);
+}
+
+const WORKDAY_KEYWORDS = ["devops", "site reliability", "cloud engineer", "platform engineer", "kubernetes"];
 
 export interface Board {
   /** Company display name, best-effort. */
@@ -144,6 +175,40 @@ export async function fetchBoard(ats: Ats, slug: string): Promise<Board> {
     };
   }
 
+  if (ats === "workday") {
+    // Tenant career-site search API; per-job detail (fetched later, only
+    // for relevant titles). Search a keyword set and dedupe by req id.
+    const parts = parseWorkdaySlug(slug);
+    if (!parts) throw new Error(`bad workday slug: ${slug}`);
+    const { tenant, host, site } = parts;
+    const base = `https://${tenant}.${host}.myworkdayjobs.com/wday/cxs/${tenant}/${site}`;
+    const byPath = new Map<string, RawPosting>();
+    for (const keyword of WORKDAY_KEYWORDS) {
+      const data = (await fetchJsonRetry(
+        `${base}/jobs`,
+        {
+          method: "POST",
+          headers: { "content-type": "application/json", accept: "application/json", "user-agent": "Mozilla/5.0 (compatible; cloud-job-board)" },
+          body: JSON.stringify({ appliedFacets: {}, limit: 20, offset: 0, searchText: keyword }),
+        },
+        8000
+      )) as any;
+      for (const j of data.jobPostings ?? []) {
+        if (!j.externalPath || byPath.has(j.externalPath)) continue;
+        byPath.set(j.externalPath, {
+          url: `https://${tenant}.${host}.myworkdayjobs.com/${site}${j.externalPath}`,
+          title: j.title ?? "",
+          location: j.locationsText ?? "",
+          postedAt: parseWorkdayPostedOn(j.postedOn ?? ""),
+          html: "", // filled by fetchWorkdayDetail for kept jobs
+          employmentType: /full/i.test(j.timeType ?? "") ? "Full-time" : undefined,
+          _workdayPath: j.externalPath,
+        });
+      }
+    }
+    return { name: prettifySlug(tenant), postings: [...byPath.values()] };
+  }
+
   // smartrecruiters: list + per-posting detail (only for relevant titles)
   const data = (await get(`https://api.smartrecruiters.com/v1/companies/${slug}/postings?limit=100`)) as any;
   const name = String(data.content?.[0]?.company?.name ?? prettifySlug(slug)).trim();
@@ -191,6 +256,35 @@ export async function fetchSmartRecruitersDetail(
       })
       .join("");
     return { html, url: j.postingUrl, employmentType: j.typeOfEmployment?.label };
+  } catch {
+    return { html: "" };
+  }
+}
+
+/** Detail fetch for a kept Workday job: description HTML, canonical apply
+ * URL, precise start date, employment type, and remote flag. */
+export async function fetchWorkdayDetail(
+  slug: string,
+  externalPath: string
+): Promise<{ html: string; url?: string; postedAt?: string; employmentType?: string; remote?: boolean }> {
+  const parts = parseWorkdaySlug(slug);
+  if (!parts) return { html: "" };
+  const { tenant, host, site } = parts;
+  try {
+    // externalPath already begins with "/job/...", so append it directly —
+    // adding another "/job" produces "/job/job/..." which Workday 406s.
+    const j = (await fetchJsonRetry(
+      `https://${tenant}.${host}.myworkdayjobs.com/wday/cxs/${tenant}/${site}${externalPath}`,
+      { headers: { accept: "application/json", "user-agent": "Mozilla/5.0 (compatible; cloud-job-board)" } }
+    )) as any;
+    const info = j.jobPostingInfo ?? {};
+    return {
+      html: info.jobDescription ?? "",
+      url: info.externalUrl,
+      postedAt: info.startDate ? String(info.startDate).slice(0, 10) : undefined,
+      employmentType: /full/i.test(info.timeType ?? "") ? "Full-time" : undefined,
+      remote: /remote/i.test(info.remoteType ?? ""),
+    };
   } catch {
     return { html: "" };
   }

@@ -15,7 +15,13 @@ import { jobsFileSchema } from "@/lib/jobs";
 import { detectTags } from "@/lib/tags";
 import { SITE } from "@/lib/site";
 import type { Job } from "@/types/job";
-import { fetchBoard, fetchSmartRecruitersDetail, fetchWorkableDetail, type Ats } from "./ats";
+import {
+  fetchBoard,
+  fetchSmartRecruitersDetail,
+  fetchWorkableDetail,
+  fetchWorkdayDetail,
+  type Ats,
+} from "./ats";
 import { GIANTS } from "./giants";
 import { guessWebsite, mineWebsiteFromHtml } from "./logos";
 import { fetchUsaJobs } from "./usajobs";
@@ -38,6 +44,11 @@ import { mapPool } from "./util";
 
 /** No single company may hold more than this many listings. */
 const MAX_PER_COMPANY = 12;
+
+/** Detail is fetched only for the newest N relevant roles per board —
+ * comfortably above MAX_PER_COMPANY to survive dedup/staleness drops,
+ * while avoiding dozens of wasted calls and per-host throttling. */
+const DETAIL_FETCH_CAP = 20;
 
 /** Source-verified listings (re-confirmed live on the company's system
  * every run) may stay this long; the UI mutes them visually after
@@ -122,7 +133,14 @@ async function main() {
         if (company.discoveredVia !== "seed" && board.name && company.name === company.slug) {
           company.name = board.name;
         }
-        const relevant = board.postings.filter((p) => isRelevantTitle(p.title));
+        // Newest first, then cap before the per-job detail fetch: no board
+        // may hold more than MAX_PER_COMPANY listings anyway, and fetching
+        // detail for dozens only to discard most both wastes calls and
+        // trips per-host throttling (Workday especially).
+        const relevant = board.postings
+          .filter((p) => isRelevantTitle(p.title))
+          .sort((a, b) => b.postedAt.localeCompare(a.postedAt))
+          .slice(0, DETAIL_FETCH_CAP);
 
         // Companies without a recorded website get initials instead of a
         // logo — mine their own description links for it.
@@ -147,6 +165,13 @@ async function main() {
             posting.html = detail.html;
             if (detail.url) posting.url = detail.url;
             if (detail.employmentType) posting.employmentType = detail.employmentType;
+          } else if (company.ats === "workday" && posting._workdayPath) {
+            const detail = await fetchWorkdayDetail(company.slug, posting._workdayPath);
+            posting.html = detail.html;
+            if (detail.url) posting.url = detail.url;
+            if (detail.postedAt) posting.postedAt = detail.postedAt;
+            if (detail.employmentType) posting.employmentType = detail.employmentType;
+            if (detail.remote) posting.location = `${posting.location} · Remote`;
           }
           sourcedJobs.push(
             mapPostingToJob(posting, {

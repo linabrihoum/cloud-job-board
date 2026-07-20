@@ -159,7 +159,8 @@
     "slug": "signifyd",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Equip Health",
@@ -666,7 +667,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 0
   },
   {
     "name": "Longshot Systems Ltd",
@@ -674,7 +675,8 @@
     "slug": "longshot-systems-ltd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "PlanetScale",
@@ -758,7 +760,8 @@
     "slug": "blackshark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Ridezum",
@@ -808,7 +811,8 @@
     "slug": "upmetrics",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "aavelabs",
@@ -816,7 +820,8 @@
     "slug": "aavelabs",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Safi",
@@ -1016,7 +1021,8 @@
     "slug": "wand",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Stream",
@@ -1041,7 +1047,8 @@
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Eagle",
@@ -1065,7 +1072,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 0
   },
   {
     "name": "Seeq",
@@ -1073,7 +1080,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 0
   },
   {
     "name": "Akeno",
@@ -1082,7 +1089,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 2
+    "failCount": 0
   },
   {
     "name": "Airship",
@@ -1287,15 +1294,15 @@
     "slug": "vvd",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 6
   },
   {
-    "name": "yassi",
+    "name": "Yassi",
     "ats": "workable",
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 0
   },
   {
     "name": "deducta",
@@ -1303,7 +1310,8 @@
     "slug": "deducta",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Sectigo",
@@ -1338,7 +1346,8 @@
     "slug": "ttiinc",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "HumanSignal",
@@ -1363,7 +1372,8 @@
     "slug": "redpandadata",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Adyen",
@@ -1477,7 +1487,8 @@
     "slug": "honey",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Supabase",
@@ -1550,7 +1561,8 @@
     "slug": "curie",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "revelare-networks",
@@ -1558,7 +1570,8 @@
     "slug": "revelare-networks",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Artie",
@@ -1631,7 +1644,8 @@
     "slug": "maihem",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Photoroom",
@@ -1724,31 +1738,32 @@
     "slug": "bdg",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
   },
   {
-    "name": "broadlume",
+    "name": "Broadlume",
     "ats": "workable",
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 0
   },
   {
-    "name": "bayutdubizzle",
+    "name": "Bayutdubizzle",
     "ats": "workable",
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 0
   },
   {
-    "name": "mytutor",
+    "name": "Mytutor",
     "ats": "workable",
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 0
   },
   {
     "name": "wallapop",
@@ -1756,6 +1771,120 @@
     "slug": "wallapop",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 7,
+    "blocked": true
+  },
+  {
+    "name": "NVIDIA",
+    "website": "nvidia.com",
+    "ats": "workday",
+    "slug": "nvidia:wd5:NVIDIAExternalCareerSite",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Salesforce",
+    "website": "salesforce.com",
+    "ats": "workday",
+    "slug": "salesforce:wd12:External_Career_Site",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "CVS Health",
+    "website": "cvshealth.com",
+    "ats": "workday",
+    "slug": "cvshealth:wd1:CVS_Health_Careers",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Adobe",
+    "website": "adobe.com",
+    "ats": "workday",
+    "slug": "adobe:wd5:external_experienced",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Dell Technologies",
+    "website": "dell.com",
+    "ats": "workday",
+    "slug": "dell:wd1:External",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Capital One",
+    "website": "capitalone.com",
+    "ats": "workday",
+    "slug": "capitalone:wd12:Capital_One",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Mastercard",
+    "website": "mastercard.com",
+    "ats": "workday",
+    "slug": "mastercard:wd1:CorporateCareers",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Red Hat",
+    "website": "redhat.com",
+    "ats": "workday",
+    "slug": "redhat:wd5:jobs",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Workday",
+    "website": "workday.com",
+    "ats": "workday",
+    "slug": "workday:wd5:Workday",
+    "discoveredVia": "seed",
+    "addedAt": "2026-07-19",
+    "failCount": 0
+  },
+  {
+    "name": "Wmeimg",
+    "ats": "workday",
+    "slug": "wmeimg:wd1:WMEGRP",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Vertexinc",
+    "ats": "workday",
+    "slug": "vertexinc:wd1:VertexInc",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Workwear",
+    "ats": "workday",
+    "slug": "workwear:wd503:Careers",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "23andme",
+    "ats": "workday",
+    "slug": "23andme:wd5:23",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-07-20",
+    "failCount": 0
   }
 ]

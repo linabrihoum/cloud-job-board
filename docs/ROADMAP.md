@@ -6,19 +6,21 @@ subtasks. "Session" here means one focused working sitting.
 
 ## Next session
 
-**Where we left off (2026-07-19):** Phases 0–4 are done. The board is live
-with 134 verified listings across 41 companies, and the daily pipeline
-(discovery → five hiring-system APIs → validate → auto-merge) runs at
-~8am ET. Its first unattended run is the morning of 2026-07-20.
+**Where we left off (2026-07-19):** Phases 0–4 done and the board is well
+past 250 verified listings. Sources: Greenhouse, Lever, Ashby, Workable,
+SmartRecruiters, Workday, Amazon, Netflix, USAJobs (key-gated), plus
+discovery (HN threads + job posts, GitHub lists) and directory probing
+(YC, CNCF, HWW, remote-jobs) with a persistent cursor. The daily pipeline
+fetches concurrently, auto-blocks dead boards, and auto-merges at ~8am ET.
 
 **Start next time with:**
-1. Check the first unattended pipeline run: repo → Actions → "Daily job
-   refresh" (and whether the two rate-limited Workable boards populated).
-2. Phase 5 — Launch: SEO basics, cookie-free analytics, real domain,
-   Lighthouse, announce.
-3. Standing personal TODOs: create the dedicated post-a-job email (replace
-   the placeholder in `src/lib/site.ts`), load the live site on a phone,
-   and re-enable required PR reviews before making the repo public.
+1. Phase 5 — Launch: cookie-free analytics, real domain (swap `SITE.url`
+   then submit the sitemap in Search Console), Lighthouse, announce.
+2. Standing personal TODOs: buy the domain, add the USAJobs API key as repo
+   secrets when it arrives, load the live site on a phone, and re-enable
+   required PR reviews before making the repo public.
+3. Optional further growth: see the source-expansion recommendation in the
+   "Later" list.
 
 ## 0. Setup (~1 session)
 
@@ -200,11 +202,35 @@ Roughly in priority order:
 9. More job sources: ~~USAJobs API~~ (done — key-gated; register at
    developer.usajobs.gov and add USAJOBS_EMAIL/USAJOBS_API_KEY as repo
    secrets to switch it on), ~~CNCF-landscape probing~~ (done),
-   ~~Amazon/Netflix career portals~~ (done), European ATSes
-   (Recruitee/Teamtailor/Personio), and community submissions via a GitHub
-   issue template. Blocked for now: Microsoft (their careers API host no
+   ~~Amazon/Netflix career portals~~ (done), ~~Workday~~ (done — unlocks
+   enterprise employers via their public candidate JSON endpoints), and
+   community submissions via a GitHub issue template.
+
+   **Source-expansion recommendation (2026-07-19), remaining order:**
+   1. ~~Workday fetcher~~ — done. Biggest legitimate unlock (enterprises on
+      Workday: banks, insurers, telecom, Fortune 500 IT). Seeded with
+      verified cloud-heavy tenants; discovery recognizes myworkdayjobs links.
+   2. Aggregator feeds as *discovery only* — use RemoteOK/Remotive purely
+      as a source of company names for the board-prober, never republishing
+      their listings or linking to them. Honors their terms and the
+      direct-apply rule; adds startup coverage cheaply.
+   3. Careers-page JSON-LD reader (candidate for its own repo) — a small,
+      general "careers page → JSON" service that reads the JobPosting
+      structured data companies publish for Google Jobs, respecting
+      robots.txt and rate limits. This is the *legitimate* version of a
+      "scraper API": indexing published machine-readable data, not
+      defeating anti-bot walls. Unlocks companies on custom/unsupported
+      portals.
+   4. European ATSes (Recruitee/Teamtailor/Personio) — each ~50-line
+      fetcher on the existing pattern.
+
+   **Explicitly rejected:** scraping LinkedIn / Indeed / Glassdoor or
+   building anything to circumvent anti-bot measures. Their terms prohibit
+   it, it invites the JobFunnel breakage treadmill, and their listings are
+   reposts without the company's original apply URL anyway — low payoff,
+   high risk. A human browsing those sites and hand-adding a verified
+   listing is always fine. Also blocked: Microsoft (careers API host no
    longer resolves) and Google (public careers API retired) — both would
-   require scraping their web apps, which this project doesn't do; revisit
-   if either exposes a JSON endpoint again.
+   need web-app scraping; revisit only if either re-exposes JSON.
 10. Probe-progress persistence so repeated `probe-companies` runs continue
     through the directory instead of rechecking the same names.

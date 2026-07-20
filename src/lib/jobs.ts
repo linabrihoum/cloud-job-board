@@ -28,6 +28,7 @@ export const jobSchema = z.object({
     "ashby",
     "workable",
     "smartrecruiters",
+    "workday",
     "usajobs",
     "amazon",
     "netflix",

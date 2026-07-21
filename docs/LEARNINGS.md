@@ -4,6 +4,19 @@ Mistakes, gotchas, and surprises from building this project — written down
 so we don't repeat them. Add an entry whenever something cost real time or
 changed our approach.
 
+## 2026-07-20 — A manual test can hide a bug the code path has
+
+Workday listings came back with no descriptions (1 of 86). I'd verified the
+detail endpoint by hand and it worked, so I first blamed rate-limiting and
+added retry/backoff — wasted effort. The real bug: Workday's `externalPath`
+already begins with `/job/...`, and the fetcher prepended another `/job`,
+producing `/job/job/...` which Workday 406s. My hand-typed probe had used a
+single `/job/`, so it never exercised the buggy construction. Lesson: when a
+manual test passes but the pipeline fails, test through the *actual code
+path* (call the real function) before theorizing about the network — and be
+suspicious of a "throttling" theory that produces a suspiciously round
+failure count like 85/86.
+
 ## 2026-07-19 — GitHub Actions can't open PRs until a repo setting allows it
 
 The pipeline's first unattended run did everything right — discovered

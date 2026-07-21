@@ -10,7 +10,8 @@ rejected and why.
 | Language | TypeScript | 5.x |
 | Styling | Tailwind CSS | 4.x |
 | Job data | JSON file in the repo (`src/data/jobs.json`) | — |
-| Job sourcing | Company hiring-system APIs (Greenhouse, Lever, Ashby, Workable, SmartRecruiters) + USAJobs (federal, key-gated) + discovery (HN, YC probing) + hand-picking | — |
+| Job sourcing | Hiring-system APIs (Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Workday) + career portals (Amazon, Netflix) + USAJobs (key-gated) + discovery (HN, GitHub lists) + directory probing (YC, CNCF, HWW, remote-jobs) + hand-picking | — |
+| Pipeline runtime | tsx (TypeScript scripts), jsdom (HTML→text) | — |
 | Hosting | Vercel (free Hobby tier) | — |
 | CI | GitHub Actions (lint + build, tests when they exist) | — |
 | Tests | Vitest + React Testing Library | added Phase 1 |
@@ -40,18 +41,21 @@ scales to a few thousand jobs. The trigger for adding a database is **user
 accounts** (post-MVP); even then the database holds only user data — jobs
 can stay in JSON. Nothing built now gets thrown away.
 
-**Company ATS APIs, not scraping or aggregator feeds.** The earliest plan
-used JobFunnel to scrape Indeed/Glassdoor — rejected because those sites
-actively block scrapers. Aggregator feeds (RemoteOK, We Work Remotely,
-Remotive) were considered next, but their terms require linking back to
-their own listing pages, which conflicts with the rule that "Apply" always
-lands on the company's posting. Instead: most tech companies run hiring on
-Greenhouse, Lever, Ashby, Workable, or SmartRecruiters — all five expose
-free public APIs of each company's live jobs. The registry of boards grows
-itself (links mined from HN "Who is hiring?" threads, plus probing public
-company directories like YC's), and jobs are always pulled from the
-company's own system — direct company URLs, inherently real and current —
-plus hand-picked listings from career pages.
+**Company hiring-system APIs, not scraping or aggregator feeds.** The
+earliest plan used JobFunnel to scrape Indeed/Glassdoor — rejected because
+those sites actively block scrapers. Aggregator feeds (RemoteOK, We Work
+Remotely, Remotive) were considered next, but their terms require linking
+back to their own listing pages, which conflicts with the rule that "Apply"
+always lands on the company's posting. Instead, jobs come from public JSON
+endpoints the companies publish themselves: six hiring systems (Greenhouse,
+Lever, Ashby, Workable, SmartRecruiters, Workday — Workday unlocks large
+enterprises), the Amazon and Netflix career portals, and USAJobs for
+federal roles. The registry of boards grows itself — links mined from HN
+"Who is hiring?" threads and GitHub company lists, plus probing public
+company directories (YC, CNCF, Hiring Without Whiteboards, remote-jobs) with
+a persistent cursor. Every listing is pulled from the company's own system,
+so URLs are direct and inherently current. LinkedIn/Indeed scraping and any
+anti-bot circumvention are explicitly rejected (see DECISIONS.md).
 
 **Vercel.** Made by the Next.js team, so deploys are near-zero-config: push
 to GitHub and the site updates; every PR gets its own preview URL. Free

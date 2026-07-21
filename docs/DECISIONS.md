@@ -4,6 +4,44 @@ Big decisions, why we made them, and what we said no to. Newest at the top.
 
 ---
 
+## 2026-07-20 — Grow only through published data; never scrape LinkedIn/Indeed
+
+**Decision:** Every new source must be a public endpoint a company or
+platform publishes for machine consumption. In priority order, the growth
+path is: (1) more hiring-system APIs — Workday is done and unlocked
+enterprises; (2) aggregator feeds used as *discovery only* (a source of
+company names for the board-prober, never republishing their listings);
+(3) a careers-page JSON-LD reader (its own repo) that reads the JobPosting
+structured data companies publish for Google Jobs, respecting robots.txt;
+(4) European ATSes (Recruitee/Teamtailor/Personio).
+
+**Why:** It keeps the pipeline stable (published data doesn't fight back),
+honors every source's terms, and preserves the direct-apply rule.
+
+**Rejected — firmly:** scraping LinkedIn, Indeed, or Glassdoor, or building
+anything to defeat anti-bot measures. Their terms prohibit it, it invites
+the JobFunnel breakage treadmill, and their listings are reposts without
+the company's original apply URL anyway — high risk, low payoff. (A human
+browsing those sites and hand-adding a verified listing is always fine.)
+Also blocked for now: Microsoft (careers API host no longer resolves) and
+Google (public careers API retired) — both would need web-app scraping.
+
+---
+
+## 2026-07-19 — Amazon/Netflix custom fetchers; Microsoft/Google left out
+
+**Decision:** Added fetchers for Amazon (amazon.jobs) and Netflix
+(Eightfold) — giants that run their own career portals with public JSON.
+Microsoft and Google were attempted but left out (see the entry above).
+
+**Why:** Marquee names are both volume and credibility for "the board cloud
+pros turn to," and both expose public JSON that links to the official
+posting.
+
+**Rejected:** scraping the two whose APIs are gone.
+
+---
+
 ## 2026-07-19 — Freshness means "live", not "young": 90-day window for verified listings
 
 **Decision:** Listings re-confirmed live on the company's own system every

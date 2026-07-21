@@ -8,20 +8,27 @@ time. There is no database, no server code, and no user data.
 ```
   Job sources                        GitHub repo                     Visitors
   ───────────                        ───────────                     ────────
-  Discovery (HN threads,  ┐
-  YC-directory probing)   │
-        │                 ├─► daily pipeline ─► src/data/jobs.json
-        ▼                 │   (8am ET, auto-       │
-  Company hiring systems: │    merged when         │
-  Greenhouse, Lever,      │    validation passes)  │
-  Ashby, Workable,        ┘                        │
-  SmartRecruiters APIs                             │
-  Hand-picked jobs ──────── edited directly ───────┤
+  Discovery (HN threads +   ┐
+  job posts, GitHub lists)  │
+  Directory probing (YC,    │
+  CNCF, HWW, remote-jobs;   ├─► daily pipeline ─► src/data/jobs.json
+  persistent cursor)        │   (8am ET: fetch      │
+        │                   │    concurrently,      │
+        ▼                   │    verify, dedupe,    │
+  Hiring systems: Greenhouse,│   validate, auto-    │
+  Lever, Ashby, Workable,   │    merge)             │
+  SmartRecruiters, Workday  │                       │
+  Career portals: Amazon,   │                       │
+  Netflix                   │                       │
+  USAJobs (federal,         │                       │
+  key-gated)                ┘                       │
+  Hand-picked jobs ──────── edited directly ────────┤
                                                ▼
-                                     Next.js build (on push)
+                                     Next.js build (SSG on push)
                                                │
                                                ▼
-                                     static HTML/CSS/JS
+                                  static HTML/CSS/JS + sitemap,
+                                  robots, JobPosting structured data
                                                │
                                                ▼
                                      Vercel CDN ────────────────► phone/desktop
@@ -45,17 +52,21 @@ time. There is no database, no server code, and no user data.
 | Components | `src/components/` | Reusable UI (JobCard, filters, header...) |
 | Job data | `src/data/jobs.json` | The single source of truth for listings |
 | Types | `src/types/` | The `Job` TypeScript shape — defined once, used everywhere |
-| Data loading | `src/lib/` | Reads + validates jobs.json at build time |
-| Pipeline | `scripts/pipeline/` | Discover boards (HN threads, YC probing), pull live jobs from five hiring-system APIs, title-filter with a hardware/aerospace negative gate, dedupe, cap per company, drop stale, verify, merge into jobs.json — daily at ~8am ET |
-| Company registry | `src/data/companies.json` | Self-growing list of known boards (discovery adds entries; `blocked` flag excludes bad ones) |
-| CI | `.github/workflows/` | Lint + build (+ tests) on every PR |
+| Data loading | `src/lib/` | Reads + validates jobs.json at build time; filter logic; date/site helpers |
+| Pipeline | `scripts/pipeline/` | Discovery, directory probing, six hiring systems + Amazon/Netflix/USAJobs fetchers, title relevance gate (with a hardware/aerospace negative filter), concurrent fetch, dedupe, per-company cap, freshness cutoff, company-website resolution for logos, auto-block, validate, merge — daily at ~8am ET |
+| Company registry | `src/data/companies.json` | Self-growing list of known boards + a `probe-state.json` cursor; discovery/probing add entries, `blocked`/`failCount` prune dead ones |
+| SEO | `src/app/sitemap.ts`, `robots.ts`, per-page metadata, JobPosting JSON-LD | Server-rendered listings, sitemap of every job page, structured data for Google Jobs |
+| Motion | `src/components/Effects.tsx`, `globals.css` | Parallax starfield, scroll reveals, counters, shooting stars — CSS-driven, ~0.1 kB JS, off under `prefers-reduced-motion` |
+| CI | `.github/workflows/` | `ci.yml` (lint + tests + build on every PR); `update-jobs.yml` (the daily refresh, self-validating auto-merge) |
 
 ## Search and filters without a server
 
-The full job list is small enough to ship to the browser. Search and
-filtering (keyword, remote/location, tags) happen client-side in React —
-instant results, no API needed. If the list ever grows past a few thousand
-jobs, revisit this.
+The full job list is server-rendered into the page HTML (so crawlers and
+Google Jobs see every listing), then search and filtering (keyword,
+work-mode, region, level, technology) run client-side in React over that
+same data — instant results, no API, filter state kept in the URL so views
+are shareable. If the list ever grows past a few thousand jobs, revisit
+this.
 
 ## What changes post-MVP
 

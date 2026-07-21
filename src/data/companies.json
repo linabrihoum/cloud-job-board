@@ -667,7 +667,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1072,7 +1072,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Seeq",
@@ -1080,7 +1080,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Akeno",
@@ -1089,7 +1089,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Airship",
@@ -1303,7 +1303,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "deducta",
@@ -1748,7 +1748,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Bayutdubizzle",
@@ -1756,7 +1756,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Mytutor",
@@ -1764,7 +1764,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "wallapop",
@@ -1949,6 +1949,60 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
+    "failCount": 0
+  },
+  {
+    "name": "Orca Security",
+    "website": "orca.security",
+    "ats": "greenhouse",
+    "slug": "orcasecurity",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-21",
+    "failCount": 0
+  },
+  {
+    "name": "Goteleport",
+    "website": "goteleport.com",
+    "ats": "ashby",
+    "slug": "goteleport",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-21",
+    "failCount": 0
+  },
+  {
+    "name": "Buildkite",
+    "website": "buildkite.com",
+    "ats": "greenhouse",
+    "slug": "buildkite",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-21",
+    "failCount": 0
+  },
+  {
+    "name": "Cabify",
+    "website": "cabify.careers",
+    "ats": "greenhouse",
+    "slug": "cabify",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-21",
+    "failCount": 0
+  },
+  {
+    "name": "Calendly",
+    "website": "careers.calendly.com",
+    "ats": "greenhouse",
+    "slug": "calendly",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-21",
+    "failCount": 0
+  },
+  {
+    "name": "Ciandt",
+    "website": "ciandt.com",
+    "ats": "lever",
+    "slug": "ciandt",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-21",
     "failCount": 0
   }
 ]

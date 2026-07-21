@@ -25,8 +25,8 @@ jobs:
         run: npm run probe-companies -- 250 || echo "probe failed; continuing with known boards"
       - run: npm run update-jobs
         env:
+          USAJOBSAPI: ${{ secrets.USAJOBSAPI }}
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
-          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
 
       # The same validation the CI workflow runs. PRs opened by the
       # GITHUB_TOKEN can't trigger other workflows, so the required

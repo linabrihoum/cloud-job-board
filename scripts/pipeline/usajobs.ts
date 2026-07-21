@@ -75,6 +75,13 @@ export async function fetchUsaJobs(email: string, apiKey: string): Promise<Job[]
         "Authorization-Key": apiKey,
       },
     });
+    if (res.status === 401 || res.status === 403) {
+      throw new Error(
+        `usajobs auth failed (${res.status}). Check the USAJOBSAPI secret, and add a ` +
+          `USAJOBS_EMAIL secret set to the email the key was registered with — ` +
+          `USAJobs expects it as the User-Agent.`
+      );
+    }
     if (!res.ok) throw new Error(`${res.status} for usajobs "${keyword}"`);
     const data = (await res.json()) as any;
     for (const item of data?.SearchResult?.SearchResultItems ?? []) {

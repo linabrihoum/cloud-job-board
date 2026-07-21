@@ -251,9 +251,13 @@ async function main() {
   }
 
   // 2b. USAJobs (federal roles) — only when API credentials are present
-  const usaEmail = process.env.USAJOBS_EMAIL;
-  const usaKey = process.env.USAJOBS_API_KEY;
-  if (usaEmail && usaKey) {
+  // USAJOBSAPI is the secret name in this repo; USAJOBS_API_KEY also works.
+  // USAJobs wants the account's registered email as the User-Agent; if it
+  // isn't set we send a contact string and let the API tell us if it minds.
+  const usaKey = process.env.USAJOBSAPI ?? process.env.USAJOBS_API_KEY;
+  const usaEmail =
+    process.env.USAJOBS_EMAIL ?? "cloud-job-board (github.com/linabrihoum/cloud-job-board)";
+  if (usaKey) {
     try {
       const jobs = (await fetchUsaJobs(usaEmail, usaKey)).filter((j) => isRelevantTitle(j.title));
       for (const job of jobs) {
@@ -268,7 +272,7 @@ async function main() {
       }
     }
   } else {
-    console.log("USAJobs: skipped (set USAJOBS_EMAIL and USAJOBS_API_KEY to enable)");
+    console.log("USAJobs: skipped (set USAJOBSAPI to enable)");
     // keep any existing federal listings while the source is unconfigured
     for (const job of existingJobs) {
       if (job.source === "usajobs") sourcedJobs.push(job);

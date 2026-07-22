@@ -263,7 +263,8 @@
     "slug": "weave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "weave.com"
   },
   {
     "name": "Proton",
@@ -667,7 +668,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1072,7 +1073,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Seeq",
@@ -1080,7 +1081,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Akeno",
@@ -1089,7 +1090,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Airship",
@@ -1303,7 +1304,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "deducta",
@@ -1748,7 +1749,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Bayutdubizzle",
@@ -1756,7 +1757,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Mytutor",
@@ -1764,7 +1765,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "wallapop",
@@ -2003,6 +2004,96 @@
     "slug": "ciandt",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-21",
+    "failCount": 0
+  },
+  {
+    "name": "Mattermost",
+    "website": "mattermost.com",
+    "ats": "greenhouse",
+    "slug": "mattermost",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Coinbase",
+    "website": "coinbase.com",
+    "ats": "greenhouse",
+    "slug": "coinbase",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Zapier",
+    "website": "zapier.com",
+    "ats": "ashby",
+    "slug": "zapier",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Benchling",
+    "website": "benchling.com",
+    "ats": "ashby",
+    "slug": "benchling",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Instacart",
+    "website": "instacart.com",
+    "ats": "greenhouse",
+    "slug": "instacart",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Spire",
+    "website": "spiffe.io",
+    "ats": "greenhouse",
+    "slug": "spire",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Commvault",
+    "website": "commvault.com",
+    "ats": "greenhouse",
+    "slug": "commvault",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "DigitalService GmbH des Bundes",
+    "website": "digitalservice.bund.de",
+    "ats": "greenhouse",
+    "slug": "digitalservice",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Doctolib",
+    "website": "about.doctolib.fr",
+    "ats": "greenhouse",
+    "slug": "doctolib",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Dronedeploy",
+    "website": "dronedeploy.com",
+    "ats": "lever",
+    "slug": "dronedeploy",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-22",
     "failCount": 0
   }
 ]

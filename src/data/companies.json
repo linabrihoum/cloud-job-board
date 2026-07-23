@@ -668,7 +668,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1073,7 +1073,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Seeq",
@@ -1081,7 +1081,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Akeno",
@@ -1090,7 +1090,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Airship",
@@ -1304,7 +1304,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "deducta",
@@ -1749,7 +1749,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Bayutdubizzle",
@@ -1757,7 +1757,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Mytutor",
@@ -1765,7 +1765,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "wallapop",
@@ -2094,6 +2094,132 @@
     "slug": "dronedeploy",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-22",
+    "failCount": 0
+  },
+  {
+    "name": "Fivetran",
+    "website": "fivetran.com",
+    "ats": "greenhouse",
+    "slug": "fivetran",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "RADAR",
+    "website": "goradar.com",
+    "ats": "greenhouse",
+    "slug": "radar",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Webflow",
+    "website": "webflow.com",
+    "ats": "greenhouse",
+    "slug": "webflow",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Everpure",
+    "website": "purestorage.com",
+    "ats": "greenhouse",
+    "slug": "purestorage",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Qumulo",
+    "website": "qumulo.com",
+    "ats": "ashby",
+    "slug": "qumulo",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Aviatrix",
+    "website": "aviatrix.com",
+    "ats": "greenhouse",
+    "slug": "aviatrix",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Endava",
+    "website": "endava.com",
+    "ats": "smartrecruiters",
+    "slug": "endava",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Equal Experts",
+    "website": "equalexperts.com",
+    "ats": "greenhouse",
+    "slug": "equalexperts",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Extend",
+    "website": "extend.com",
+    "ats": "greenhouse",
+    "slug": "extend",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Fonoa",
+    "website": "fonoa.com",
+    "ats": "ashby",
+    "slug": "fonoa",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Form3 - External",
+    "website": "form3.tech",
+    "ats": "greenhouse",
+    "slug": "form3",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Gcore",
+    "website": "gcore.com",
+    "ats": "smartrecruiters",
+    "slug": "gcore",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "Gemini",
+    "website": "gemini.com",
+    "ats": "greenhouse",
+    "slug": "gemini",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "GitLab",
+    "website": "about.gitlab.com",
+    "ats": "greenhouse",
+    "slug": "gitlab",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-23",
     "failCount": 0
   }
 ]

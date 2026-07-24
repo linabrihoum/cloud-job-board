@@ -668,7 +668,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1073,7 +1073,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Seeq",
@@ -1081,7 +1081,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Akeno",
@@ -1090,7 +1090,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Airship",
@@ -1304,7 +1304,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "deducta",
@@ -1749,7 +1749,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Bayutdubizzle",
@@ -1757,7 +1757,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Mytutor",
@@ -1765,7 +1765,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "wallapop",
@@ -2220,6 +2220,51 @@
     "slug": "gitlab",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-23",
+    "failCount": 0
+  },
+  {
+    "name": "ABACUS",
+    "website": "abacus.com",
+    "ats": "greenhouse",
+    "slug": "abacus",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-24",
+    "failCount": 0
+  },
+  {
+    "name": "Armada",
+    "website": "armadaproject.io",
+    "ats": "greenhouse",
+    "slug": "armada",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-24",
+    "failCount": 0
+  },
+  {
+    "name": "Kestra",
+    "website": "kestra.io",
+    "ats": "ashby",
+    "slug": "kestra",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-24",
+    "failCount": 0
+  },
+  {
+    "name": "HelloFresh",
+    "website": "hellofresh.com",
+    "ats": "greenhouse",
+    "slug": "hellofresh",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-24",
+    "failCount": 0
+  },
+  {
+    "name": "Hoxhunt",
+    "website": "hoxhunt.com",
+    "ats": "ashby",
+    "slug": "hoxhunt",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-24",
     "failCount": 0
   }
 ]

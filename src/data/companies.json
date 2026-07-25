@@ -601,7 +601,8 @@
     "slug": "permitflow",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "permitflow.com"
   },
   {
     "name": "Category Labs",
@@ -668,7 +669,7 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1073,7 +1074,7 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Seeq",
@@ -1081,7 +1082,7 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Akeno",
@@ -1090,7 +1091,7 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Airship",
@@ -1304,7 +1305,7 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "deducta",
@@ -1749,7 +1750,7 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Bayutdubizzle",
@@ -1757,7 +1758,7 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Mytutor",
@@ -1765,7 +1766,7 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "wallapop",
@@ -2265,6 +2266,78 @@
     "slug": "hoxhunt",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-24",
+    "failCount": 0
+  },
+  {
+    "name": "Alchemy",
+    "website": "alchemynano.com",
+    "ats": "ashby",
+    "slug": "alchemy",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Hive",
+    "website": "hive.co",
+    "ats": "lever",
+    "slug": "hive",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Katalyst Space Technologies",
+    "website": "gokatalyst.io",
+    "ats": "greenhouse",
+    "slug": "katalyst",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Knock",
+    "website": "knock.com",
+    "ats": "ashby",
+    "slug": "knock",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Lightning",
+    "website": "lightning.korbit.co.kr",
+    "ats": "ashby",
+    "slug": "lightning",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "LaunchDarkly",
+    "website": "launchdarkly.com",
+    "ats": "greenhouse",
+    "slug": "launchdarkly",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Litmus",
+    "website": "litmus.com",
+    "ats": "ashby",
+    "slug": "litmus",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Lyft",
+    "website": "lyft.com",
+    "ats": "greenhouse",
+    "slug": "lyft",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-25",
     "failCount": 0
   }
 ]

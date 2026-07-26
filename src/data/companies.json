@@ -669,7 +669,8 @@
     "slug": "atria-health",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Longshot Systems Ltd",
@@ -1074,7 +1075,8 @@
     "slug": "justpark",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Seeq",
@@ -1082,7 +1084,8 @@
     "slug": "seeq",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Akeno",
@@ -1091,7 +1094,8 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
     "website": "akeno.ai",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Airship",
@@ -1305,7 +1309,8 @@
     "slug": "yassi",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "deducta",
@@ -1750,7 +1755,8 @@
     "slug": "broadlume",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Bayutdubizzle",
@@ -1758,7 +1764,8 @@
     "slug": "bayutdubizzle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Mytutor",
@@ -1766,7 +1773,8 @@
     "slug": "mytutor",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "wallapop",
@@ -2338,6 +2346,87 @@
     "slug": "lyft",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-25",
+    "failCount": 0
+  },
+  {
+    "name": "Flip",
+    "website": "justflip.com",
+    "ats": "ashby",
+    "slug": "flip",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "Lumi",
+    "website": "lumi.com",
+    "ats": "smartrecruiters",
+    "slug": "lumi",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "ClickHouse",
+    "website": "clickhouse.com",
+    "ats": "greenhouse",
+    "slug": "clickhouse",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "Miro",
+    "website": "miro.com",
+    "ats": "ashby",
+    "slug": "miro",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "Monzo",
+    "website": "monzo.com",
+    "ats": "greenhouse",
+    "slug": "monzo",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "Mozilla",
+    "website": "careers.mozilla.org",
+    "ats": "greenhouse",
+    "slug": "mozilla",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "Mux",
+    "website": "mux.com",
+    "ats": "ashby",
+    "slug": "mux",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "Nerdwallet",
+    "website": "nerdwallet.com",
+    "ats": "ashby",
+    "slug": "nerdwallet",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-26",
+    "failCount": 0
+  },
+  {
+    "name": "New Relic",
+    "website": "newrelic.com",
+    "ats": "greenhouse",
+    "slug": "newrelic",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-26",
     "failCount": 0
   }
 ]

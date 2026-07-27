@@ -2428,5 +2428,113 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-26",
     "failCount": 0
+  },
+  {
+    "name": "ASM",
+    "website": "asm.co",
+    "ats": "greenhouse",
+    "slug": "asm",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Ramp",
+    "website": "ramp.com",
+    "ats": "ashby",
+    "slug": "ramp",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "InterSystems",
+    "website": "intersystems.com",
+    "ats": "greenhouse",
+    "slug": "intersystems",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "MongoDB",
+    "website": "mongodb.com",
+    "ats": "greenhouse",
+    "slug": "mongodb",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Neo4j",
+    "website": "neo4j.com",
+    "ats": "greenhouse",
+    "slug": "neo4j",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Redis",
+    "website": "redis.io",
+    "ats": "ashby",
+    "slug": "redis",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Snowflake",
+    "website": "snowflake.com",
+    "ats": "ashby",
+    "slug": "snowflake",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Authzed",
+    "website": "authzed.com",
+    "ats": "ashby",
+    "slug": "authzed",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Nubank",
+    "website": "nubank.workable.com",
+    "ats": "ashby",
+    "slug": "nubank",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "OCTO Technology",
+    "website": "rejoins.octo.com",
+    "ats": "smartrecruiters",
+    "slug": "octotechnology",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Platform.sh",
+    "website": "platform.sh",
+    "ats": "greenhouse",
+    "slug": "platformsh",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Pleo",
+    "website": "pleo.io",
+    "ats": "ashby",
+    "slug": "pleo",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-27",
+    "failCount": 0
   }
 ]

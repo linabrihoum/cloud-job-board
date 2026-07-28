@@ -527,7 +527,8 @@
     "slug": "9-mothers",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "9mothers.com"
   },
   {
     "name": "Pear Vc",
@@ -2535,6 +2536,78 @@
     "slug": "pleo",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-27",
+    "failCount": 0
+  },
+  {
+    "name": "Deepgram",
+    "website": "deepgram.com",
+    "ats": "ashby",
+    "slug": "deepgram",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Focal Systems",
+    "website": "focal.systems",
+    "ats": "greenhouse",
+    "slug": "focalsystems",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Rocket Money",
+    "website": "truebill.com",
+    "ats": "greenhouse",
+    "slug": "truebill",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Emburse",
+    "website": "emburse.com",
+    "ats": "lever",
+    "slug": "emburse",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "YugabyteDB",
+    "website": "yugabyte.com",
+    "ats": "greenhouse",
+    "slug": "yugabyte",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Searchapi",
+    "website": "searchapi.io",
+    "ats": "ashby",
+    "slug": "searchapi",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Sensor Tower",
+    "website": "sensortower.com",
+    "ats": "ashby",
+    "slug": "sensor-tower",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Sertis",
+    "website": "sertiscorp.com",
+    "ats": "greenhouse",
+    "slug": "sertis",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-28",
     "failCount": 0
   }
 ]

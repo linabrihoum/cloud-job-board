@@ -1060,7 +1060,8 @@
     "slug": "eagle",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "eagle.com"
   },
   {
     "name": "Compa",
@@ -1488,7 +1489,7 @@
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "honey",
@@ -2608,6 +2609,78 @@
     "slug": "sertis",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-28",
+    "failCount": 0
+  },
+  {
+    "name": "Meesho",
+    "website": "meesho.com",
+    "ats": "lever",
+    "slug": "meesho",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "Theathletic",
+    "website": "theathletic.com",
+    "ats": "lever",
+    "slug": "theathletic",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "Develocity",
+    "website": "gradle.org",
+    "ats": "greenhouse",
+    "slug": "gradle",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "Signal Ai",
+    "website": "signal-ai.com",
+    "ats": "ashby",
+    "slug": "signal-ai",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "Signoz",
+    "website": "signoz.io",
+    "ats": "ashby",
+    "slug": "signoz",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "SPLICE",
+    "website": "jobs.splice.com",
+    "ats": "smartrecruiters",
+    "slug": "splice",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "SumUp",
+    "website": "sumup.com",
+    "ats": "greenhouse",
+    "slug": "sumup",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "Surglogs",
+    "website": "surglogs.com",
+    "ats": "lever",
+    "slug": "surglogs",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-29",
     "failCount": 0
   }
 ]

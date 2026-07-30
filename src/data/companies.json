@@ -1489,7 +1489,7 @@
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "honey",
@@ -2681,6 +2681,87 @@
     "slug": "surglogs",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-29",
+    "failCount": 0
+  },
+  {
+    "name": "Scale AI",
+    "website": "scale.com",
+    "ats": "greenhouse",
+    "slug": "scaleai",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Classdojo",
+    "website": "classdojo.com",
+    "ats": "ashby",
+    "slug": "classdojo",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Scribe",
+    "website": "tryscribe.com",
+    "ats": "ashby",
+    "slug": "scribe",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Akuity",
+    "website": "akuity.io",
+    "ats": "greenhouse",
+    "slug": "akuity",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Flux",
+    "website": "fluxcd.io",
+    "ats": "ashby",
+    "slug": "flux",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "JetBrains",
+    "website": "jetbrains.com",
+    "ats": "greenhouse",
+    "slug": "jetbrains",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Thoughtworks",
+    "website": "thoughtworks.com",
+    "ats": "greenhouse",
+    "slug": "thoughtworks",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Trivago",
+    "website": "trivago.com",
+    "ats": "greenhouse",
+    "slug": "trivago",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Uberall",
+    "website": "uberall.com",
+    "ats": "ashby",
+    "slug": "uberall",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-30",
     "failCount": 0
   }
 ]

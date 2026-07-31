@@ -714,7 +714,8 @@
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "outschool.com"
   },
   {
     "name": "The Allen Institute for Artificial Intelligence",
@@ -1489,7 +1490,7 @@
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "honey",
@@ -2762,6 +2763,78 @@
     "slug": "uberall",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-30",
+    "failCount": 0
+  },
+  {
+    "name": "Faire",
+    "website": "faire.com",
+    "ats": "greenhouse",
+    "slug": "faire",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Brex",
+    "website": "brex.com",
+    "ats": "greenhouse",
+    "slug": "brex",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Accordion",
+    "website": "accordions.co.kr",
+    "ats": "greenhouse",
+    "slug": "accordion",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Mirantis",
+    "website": "mirantis.com",
+    "ats": "smartrecruiters",
+    "slug": "mirantis",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Waymark",
+    "website": "waymark.com",
+    "ats": "greenhouse",
+    "slug": "waymark",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Wealthsimple",
+    "website": "wealthsimple.com",
+    "ats": "ashby",
+    "slug": "wealthsimple",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Wheely",
+    "website": "wheely.com",
+    "ats": "greenhouse",
+    "slug": "wheely",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "Xplor",
+    "website": "ourxplor.com",
+    "ats": "smartrecruiters",
+    "slug": "xplor",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-07-31",
     "failCount": 0
   }
 ]

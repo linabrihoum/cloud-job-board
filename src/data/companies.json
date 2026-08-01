@@ -1490,7 +1490,7 @@
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "honey",
@@ -2835,6 +2835,69 @@
     "slug": "xplor",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-31",
+    "failCount": 0
+  },
+  {
+    "name": "May Mobility",
+    "website": "maymobility.com",
+    "ats": "greenhouse",
+    "slug": "maymobility",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "CoreWeave",
+    "website": "coreweave.com",
+    "ats": "greenhouse",
+    "slug": "coreweave",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "Toast",
+    "website": "toast.com",
+    "ats": "greenhouse",
+    "slug": "toast",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "Console",
+    "website": "console.qingcloud.com",
+    "ats": "ashby",
+    "slug": "console",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "Scaleway",
+    "website": "scaleway.com",
+    "ats": "lever",
+    "slug": "scaleway",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "Vultr",
+    "website": "vultr.com",
+    "ats": "ashby",
+    "slug": "vultr",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "Artsy",
+    "website": "artsy.net",
+    "ats": "ashby",
+    "slug": "artsy",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-01",
     "failCount": 0
   }
 ]

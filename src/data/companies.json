@@ -1490,7 +1490,7 @@
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "honey",
@@ -2898,6 +2898,51 @@
     "slug": "artsy",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-01",
+    "failCount": 0
+  },
+  {
+    "name": "Spellbrush",
+    "website": "spellbrush.com",
+    "ats": "ashby",
+    "slug": "spellbrush",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-02",
+    "failCount": 0
+  },
+  {
+    "name": "Pulse",
+    "website": "pulse.qa",
+    "ats": "ashby",
+    "slug": "pulse",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-02",
+    "failCount": 0
+  },
+  {
+    "name": "Cointracker",
+    "website": "cointracker.com",
+    "ats": "ashby",
+    "slug": "cointracker",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-02",
+    "failCount": 0
+  },
+  {
+    "name": "Vanta",
+    "website": "vanta.com",
+    "ats": "ashby",
+    "slug": "vanta",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-02",
+    "failCount": 0
+  },
+  {
+    "name": "Buffer",
+    "website": "buffer.com",
+    "ats": "ashby",
+    "slug": "buffer",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-02",
     "failCount": 0
   }
 ]

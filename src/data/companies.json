@@ -1490,7 +1490,7 @@
     "slug": "fractional-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "honey",
@@ -2943,6 +2943,60 @@
     "slug": "buffer",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-02",
+    "failCount": 0
+  },
+  {
+    "name": "Culture Biosciences",
+    "website": "culturebiosciences.com",
+    "ats": "greenhouse",
+    "slug": "culturebiosciences",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-03",
+    "failCount": 0
+  },
+  {
+    "name": "Observe.AI",
+    "website": "observe.ai",
+    "ats": "greenhouse",
+    "slug": "observeai",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-03",
+    "failCount": 0
+  },
+  {
+    "name": "Super Technologies",
+    "website": "superapp.id",
+    "ats": "greenhouse",
+    "slug": "super",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-03",
+    "failCount": 0
+  },
+  {
+    "name": "Twilio",
+    "website": "twilio.com",
+    "ats": "greenhouse",
+    "slug": "twilio",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-03",
+    "failCount": 0
+  },
+  {
+    "name": "Vercel",
+    "website": "vercel.com",
+    "ats": "greenhouse",
+    "slug": "vercel",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-03",
+    "failCount": 0
+  },
+  {
+    "name": "Gremlin",
+    "website": "gremlin.com",
+    "ats": "greenhouse",
+    "slug": "gremlin",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-03",
     "failCount": 0
   }
 ]

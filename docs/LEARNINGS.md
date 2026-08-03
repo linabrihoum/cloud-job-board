@@ -4,6 +4,20 @@ Mistakes, gotchas, and surprises from building this project — written down
 so we don't repeat them. Add an entry whenever something cost real time or
 changed our approach.
 
+## 2026-08-03 — "updated" is not "posted": Greenhouse dates were last-modified
+
+Every Greenhouse listing showed a recent posting date even when the role
+had been open for months. Cause: the fetcher read `updated_at`, which
+Greenhouse bumps whenever a still-live posting is touched (all of a board's
+jobs often share one recent `updated_at`), instead of `first_published`,
+the true original date. Fixed by preferring `first_published`. Lesson: when
+mapping any ATS date, confirm the field is *created/published*, not
+*modified/updated* — the two look identical until a job has been live a
+while. (Checked the others: Lever `createdAt`, Ashby `publishedAt`,
+Workable `published`, SmartRecruiters `releasedDate`, Workday `startDate`,
+Amazon `posted_date`, Netflix `t_create`, USAJobs `PublicationStartDate`
+are all original-posting fields.)
+
 ## 2026-07-20 — A manual test can hide a bug the code path has
 
 Workday listings came back with no descriptions (1 of 86). I'd verified the

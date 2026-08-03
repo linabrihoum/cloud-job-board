@@ -100,7 +100,10 @@ export async function fetchBoard(ats: Ats, slug: string): Promise<Board> {
         url: j.absolute_url,
         title: j.title ?? "",
         location: j.location?.name ?? "",
-        postedAt: (j.updated_at ?? j.first_published ?? "").slice(0, 10),
+        // Original posting date. `updated_at` is the LAST-MODIFIED time —
+        // it bumps to a recent date whenever a still-live posting is
+        // touched, so preferring it made old jobs look freshly posted.
+        postedAt: (j.first_published ?? j.updated_at ?? "").slice(0, 10),
         html: decodeEntities(j.content ?? ""),
       })),
     };

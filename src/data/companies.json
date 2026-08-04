@@ -362,7 +362,8 @@
     "slug": "middesk",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "middesk.com"
   },
   {
     "name": "Hiya",
@@ -2998,6 +2999,134 @@
     "slug": "gremlin",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-03",
+    "failCount": 0
+  },
+  {
+    "name": "Titan",
+    "website": "titan.com",
+    "ats": "ashby",
+    "slug": "titan",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Prodigal",
+    "website": "prodigaltech.com",
+    "ats": "greenhouse",
+    "slug": "prodigal",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "ScaleOps",
+    "website": "scaleops.com",
+    "ats": "greenhouse",
+    "slug": "scaleops",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Elastic",
+    "website": "elastic.co",
+    "ats": "greenhouse",
+    "slug": "elastic",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Dash0",
+    "website": "dash0.com",
+    "ats": "ashby",
+    "slug": "dash0",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Datadog",
+    "website": "datadoghq.com",
+    "ats": "greenhouse",
+    "slug": "datadog",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Baton (A Ryder Technology Lab)",
+    "ats": "greenhouse",
+    "slug": "baton",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Canopy Works",
+    "ats": "greenhouse",
+    "slug": "canopyworks",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Eleostech",
+    "ats": "lever",
+    "slug": "eleostech",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Gausslabs",
+    "ats": "lever",
+    "slug": "gausslabs",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0,
+    "website": "gausslabs.com"
+  },
+  {
+    "name": "Everis",
+    "ats": "ashby",
+    "slug": "everis",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Tonicai",
+    "ats": "ashby",
+    "slug": "tonicai",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Prior Labs",
+    "ats": "ashby",
+    "slug": "prior-labs",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0,
+    "website": "priorlabs.ai"
+  },
+  {
+    "name": "Proxima Fusion",
+    "ats": "ashby",
+    "slug": "proxima-fusion",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
+    "failCount": 0
+  },
+  {
+    "name": "Deepsetai",
+    "ats": "ashby",
+    "slug": "deepsetai",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-04",
     "failCount": 0
   }
 ]

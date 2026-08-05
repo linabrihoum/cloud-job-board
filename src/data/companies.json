@@ -1071,7 +1071,8 @@
     "slug": "compa",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "compa.com"
   },
   {
     "name": "Justpark",
@@ -1202,7 +1203,8 @@
     "slug": "kraken123",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "kraken.tech"
   },
   {
     "name": "Zippymh",
@@ -3128,5 +3130,66 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-08-04",
     "failCount": 0
+  },
+  {
+    "name": "Skydropx",
+    "website": "skydropx.com",
+    "ats": "ashby",
+    "slug": "skydropx",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-05",
+    "failCount": 0
+  },
+  {
+    "name": "Kalshi",
+    "website": "kalshi.com",
+    "ats": "greenhouse",
+    "slug": "kalshi",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-05",
+    "failCount": 0
+  },
+  {
+    "name": "Kepler",
+    "website": "sustainable-computing.io",
+    "ats": "lever",
+    "slug": "kepler",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-05",
+    "failCount": 0
+  },
+  {
+    "name": "LogicMonitor",
+    "website": "logicmonitor.com",
+    "ats": "greenhouse",
+    "slug": "logicmonitor",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-05",
+    "failCount": 0
+  },
+  {
+    "name": "Brightcore Energy",
+    "ats": "greenhouse",
+    "slug": "brightcoreenergy",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-05",
+    "failCount": 0
+  },
+  {
+    "name": "Forus",
+    "ats": "ashby",
+    "slug": "forus",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-05",
+    "failCount": 0
+  },
+  {
+    "name": "Maincode",
+    "ats": "ashby",
+    "slug": "maincode",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-05",
+    "failCount": 0,
+    "website": "maincode.com"
   }
 ]

@@ -612,7 +612,8 @@
     "slug": "category-labs",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "category.xyz"
   },
   {
     "name": "Norm Ai",
@@ -3191,5 +3192,50 @@
     "addedAt": "2026-08-05",
     "failCount": 0,
     "website": "maincode.com"
+  },
+  {
+    "name": "Postscript",
+    "website": "postscript.io",
+    "ats": "greenhouse",
+    "slug": "postscript",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-06",
+    "failCount": 0
+  },
+  {
+    "name": "Ashby",
+    "website": "ashbyhq.com",
+    "ats": "ashby",
+    "slug": "ashby",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-06",
+    "failCount": 0
+  },
+  {
+    "name": "Probablygenetic",
+    "website": "probablygenetic.com",
+    "ats": "ashby",
+    "slug": "probablygenetic",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-06",
+    "failCount": 0
+  },
+  {
+    "name": "Sumo Logic",
+    "website": "sumologic.com",
+    "ats": "greenhouse",
+    "slug": "sumologic",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-06",
+    "failCount": 0
+  },
+  {
+    "name": "Sysdig",
+    "website": "sysdig.com",
+    "ats": "lever",
+    "slug": "sysdig",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-06",
+    "failCount": 0
   }
 ]

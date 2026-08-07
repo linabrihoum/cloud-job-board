@@ -3237,5 +3237,32 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-06",
     "failCount": 0
+  },
+  {
+    "name": "Heart Aerospace",
+    "website": "heartaerospace.com",
+    "ats": "greenhouse",
+    "slug": "heartaerospace",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-07",
+    "failCount": 0
+  },
+  {
+    "name": "Alpaca",
+    "website": "alpaca.markets",
+    "ats": "greenhouse",
+    "slug": "alpaca",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-07",
+    "failCount": 0
+  },
+  {
+    "name": "Pronto",
+    "website": "tuprontomx.com",
+    "ats": "greenhouse",
+    "slug": "pronto",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-07",
+    "failCount": 0
   }
 ]

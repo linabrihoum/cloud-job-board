@@ -3264,5 +3264,32 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-07",
     "failCount": 0
+  },
+  {
+    "name": "Sable",
+    "website": "sablecard.com",
+    "ats": "ashby",
+    "slug": "sable",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-08",
+    "failCount": 0
+  },
+  {
+    "name": "Trm Labs",
+    "website": "trmlabs.com",
+    "ats": "ashby",
+    "slug": "trm-labs",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-08",
+    "failCount": 0
+  },
+  {
+    "name": "Reply",
+    "website": "reply.com",
+    "ats": "lever",
+    "slug": "reply",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-08",
+    "failCount": 0
   }
 ]

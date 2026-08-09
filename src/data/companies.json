@@ -3291,5 +3291,50 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-08",
     "failCount": 0
+  },
+  {
+    "name": "Rutter",
+    "website": "rutter.com",
+    "ats": "ashby",
+    "slug": "rutter",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-09",
+    "failCount": 0
+  },
+  {
+    "name": "Fampay",
+    "website": "fampay.in",
+    "ats": "lever",
+    "slug": "fampay",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-09",
+    "failCount": 0
+  },
+  {
+    "name": "Rackner",
+    "website": "rackner.com",
+    "ats": "greenhouse",
+    "slug": "rackner",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-09",
+    "failCount": 0
+  },
+  {
+    "name": "Software Mind",
+    "website": "softwaremind.com",
+    "ats": "smartrecruiters",
+    "slug": "softwaremind",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-09",
+    "failCount": 0
+  },
+  {
+    "name": "Clari + Salesloft",
+    "website": "salesloft.com",
+    "ats": "greenhouse",
+    "slug": "salesloft",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-09",
+    "failCount": 0
   }
 ]

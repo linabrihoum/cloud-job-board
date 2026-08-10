@@ -3336,5 +3336,50 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-09",
     "failCount": 0
+  },
+  {
+    "name": "LAIKA",
+    "website": "laika.com.co",
+    "ats": "greenhouse",
+    "slug": "laika",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-10",
+    "failCount": 0
+  },
+  {
+    "name": "Phonic",
+    "website": "phonic.ai",
+    "ats": "ashby",
+    "slug": "phonic",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-10",
+    "failCount": 0
+  },
+  {
+    "name": "Ophelia",
+    "website": "ophelia.com",
+    "ats": "greenhouse",
+    "slug": "ophelia",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-10",
+    "failCount": 0
+  },
+  {
+    "name": "Glimpse",
+    "website": "joinglimpse.com",
+    "ats": "ashby",
+    "slug": "glimpse",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-10",
+    "failCount": 0
+  },
+  {
+    "name": "Stardog",
+    "website": "stardog.com",
+    "ats": "lever",
+    "slug": "stardog",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-10",
+    "failCount": 0
   }
 ]

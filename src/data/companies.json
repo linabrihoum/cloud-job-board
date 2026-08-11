@@ -495,7 +495,8 @@
     "slug": "solace",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "solace.io"
   },
   {
     "name": "Spruceid",
@@ -3380,6 +3381,51 @@
     "slug": "stardog",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-10",
+    "failCount": 0
+  },
+  {
+    "name": "Benepass",
+    "website": "getbenepass.com",
+    "ats": "ashby",
+    "slug": "benepass",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-11",
+    "failCount": 0
+  },
+  {
+    "name": "Cortex",
+    "website": "cortex.io",
+    "ats": "greenhouse",
+    "slug": "cortex",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-11",
+    "failCount": 0
+  },
+  {
+    "name": "Savvy",
+    "website": "gosavvy.com",
+    "ats": "ashby",
+    "slug": "savvy",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-11",
+    "failCount": 0
+  },
+  {
+    "name": "Tryriot",
+    "website": "tryriot.com",
+    "ats": "lever",
+    "slug": "tryriot",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-11",
+    "failCount": 0
+  },
+  {
+    "name": "Posthog",
+    "website": "posthog.com",
+    "ats": "ashby",
+    "slug": "posthog",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-11",
     "failCount": 0
   }
 ]

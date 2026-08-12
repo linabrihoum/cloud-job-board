@@ -3427,5 +3427,86 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-11",
     "failCount": 0
+  },
+  {
+    "name": "Thndr",
+    "website": "thndr.app",
+    "ats": "ashby",
+    "slug": "thndr",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Nomic",
+    "website": "nomic.bio",
+    "ats": "ashby",
+    "slug": "nomic",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Recall",
+    "website": "recall.ai",
+    "ats": "ashby",
+    "slug": "recall",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Airbyte",
+    "website": "airbyte.com",
+    "ats": "ashby",
+    "slug": "airbyte",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Yassir",
+    "website": "yassir.com",
+    "ats": "smartrecruiters",
+    "slug": "yassir",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Zip",
+    "website": "ziphq.com",
+    "ats": "ashby",
+    "slug": "zip",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Blacksmith",
+    "website": "blacksmith.sh",
+    "ats": "ashby",
+    "slug": "blacksmith",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Canonical",
+    "website": "canonical.com",
+    "ats": "greenhouse",
+    "slug": "canonical",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
+  },
+  {
+    "name": "Chainguard",
+    "website": "chainguard.dev",
+    "ats": "greenhouse",
+    "slug": "chainguard",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-12",
+    "failCount": 0
   }
 ]

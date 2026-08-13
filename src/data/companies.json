@@ -3508,5 +3508,76 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-12",
     "failCount": 0
+  },
+  {
+    "name": "Roboflow",
+    "website": "roboflow.com",
+    "ats": "ashby",
+    "slug": "roboflow",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "Atob",
+    "website": "atob.com",
+    "ats": "ashby",
+    "slug": "atob",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "Mesh",
+    "website": "mesh.ai",
+    "ats": "greenhouse",
+    "slug": "mesh",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "Yotta",
+    "website": "withyotta.com",
+    "ats": "ashby",
+    "slug": "yotta",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "Ciroos",
+    "website": "ciroos.ai",
+    "ats": "ashby",
+    "slug": "ciroos",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "Clickhouse",
+    "website": "clickhouse.com",
+    "ats": "ashby",
+    "slug": "clickhouse",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "Crusoe",
+    "website": "crusoe.ai",
+    "ats": "ashby",
+    "slug": "crusoe",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-13",
+    "failCount": 0
+  },
+  {
+    "name": "GiveCampus",
+    "ats": "greenhouse",
+    "slug": "givecampus",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-13",
+    "failCount": 0
   }
 ]

@@ -3579,5 +3579,59 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-08-13",
     "failCount": 0
+  },
+  {
+    "name": "Nabla",
+    "website": "nabla.bio",
+    "ats": "ashby",
+    "slug": "nabla",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-14",
+    "failCount": 0
+  },
+  {
+    "name": "Flint",
+    "website": "withflint.com",
+    "ats": "ashby",
+    "slug": "flint",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-14",
+    "failCount": 0
+  },
+  {
+    "name": "Cohere",
+    "website": "cohere.io",
+    "ats": "ashby",
+    "slug": "cohere",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-14",
+    "failCount": 0
+  },
+  {
+    "name": "Defense Unicorns",
+    "website": "defenseunicorns.com",
+    "ats": "greenhouse",
+    "slug": "defenseunicorns",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-14",
+    "failCount": 0
+  },
+  {
+    "name": "Diagrid",
+    "website": "diagrid.io",
+    "ats": "ashby",
+    "slug": "diagrid",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-14",
+    "failCount": 0
+  },
+  {
+    "name": "Dlocal",
+    "website": "dlocal.com",
+    "ats": "lever",
+    "slug": "dlocal",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-14",
+    "failCount": 0
   }
 ]

@@ -1828,7 +1828,7 @@
     "slug": "adobe:wd5:external_experienced",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Dell Technologies",
@@ -3632,6 +3632,24 @@
     "slug": "dlocal",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-14",
+    "failCount": 0
+  },
+  {
+    "name": "Fieldguide",
+    "website": "fieldguide.com",
+    "ats": "ashby",
+    "slug": "fieldguide",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-15",
+    "failCount": 0
+  },
+  {
+    "name": "Runway",
+    "website": "runway.team",
+    "ats": "ashby",
+    "slug": "runway",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-15",
     "failCount": 0
   }
 ]

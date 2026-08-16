@@ -1828,7 +1828,7 @@
     "slug": "adobe:wd5:external_experienced",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 0
   },
   {
     "name": "Dell Technologies",
@@ -3650,6 +3650,96 @@
     "slug": "runway",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-15",
+    "failCount": 0
+  },
+  {
+    "name": "Axiom",
+    "website": "axiom.ai",
+    "ats": "ashby",
+    "slug": "axiom",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Encord",
+    "website": "encord.com",
+    "ats": "ashby",
+    "slug": "encord",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Axle Health",
+    "website": "axlehealth.com",
+    "ats": "ashby",
+    "slug": "axle-health",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Gridware",
+    "website": "gridware.io",
+    "ats": "lever",
+    "slug": "gridware",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Vapi",
+    "website": "vapi.ai",
+    "ats": "ashby",
+    "slug": "vapi",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Legora",
+    "website": "legora.com",
+    "ats": "ashby",
+    "slug": "legora",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Lovable",
+    "website": "lovable.dev",
+    "ats": "ashby",
+    "slug": "lovable",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "MyFitnessPal",
+    "website": "myfitnesspal.com",
+    "ats": "greenhouse",
+    "slug": "myfitnesspal",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Nebius",
+    "website": "nebius.com",
+    "ats": "greenhouse",
+    "slug": "nebius",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-16",
+    "failCount": 0
+  },
+  {
+    "name": "Netbird",
+    "website": "netbird.io",
+    "ats": "ashby",
+    "slug": "netbird",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-16",
     "failCount": 0
   }
 ]

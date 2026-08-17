@@ -3741,5 +3741,23 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-16",
     "failCount": 0
+  },
+  {
+    "name": "Okta",
+    "website": "okta.com",
+    "ats": "greenhouse",
+    "slug": "okta",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-17",
+    "failCount": 0
+  },
+  {
+    "name": "Freetrade",
+    "website": "freetrade.io",
+    "ats": "ashby",
+    "slug": "freetrade",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-17",
+    "failCount": 0
   }
 ]

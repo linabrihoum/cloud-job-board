@@ -3795,5 +3795,68 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-18",
     "failCount": 0
+  },
+  {
+    "name": "Triomics",
+    "website": "triomics.com",
+    "ats": "ashby",
+    "slug": "triomics",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Inversion",
+    "website": "inversionspace.com",
+    "ats": "greenhouse",
+    "slug": "inversionspace",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Stacklok",
+    "website": "stacklok.com",
+    "ats": "greenhouse",
+    "slug": "stacklok",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Tailscale",
+    "website": "tailscale.com",
+    "ats": "greenhouse",
+    "slug": "tailscale",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Temporal",
+    "website": "temporal.io",
+    "ats": "ashby",
+    "slug": "temporal",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Traversal",
+    "website": "traversal.com",
+    "ats": "ashby",
+    "slug": "traversal",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "TrueFoundry",
+    "website": "truefoundry.com",
+    "ats": "greenhouse",
+    "slug": "truefoundry",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
   }
 ]

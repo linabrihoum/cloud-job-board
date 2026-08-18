@@ -3759,5 +3759,41 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-17",
     "failCount": 0
+  },
+  {
+    "name": "Ziina",
+    "website": "ziina.com",
+    "ats": "ashby",
+    "slug": "ziina",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Gigs",
+    "website": "gigs.com",
+    "ats": "greenhouse",
+    "slug": "gigs",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Sonatype",
+    "website": "sonatype.com",
+    "ats": "lever",
+    "slug": "sonatype",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
+  },
+  {
+    "name": "Squarespace",
+    "website": "squarespace.com",
+    "ats": "greenhouse",
+    "slug": "squarespace",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-18",
+    "failCount": 0
   }
 ]

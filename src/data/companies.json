@@ -3858,5 +3858,23 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-18",
     "failCount": 0
+  },
+  {
+    "name": "Odys Aviation",
+    "website": "odysaviation.com",
+    "ats": "ashby",
+    "slug": "odys-aviation",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-19",
+    "failCount": 0
+  },
+  {
+    "name": "Parallel Systems",
+    "website": "parallel.bio",
+    "ats": "greenhouse",
+    "slug": "parallel",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-19",
+    "failCount": 0
   }
 ]

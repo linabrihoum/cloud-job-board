@@ -3876,5 +3876,86 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-19",
     "failCount": 0
+  },
+  {
+    "name": "Onebrief",
+    "website": "onebrief.com",
+    "ats": "ashby",
+    "slug": "onebrief",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "Wikimedia Foundation",
+    "website": "wikimedia.org",
+    "ats": "greenhouse",
+    "slug": "wikimedia",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "CarGurus",
+    "website": "cargurus.com",
+    "ats": "greenhouse",
+    "slug": "cargurus",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "Celonis",
+    "website": "celonis.com",
+    "ats": "greenhouse",
+    "slug": "celonis",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "MasterControl",
+    "website": "mastercontrol.com",
+    "ats": "greenhouse",
+    "slug": "mastercontrol",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "NielsenIQ",
+    "website": "nielseniq.com",
+    "ats": "smartrecruiters",
+    "slug": "nielseniq",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "PDT Partners",
+    "website": "pdtpartners.com",
+    "ats": "greenhouse",
+    "slug": "pdtpartners",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "Robinhood",
+    "website": "robinhood.com",
+    "ats": "greenhouse",
+    "slug": "robinhood",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
+  },
+  {
+    "name": "Plane",
+    "website": "pilot.notion.site",
+    "ats": "ashby",
+    "slug": "plane",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-20",
+    "failCount": 0
   }
 ]

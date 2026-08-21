@@ -3957,5 +3957,32 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-20",
     "failCount": 0
+  },
+  {
+    "name": "Lemfi",
+    "website": "lemfi.com",
+    "ats": "ashby",
+    "slug": "lemfi",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-21",
+    "failCount": 0
+  },
+  {
+    "name": "Zensors",
+    "website": "zensors.com",
+    "ats": "ashby",
+    "slug": "zensors",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-21",
+    "failCount": 0
+  },
+  {
+    "name": "Spin Careers",
+    "website": "spinframework.dev",
+    "ats": "greenhouse",
+    "slug": "spin",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-21",
+    "failCount": 0
   }
 ]

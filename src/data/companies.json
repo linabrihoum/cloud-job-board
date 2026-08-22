@@ -3984,5 +3984,58 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-21",
     "failCount": 0
+  },
+  {
+    "name": "Adaptyv",
+    "website": "adaptyvbio.com",
+    "ats": "ashby",
+    "slug": "adaptyv",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-22",
+    "failCount": 0
+  },
+  {
+    "name": "Float",
+    "website": "float.xyz",
+    "ats": "ashby",
+    "slug": "float",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-22",
+    "failCount": 0
+  },
+  {
+    "name": "Getzuma",
+    "website": "getzuma.com",
+    "ats": "lever",
+    "slug": "getzuma",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-22",
+    "failCount": 0
+  },
+  {
+    "name": "Pylon",
+    "website": "pylonump.com",
+    "ats": "ashby",
+    "slug": "pylon",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-22",
+    "failCount": 0
+  },
+  {
+    "name": "Fastly",
+    "website": "fastly.com",
+    "ats": "greenhouse",
+    "slug": "fastly",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-22",
+    "failCount": 0
+  },
+  {
+    "name": "Litellm",
+    "ats": "ashby",
+    "slug": "litellm",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-08-22",
+    "failCount": 0
   }
 ]

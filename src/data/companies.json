@@ -4037,5 +4037,77 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-08-22",
     "failCount": 0
+  },
+  {
+    "name": "Medium",
+    "website": "medium.bio",
+    "ats": "greenhouse",
+    "slug": "medium",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Turion Space",
+    "website": "turionspace.com",
+    "ats": "ashby",
+    "slug": "turion-space",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Toku",
+    "website": "trytoku.com",
+    "ats": "ashby",
+    "slug": "toku",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Ripple",
+    "website": "ripple.com",
+    "ats": "greenhouse",
+    "slug": "ripple",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Langchain",
+    "website": "docs.langchain.com",
+    "ats": "ashby",
+    "slug": "langchain",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Composio",
+    "website": "composio.dev",
+    "ats": "ashby",
+    "slug": "composio",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Firecrawl",
+    "website": "firecrawl.dev",
+    "ats": "ashby",
+    "slug": "firecrawl",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
+  },
+  {
+    "name": "Inngest",
+    "website": "inngest.com",
+    "ats": "ashby",
+    "slug": "inngest",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-23",
+    "failCount": 0
   }
 ]

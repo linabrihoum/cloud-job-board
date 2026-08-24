@@ -4109,5 +4109,14 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-23",
     "failCount": 0
+  },
+  {
+    "name": "E2b",
+    "website": "e2b.dev",
+    "ats": "ashby",
+    "slug": "e2b",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-24",
+    "failCount": 0
   }
 ]

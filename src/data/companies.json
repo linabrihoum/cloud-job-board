@@ -3123,7 +3123,8 @@
     "slug": "proxima-fusion",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-08-04",
-    "failCount": 0
+    "failCount": 0,
+    "website": "proximafusion.com"
   },
   {
     "name": "Deepsetai",
@@ -4117,6 +4118,24 @@
     "slug": "e2b",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-24",
+    "failCount": 0
+  },
+  {
+    "name": "Aspora",
+    "website": "aspora.com",
+    "ats": "ashby",
+    "slug": "aspora",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-25",
+    "failCount": 0
+  },
+  {
+    "name": "Langfuse",
+    "website": "github.com",
+    "ats": "ashby",
+    "slug": "langfuse",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-25",
     "failCount": 0
   }
 ]

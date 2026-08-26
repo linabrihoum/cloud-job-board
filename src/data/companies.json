@@ -1628,7 +1628,8 @@
     "slug": "nango",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "nango.dev"
   },
   {
     "name": "Meticulous",
@@ -4136,6 +4137,24 @@
     "slug": "langfuse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-25",
+    "failCount": 0
+  },
+  {
+    "name": "Voize",
+    "website": "voize.de",
+    "ats": "ashby",
+    "slug": "voize",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-26",
+    "failCount": 0
+  },
+  {
+    "name": "JFrog",
+    "website": "jfrog.com",
+    "ats": "greenhouse",
+    "slug": "jfrog",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-26",
     "failCount": 0
   }
 ]

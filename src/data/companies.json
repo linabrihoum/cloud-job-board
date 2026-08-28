@@ -4156,5 +4156,23 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-08-26",
     "failCount": 0
+  },
+  {
+    "name": "Attain",
+    "website": "joinattain.com",
+    "ats": "greenhouse",
+    "slug": "attain",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-28",
+    "failCount": 0
+  },
+  {
+    "name": "GRAM",
+    "website": "gram.gs",
+    "ats": "greenhouse",
+    "slug": "gram",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-28",
+    "failCount": 0
   }
 ]

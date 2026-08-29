@@ -4174,5 +4174,41 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-28",
     "failCount": 0
+  },
+  {
+    "name": "Chariot",
+    "website": "givechariot.com",
+    "ats": "ashby",
+    "slug": "chariot",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-29",
+    "failCount": 0
+  },
+  {
+    "name": "Tailor",
+    "website": "tailor.tech",
+    "ats": "ashby",
+    "slug": "tailor",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-29",
+    "failCount": 0
+  },
+  {
+    "name": "Scality",
+    "website": "scality.com",
+    "ats": "lever",
+    "slug": "scality",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-08-29",
+    "failCount": 0
+  },
+  {
+    "name": "Influxdata",
+    "website": "influxdata.com",
+    "ats": "ashby",
+    "slug": "influxdata",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-08-29",
+    "failCount": 0
   }
 ]

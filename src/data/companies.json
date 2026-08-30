@@ -4210,5 +4210,14 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-08-29",
     "failCount": 0
+  },
+  {
+    "name": "Unify",
+    "website": "unify.ai",
+    "ats": "lever",
+    "slug": "unify",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-30",
+    "failCount": 0
   }
 ]

@@ -4219,5 +4219,14 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-30",
     "failCount": 0
+  },
+  {
+    "name": "Aurelian",
+    "website": "aurelian.com",
+    "ats": "ashby",
+    "slug": "aurelian",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-08-31",
+    "failCount": 0
   }
 ]

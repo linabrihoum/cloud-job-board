@@ -2383,7 +2383,7 @@
     "slug": "clickhouse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-07-26",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Miro",
@@ -4228,5 +4228,55 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-31",
     "failCount": 0
+  },
+  {
+    "name": "Axle",
+    "website": "axle.insure",
+    "ats": "greenhouse",
+    "slug": "axle",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-01",
+    "failCount": 0
+  },
+  {
+    "name": "Qonto",
+    "website": "qonto.com",
+    "ats": "lever",
+    "slug": "qonto",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-01",
+    "failCount": 0
+  },
+  {
+    "name": "Smarkets",
+    "ats": "ashby",
+    "slug": "smarkets",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-01",
+    "failCount": 0
+  },
+  {
+    "name": "modash",
+    "ats": "workable",
+    "slug": "modash",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-01",
+    "failCount": 1
+  },
+  {
+    "name": "Ceritypartners",
+    "ats": "workday",
+    "slug": "ceritypartners:wd12:ceritypartnerscareers",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-01",
+    "failCount": 0
+  },
+  {
+    "name": "ceritypartners:wd12:ceritypa",
+    "ats": "workday",
+    "slug": "ceritypartners:wd12:ceritypa",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-01",
+    "failCount": 1
   }
 ]

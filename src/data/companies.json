@@ -1838,7 +1838,7 @@
     "slug": "dell:wd1:External",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Capital One",
@@ -2383,7 +2383,7 @@
     "slug": "clickhouse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-07-26",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Miro",
@@ -4261,7 +4261,7 @@
     "slug": "modash",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Ceritypartners",
@@ -4277,6 +4277,167 @@
     "slug": "ceritypartners:wd12:ceritypa",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 1
+    "failCount": 2
+  },
+  {
+    "name": "Latent",
+    "website": "latenthealth.com",
+    "ats": "ashby",
+    "slug": "latent",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Salient",
+    "website": "trysalient.com",
+    "ats": "ashby",
+    "slug": "salient",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Alloy",
+    "website": "alloy.app",
+    "ats": "greenhouse",
+    "slug": "alloy",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Smartly",
+    "website": "smartly.io",
+    "ats": "greenhouse",
+    "slug": "smartlyio",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Discord",
+    "ats": "greenhouse",
+    "slug": "discord",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0,
+    "website": "discord.com"
+  },
+  {
+    "name": "Relativity Space",
+    "ats": "greenhouse",
+    "slug": "relativity",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0,
+    "website": "relativityspace.com"
+  },
+  {
+    "name": "Attentive",
+    "ats": "greenhouse",
+    "slug": "attentive",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0,
+    "website": "attentive.com"
+  },
+  {
+    "name": "Black Canyon Consulting",
+    "ats": "greenhouse",
+    "slug": "blackcanyonconsulting",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Loftorbital",
+    "ats": "lever",
+    "slug": "loftorbital",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0,
+    "website": "loftorbital.com"
+  },
+  {
+    "name": "Rai",
+    "ats": "lever",
+    "slug": "rai",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Chariotclaims",
+    "ats": "ashby",
+    "slug": "chariotclaims",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Aiuc",
+    "ats": "ashby",
+    "slug": "aiuc",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Productgenius",
+    "ats": "ashby",
+    "slug": "productgenius",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Tolmo",
+    "ats": "ashby",
+    "slug": "tolmo",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Deepl",
+    "ats": "ashby",
+    "slug": "deepl",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0,
+    "website": "deepl.com"
+  },
+  {
+    "name": "Latchbio",
+    "ats": "ashby",
+    "slug": "latchbio",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Artificialanalysis",
+    "ats": "ashby",
+    "slug": "artificialanalysis",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Reframesystems",
+    "ats": "ashby",
+    "slug": "reframesystems",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
+  },
+  {
+    "name": "Neon",
+    "ats": "ashby",
+    "slug": "neon",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-02",
+    "failCount": 0
   }
 ]

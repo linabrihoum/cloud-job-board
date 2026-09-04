@@ -1838,7 +1838,7 @@
     "slug": "dell:wd1:External",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Capital One",
@@ -2383,7 +2383,7 @@
     "slug": "clickhouse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-07-26",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Miro",
@@ -4261,7 +4261,7 @@
     "slug": "modash",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Ceritypartners",
@@ -4277,7 +4277,7 @@
     "slug": "ceritypartners:wd12:ceritypa",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Latent",

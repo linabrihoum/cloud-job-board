@@ -1371,7 +1371,8 @@
     "slug": "humansignal",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "humansignal.com"
   },
   {
     "name": "Verkada",
@@ -1838,7 +1839,7 @@
     "slug": "dell:wd1:External",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Capital One",
@@ -2383,7 +2384,7 @@
     "slug": "clickhouse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-07-26",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Miro",
@@ -4261,7 +4262,7 @@
     "slug": "modash",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Ceritypartners",
@@ -4277,7 +4278,7 @@
     "slug": "ceritypartners:wd12:ceritypa",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Latent",
@@ -4455,6 +4456,50 @@
     "slug": "mastra",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-03",
+    "failCount": 0
+  },
+  {
+    "name": "Twenty",
+    "website": "twenty.com",
+    "ats": "ashby",
+    "slug": "twenty",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-05",
+    "failCount": 0
+  },
+  {
+    "name": "Hyperbound",
+    "website": "hyperbound.ai",
+    "ats": "ashby",
+    "slug": "hyperbound",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-05",
+    "failCount": 0
+  },
+  {
+    "name": "Bland",
+    "website": "bland.com",
+    "ats": "ashby",
+    "slug": "bland",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-05",
+    "failCount": 0
+  },
+  {
+    "name": "Ataccama",
+    "website": "jobs.ataccama.com",
+    "ats": "lever",
+    "slug": "ataccama",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-05",
+    "failCount": 0
+  },
+  {
+    "name": "Deeter Analytics",
+    "ats": "ashby",
+    "slug": "deeter-analytics",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-05",
     "failCount": 0
   }
 ]

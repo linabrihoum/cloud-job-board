@@ -1839,7 +1839,7 @@
     "slug": "dell:wd1:External",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Capital One",
@@ -2384,7 +2384,7 @@
     "slug": "clickhouse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-07-26",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Miro",
@@ -4262,7 +4262,7 @@
     "slug": "modash",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Ceritypartners",
@@ -4278,7 +4278,7 @@
     "slug": "ceritypartners:wd12:ceritypa",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Latent",
@@ -4500,6 +4500,24 @@
     "slug": "deeter-analytics",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-05",
+    "failCount": 0
+  },
+  {
+    "name": "Lio",
+    "website": "lio.ai",
+    "ats": "ashby",
+    "slug": "lio",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-06",
+    "failCount": 0
+  },
+  {
+    "name": "Solveintelligence",
+    "website": "solveintelligence.com",
+    "ats": "ashby",
+    "slug": "solveintelligence",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-06",
     "failCount": 0
   }
 ]

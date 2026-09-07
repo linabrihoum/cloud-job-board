@@ -1839,7 +1839,7 @@
     "slug": "dell:wd1:External",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Capital One",
@@ -2384,7 +2384,8 @@
     "slug": "clickhouse",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-07-26",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Miro",
@@ -4262,7 +4263,8 @@
     "slug": "modash",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Ceritypartners",
@@ -4278,7 +4280,8 @@
     "slug": "ceritypartners:wd12:ceritypa",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-09-01",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Latent",
@@ -4518,6 +4521,15 @@
     "slug": "solveintelligence",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-06",
+    "failCount": 0
+  },
+  {
+    "name": "Langdock",
+    "website": "langdock.com",
+    "ats": "ashby",
+    "slug": "langdock",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-07",
     "failCount": 0
   }
 ]

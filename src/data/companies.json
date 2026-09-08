@@ -1839,7 +1839,8 @@
     "slug": "dell:wd1:External",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Capital One",
@@ -4530,6 +4531,33 @@
     "slug": "langdock",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-07",
+    "failCount": 0
+  },
+  {
+    "name": "Greptile",
+    "website": "greptile.com",
+    "ats": "ashby",
+    "slug": "greptile",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-08",
+    "failCount": 0
+  },
+  {
+    "name": "Ion",
+    "website": "ion.design",
+    "ats": "lever",
+    "slug": "ion",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-08",
+    "failCount": 0
+  },
+  {
+    "name": "Reducto",
+    "website": "reducto.ai",
+    "ats": "ashby",
+    "slug": "reducto",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-08",
     "failCount": 0
   }
 ]

@@ -4559,5 +4559,59 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-08",
     "failCount": 0
+  },
+  {
+    "name": "Newton",
+    "website": "joinnewton.com",
+    "ats": "lever",
+    "slug": "newton",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-09",
+    "failCount": 0
+  },
+  {
+    "name": "Pivotrobotics",
+    "website": "pivotrobotics.com",
+    "ats": "ashby",
+    "slug": "pivotrobotics",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-09",
+    "failCount": 0
+  },
+  {
+    "name": "Pointone",
+    "website": "pointone.com",
+    "ats": "ashby",
+    "slug": "pointone",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-09",
+    "failCount": 0
+  },
+  {
+    "name": "Paradigm",
+    "website": "paradigmai.com",
+    "ats": "ashby",
+    "slug": "paradigm",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-09",
+    "failCount": 0
+  },
+  {
+    "name": "Greenboard",
+    "website": "greenboard.com",
+    "ats": "ashby",
+    "slug": "greenboard",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-09",
+    "failCount": 0
+  },
+  {
+    "name": "Tamarindbio",
+    "website": "tamarind.bio",
+    "ats": "ashby",
+    "slug": "tamarindbio",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-09",
+    "failCount": 0
   }
 ]

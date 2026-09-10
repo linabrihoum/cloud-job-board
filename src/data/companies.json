@@ -4613,5 +4613,41 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-09",
     "failCount": 0
+  },
+  {
+    "name": "Beparallel",
+    "website": "beparallel.com",
+    "ats": "ashby",
+    "slug": "beparallel",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-10",
+    "failCount": 0
+  },
+  {
+    "name": "Fuse",
+    "website": "fuseinsight.com",
+    "ats": "ashby",
+    "slug": "fuse",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-10",
+    "failCount": 0
+  },
+  {
+    "name": "Hazel",
+    "website": "hazelai.com",
+    "ats": "ashby",
+    "slug": "hazel",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-10",
+    "failCount": 0
+  },
+  {
+    "name": "Cloudzero",
+    "website": "cloudzero.com",
+    "ats": "ashby",
+    "slug": "cloudzero",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-09-10",
+    "failCount": 0
   }
 ]

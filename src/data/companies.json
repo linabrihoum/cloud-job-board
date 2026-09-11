@@ -4649,5 +4649,23 @@
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-09-10",
     "failCount": 0
+  },
+  {
+    "name": "Polar",
+    "website": "polarfi.com",
+    "ats": "ashby",
+    "slug": "polar",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-11",
+    "failCount": 0
+  },
+  {
+    "name": "Anterior",
+    "ats": "ashby",
+    "slug": "anterior",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-09-11",
+    "failCount": 0,
+    "website": "anterior.app"
   }
 ]

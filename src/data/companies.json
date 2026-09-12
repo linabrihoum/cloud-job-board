@@ -4667,5 +4667,41 @@
     "addedAt": "2026-09-11",
     "failCount": 0,
     "website": "anterior.app"
+  },
+  {
+    "name": "Doublezero",
+    "website": "doublezero.tech",
+    "ats": "ashby",
+    "slug": "doublezero",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-12",
+    "failCount": 0
+  },
+  {
+    "name": "Sagecare",
+    "website": "sagecare.ai",
+    "ats": "ashby",
+    "slug": "sagecare",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-12",
+    "failCount": 0
+  },
+  {
+    "name": "Phonely",
+    "website": "phonely.ai",
+    "ats": "ashby",
+    "slug": "phonely",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-12",
+    "failCount": 0
+  },
+  {
+    "name": "M3",
+    "website": "m3db.io",
+    "ats": "greenhouse",
+    "slug": "m3",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-09-12",
+    "failCount": 0
   }
 ]

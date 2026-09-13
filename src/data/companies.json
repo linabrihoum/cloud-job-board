@@ -371,7 +371,8 @@
     "slug": "hiya",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "hiya.com"
   },
   {
     "name": "Oneleet",
@@ -4702,6 +4703,51 @@
     "slug": "m3",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-09-12",
+    "failCount": 0
+  },
+  {
+    "name": "Scape",
+    "website": "scape.app",
+    "ats": "ashby",
+    "slug": "scape",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-13",
+    "failCount": 0
+  },
+  {
+    "name": "Plume",
+    "website": "plumefinder.com",
+    "ats": "greenhouse",
+    "slug": "plume",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-13",
+    "failCount": 0
+  },
+  {
+    "name": "Modus",
+    "website": "himodus.com",
+    "ats": "ashby",
+    "slug": "modus",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-13",
+    "failCount": 0
+  },
+  {
+    "name": "Saturn",
+    "website": "saturnos.com",
+    "ats": "ashby",
+    "slug": "saturn",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-13",
+    "failCount": 0
+  },
+  {
+    "name": "PagerDuty",
+    "website": "pagerduty.com",
+    "ats": "greenhouse",
+    "slug": "pagerduty",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-13",
     "failCount": 0
   }
 ]

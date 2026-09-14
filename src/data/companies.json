@@ -4749,5 +4749,14 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-09-13",
     "failCount": 0
+  },
+  {
+    "name": "Simple Ai",
+    "website": "usesimple.ai",
+    "ats": "ashby",
+    "slug": "simple-ai",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-14",
+    "failCount": 0
   }
 ]

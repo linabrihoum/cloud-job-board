@@ -1425,7 +1425,8 @@
     "slug": "skyways",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "skyways.com"
   },
   {
     "name": "Project Healthy Minds",
@@ -4766,6 +4767,51 @@
     "slug": "usul",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-15",
+    "failCount": 0
+  },
+  {
+    "name": "Symphony Communication Services",
+    "website": "getsymphony.co",
+    "ats": "greenhouse",
+    "slug": "symphony",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-16",
+    "failCount": 0
+  },
+  {
+    "name": "Archil",
+    "website": "archil.com",
+    "ats": "ashby",
+    "slug": "archil",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-16",
+    "failCount": 0
+  },
+  {
+    "name": "Abundant",
+    "website": "abundant.ai",
+    "ats": "ashby",
+    "slug": "abundant",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-16",
+    "failCount": 0
+  },
+  {
+    "name": "YLD",
+    "website": "yld.com",
+    "ats": "greenhouse",
+    "slug": "yld",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-09-16",
+    "failCount": 0
+  },
+  {
+    "name": "VTEX",
+    "website": "lab.vtex.com",
+    "ats": "greenhouse",
+    "slug": "vtex",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-16",
     "failCount": 0
   }
 ]

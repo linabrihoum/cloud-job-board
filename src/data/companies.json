@@ -4740,7 +4740,7 @@
     "slug": "saturn",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-13",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "PagerDuty",
@@ -4821,6 +4821,15 @@
     "slug": "sunset",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-17",
+    "failCount": 0
+  },
+  {
+    "name": "Harperinsure",
+    "website": "harperinsure.com",
+    "ats": "ashby",
+    "slug": "harperinsure",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-19",
     "failCount": 0
   }
 ]

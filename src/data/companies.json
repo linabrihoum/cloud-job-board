@@ -4740,7 +4740,7 @@
     "slug": "saturn",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-13",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "PagerDuty",
@@ -4830,6 +4830,15 @@
     "slug": "harperinsure",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-19",
+    "failCount": 0
+  },
+  {
+    "name": "Blaxel",
+    "website": "blaxel.ai",
+    "ats": "ashby",
+    "slug": "blaxel",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-20",
     "failCount": 0
   }
 ]

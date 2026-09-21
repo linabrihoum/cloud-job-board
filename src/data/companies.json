@@ -556,7 +556,8 @@
     "slug": "runway-ml",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "runwayml.com"
   },
   {
     "name": "Kog",
@@ -1973,7 +1974,7 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Orca Security",
@@ -3585,7 +3586,8 @@
     "slug": "givecampus",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-08-13",
-    "failCount": 0
+    "failCount": 0,
+    "website": "givecampus.com"
   },
   {
     "name": "Nabla",
@@ -4740,7 +4742,7 @@
     "slug": "saturn",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-13",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "PagerDuty",
@@ -4839,6 +4841,15 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
+    "failCount": 0
+  },
+  {
+    "name": "Lucis",
+    "website": "lucis.life",
+    "ats": "ashby",
+    "slug": "lucis",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-21",
     "failCount": 0
   }
 ]

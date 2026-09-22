@@ -329,7 +329,8 @@
     "slug": "duck-duck-go",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "duckduckgo.com"
   },
   {
     "name": "Antithesis",
@@ -1974,7 +1975,7 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Orca Security",
@@ -4742,7 +4743,7 @@
     "slug": "saturn",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-13",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "PagerDuty",
@@ -4850,6 +4851,33 @@
     "slug": "lucis",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-21",
+    "failCount": 0
+  },
+  {
+    "name": "Dedalus Labs",
+    "website": "dedaluslabs.ai",
+    "ats": "ashby",
+    "slug": "dedalus-labs",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-22",
+    "failCount": 0
+  },
+  {
+    "name": "Halluminate",
+    "website": "halluminate.ai",
+    "ats": "ashby",
+    "slug": "halluminate",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-22",
+    "failCount": 0
+  },
+  {
+    "name": "IONOS DE",
+    "website": "ionos.de",
+    "ats": "greenhouse",
+    "slug": "ionos",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-09-22",
     "failCount": 0
   }
 ]

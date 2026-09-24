@@ -1617,7 +1617,7 @@
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Infisical",
@@ -1975,7 +1975,7 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Orca Security",

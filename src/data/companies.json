@@ -780,7 +780,8 @@
     "slug": "ridezum",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "ridezum.com"
   },
   {
     "name": "Apolloresearch",
@@ -1617,7 +1618,7 @@
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Infisical",
@@ -1975,7 +1976,7 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Orca Security",

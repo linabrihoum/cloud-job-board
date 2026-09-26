@@ -1618,7 +1618,7 @@
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Infisical",
@@ -1976,7 +1976,7 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Orca Security",
@@ -4880,6 +4880,42 @@
     "slug": "ionos",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-09-22",
+    "failCount": 0
+  },
+  {
+    "name": "Icarus",
+    "website": "icarus.one",
+    "ats": "greenhouse",
+    "slug": "icarus",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-26",
+    "failCount": 0
+  },
+  {
+    "name": "Valarian",
+    "website": "valarian.com",
+    "ats": "lever",
+    "slug": "valarian",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-09-26",
+    "failCount": 0
+  },
+  {
+    "name": "Workos",
+    "website": "workos.com",
+    "ats": "ashby",
+    "slug": "workos",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-09-26",
+    "failCount": 0
+  },
+  {
+    "name": "Reaktor",
+    "website": "reaktor.com",
+    "ats": "ashby",
+    "slug": "reaktor",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-26",
     "failCount": 0
   }
 ]

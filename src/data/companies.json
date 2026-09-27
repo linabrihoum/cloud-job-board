@@ -1618,7 +1618,7 @@
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Infisical",
@@ -1976,7 +1976,8 @@
     "slug": "bitso",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-20",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Orca Security",
@@ -4916,6 +4917,15 @@
     "slug": "reaktor",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-09-26",
+    "failCount": 0
+  },
+  {
+    "name": "Moss",
+    "website": "moss.dev",
+    "ats": "ashby",
+    "slug": "moss",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-27",
     "failCount": 0
   }
 ]

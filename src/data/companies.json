@@ -408,7 +408,7 @@
     "slug": "amplitude",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Clutch",
@@ -720,7 +720,7 @@
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0,
+    "failCount": 1,
     "website": "outschool.com"
   },
   {
@@ -1618,7 +1618,7 @@
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Infisical",
@@ -4926,6 +4926,33 @@
     "slug": "moss",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-27",
+    "failCount": 0
+  },
+  {
+    "name": "Stilta",
+    "website": "stilta.com",
+    "ats": "ashby",
+    "slug": "stilta",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-09-28",
+    "failCount": 0
+  },
+  {
+    "name": "Thoughtworks",
+    "website": "thoughtworks.com",
+    "ats": "ashby",
+    "slug": "thoughtworks",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-28",
+    "failCount": 0
+  },
+  {
+    "name": "Verve",
+    "website": "verve.co",
+    "ats": "greenhouse",
+    "slug": "verve",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-09-28",
     "failCount": 0
   }
 ]

@@ -408,7 +408,7 @@
     "slug": "amplitude",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Clutch",
@@ -582,7 +582,8 @@
     "slug": "colonist",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "colonist.io"
   },
   {
     "name": "Amo",
@@ -720,7 +721,7 @@
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1,
+    "failCount": 2,
     "website": "outschool.com"
   },
   {
@@ -1618,7 +1619,8 @@
     "slug": "workweave",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Infisical",

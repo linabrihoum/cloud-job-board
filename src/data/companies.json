@@ -408,7 +408,7 @@
     "slug": "amplitude",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Clutch",
@@ -721,7 +721,7 @@
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3,
+    "failCount": 4,
     "website": "outschool.com"
   },
   {
@@ -4964,6 +4964,31 @@
     "slug": "stage",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-30",
+    "failCount": 0
+  },
+  {
+    "name": "Shieldai",
+    "ats": "lever",
+    "slug": "shieldai",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-01",
+    "failCount": 0,
+    "website": "shield.ai"
+  },
+  {
+    "name": "Curai",
+    "ats": "lever",
+    "slug": "curai",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-01",
+    "failCount": 0
+  },
+  {
+    "name": "Thundercompute",
+    "ats": "ashby",
+    "slug": "thundercompute",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-01",
     "failCount": 0
   }
 ]

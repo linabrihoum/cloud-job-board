@@ -408,7 +408,7 @@
     "slug": "amplitude",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Clutch",
@@ -721,7 +721,7 @@
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4,
+    "failCount": 5,
     "website": "outschool.com"
   },
   {
@@ -4946,7 +4946,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-09-28",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Verve",
@@ -4990,5 +4990,71 @@
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-10-01",
     "failCount": 0
+  },
+  {
+    "name": "Chronicle Labs",
+    "website": "chronicle-labs.com",
+    "ats": "ashby",
+    "slug": "chronicle-labs",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-02",
+    "failCount": 0
+  },
+  {
+    "name": "GiveDirectly",
+    "ats": "greenhouse",
+    "slug": "givedirectly",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 0
+  },
+  {
+    "name": "K2 Space",
+    "ats": "greenhouse",
+    "slug": "k2spacecorporation",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 0,
+    "website": "k2space.com"
+  },
+  {
+    "name": "Growfig",
+    "ats": "ashby",
+    "slug": "growfig",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 0
+  },
+  {
+    "name": "Jupus",
+    "ats": "ashby",
+    "slug": "jupus",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 0
+  },
+  {
+    "name": "Rebar",
+    "ats": "ashby",
+    "slug": "rebar",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 0
+  },
+  {
+    "name": "Somana.Tech",
+    "ats": "ashby",
+    "slug": "somana.tech",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 0
+  },
+  {
+    "name": "portswigger",
+    "ats": "workable",
+    "slug": "portswigger",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-02",
+    "failCount": 1
   }
 ]

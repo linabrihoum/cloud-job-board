@@ -408,7 +408,8 @@
     "slug": "amplitude",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Clutch",
@@ -721,8 +722,9 @@
     "slug": "outschool",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6,
-    "website": "outschool.com"
+    "failCount": 7,
+    "website": "outschool.com",
+    "blocked": true
   },
   {
     "name": "The Allen Institute for Artificial Intelligence",
@@ -4946,7 +4948,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-09-28",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Verve",
@@ -5055,7 +5057,7 @@
     "slug": "portswigger",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-10-02",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Moonshot",
@@ -5089,6 +5091,33 @@
     "slug": "menlo",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-10-03",
+    "failCount": 0
+  },
+  {
+    "name": "Bernard",
+    "website": "bernardhq.com",
+    "ats": "ashby",
+    "slug": "bernard",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-04",
+    "failCount": 0
+  },
+  {
+    "name": "Clair",
+    "website": "redhat.com",
+    "ats": "ashby",
+    "slug": "clair",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-10-04",
+    "failCount": 0
+  },
+  {
+    "name": "Mondoo",
+    "website": "mondoo.com",
+    "ats": "ashby",
+    "slug": "mondoo",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-10-04",
     "failCount": 0
   }
 ]

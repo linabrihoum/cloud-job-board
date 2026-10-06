@@ -1160,7 +1160,8 @@
     "slug": "justworks",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "justworks.com"
   },
   {
     "name": "Cloudflare",
@@ -4948,7 +4949,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-09-28",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Verve",
@@ -5057,7 +5058,7 @@
     "slug": "portswigger",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-10-02",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Moonshot",
@@ -5118,6 +5119,14 @@
     "slug": "mondoo",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-10-04",
+    "failCount": 0
+  },
+  {
+    "name": "Footprint",
+    "ats": "ashby",
+    "slug": "footprint",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-06",
     "failCount": 0
   }
 ]

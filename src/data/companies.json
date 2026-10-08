@@ -4950,7 +4950,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-09-28",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Verve",
@@ -5059,7 +5059,7 @@
     "slug": "portswigger",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-10-02",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Moonshot",
@@ -5147,5 +5147,14 @@
     "addedAt": "2026-10-07",
     "failCount": 0,
     "website": "manifest.com"
+  },
+  {
+    "name": "Iceye",
+    "ats": "ashby",
+    "slug": "iceye",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-08",
+    "failCount": 0,
+    "website": "iceye.com"
   }
 ]

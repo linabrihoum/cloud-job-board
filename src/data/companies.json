@@ -1658,7 +1658,7 @@
     "slug": "verge-genomics",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Legionhealth",
@@ -5175,6 +5175,24 @@
     "slug": "red-gate",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-10-09",
+    "failCount": 0
+  },
+  {
+    "name": "HackerRank Careers",
+    "website": "hackerrank.com",
+    "ats": "greenhouse",
+    "slug": "hackerrank",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-10",
+    "failCount": 0
+  },
+  {
+    "name": "Snyk",
+    "website": "snyk.io",
+    "ats": "ashby",
+    "slug": "snyk",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-10-10",
     "failCount": 0
   }
 ]

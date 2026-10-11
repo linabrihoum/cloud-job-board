@@ -1658,7 +1658,7 @@
     "slug": "verge-genomics",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Legionhealth",
@@ -5193,6 +5193,23 @@
     "slug": "snyk",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-10-10",
+    "failCount": 0
+  },
+  {
+    "name": "Mixpanel",
+    "website": "mixpanel.com",
+    "ats": "greenhouse",
+    "slug": "mixpanel",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-11",
+    "failCount": 0
+  },
+  {
+    "name": "Weave Os",
+    "ats": "ashby",
+    "slug": "weave-os",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-11",
     "failCount": 0
   }
 ]

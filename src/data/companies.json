@@ -1658,7 +1658,7 @@
     "slug": "verge-genomics",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Legionhealth",
@@ -5210,6 +5210,41 @@
     "slug": "weave-os",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-10-11",
+    "failCount": 0
+  },
+  {
+    "name": "Caremessage",
+    "website": "caremessage.org",
+    "ats": "ashby",
+    "slug": "caremessage",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-14",
+    "failCount": 0
+  },
+  {
+    "name": "Flexport",
+    "website": "flexport.com",
+    "ats": "greenhouse",
+    "slug": "flexport",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-14",
+    "failCount": 0
+  },
+  {
+    "name": "Clara",
+    "website": "clara.com",
+    "ats": "greenhouse",
+    "slug": "clara",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-10-14",
+    "failCount": 0
+  },
+  {
+    "name": "Postera",
+    "ats": "lever",
+    "slug": "postera",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-10-14",
     "failCount": 0
   }
 ]

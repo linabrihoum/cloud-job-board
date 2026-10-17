@@ -5265,5 +5265,14 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-10-16",
     "failCount": 0
+  },
+  {
+    "name": "Hinge Health",
+    "website": "hingehealth.com",
+    "ats": "ashby",
+    "slug": "hinge-health",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-10-17",
+    "failCount": 0
   }
 ]

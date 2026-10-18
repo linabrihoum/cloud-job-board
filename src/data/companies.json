@@ -5274,5 +5274,14 @@
     "discoveredVia": "hww-probe",
     "addedAt": "2026-10-17",
     "failCount": 0
+  },
+  {
+    "name": "Instawork",
+    "website": "instawork.com",
+    "ats": "greenhouse",
+    "slug": "instawork",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-18",
+    "failCount": 0
   }
 ]

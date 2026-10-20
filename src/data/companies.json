@@ -1824,7 +1824,7 @@
     "slug": "salesforce:wd12:External_Career_Site",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 0
   },
   {
     "name": "CVS Health",
@@ -4852,7 +4852,7 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Lucis",
@@ -5309,6 +5309,15 @@
     "slug": "astranis",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-10-19",
+    "failCount": 0
+  },
+  {
+    "name": "Multiplylabs",
+    "website": "multiplylabs.com",
+    "ats": "lever",
+    "slug": "multiplylabs",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-20",
     "failCount": 0
   }
 ]

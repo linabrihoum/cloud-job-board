@@ -1745,7 +1745,8 @@
     "slug": "seesaw",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "seesaw.me"
   },
   {
     "name": "Meetalbert",
@@ -4852,7 +4853,7 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Lucis",

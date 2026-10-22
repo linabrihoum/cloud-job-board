@@ -4853,7 +4853,7 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Lucis",
@@ -5319,6 +5319,24 @@
     "slug": "multiplylabs",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-10-20",
+    "failCount": 0
+  },
+  {
+    "name": "Carrot",
+    "website": "get-carrot.com",
+    "ats": "greenhouse",
+    "slug": "carrotfertility",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-22",
+    "failCount": 0
+  },
+  {
+    "name": "Prelim",
+    "website": "prelim.com",
+    "ats": "ashby",
+    "slug": "prelim",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-22",
     "failCount": 0
   }
 ]

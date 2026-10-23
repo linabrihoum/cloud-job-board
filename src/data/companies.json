@@ -1257,7 +1257,7 @@
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Comity",
@@ -4853,7 +4853,7 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Lucis",
@@ -5337,6 +5337,15 @@
     "slug": "prelim",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-10-22",
+    "failCount": 0
+  },
+  {
+    "name": "Pyka",
+    "website": "flypyka.com",
+    "ats": "lever",
+    "slug": "pyka",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-23",
     "failCount": 0
   }
 ]

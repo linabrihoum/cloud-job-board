@@ -601,7 +601,8 @@
     "slug": "confido",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "confido.com"
   },
   {
     "name": "Permitflow",
@@ -1257,7 +1258,7 @@
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Comity",
@@ -4853,7 +4854,7 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Lucis",
@@ -5346,6 +5347,15 @@
     "slug": "pyka",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-10-23",
+    "failCount": 0
+  },
+  {
+    "name": "Treasury Prime",
+    "website": "treasuryprime.com",
+    "ats": "greenhouse",
+    "slug": "treasuryprime",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-24",
     "failCount": 0
   }
 ]

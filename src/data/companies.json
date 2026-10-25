@@ -1258,7 +1258,7 @@
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Comity",
@@ -4854,7 +4854,7 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Lucis",
@@ -5356,6 +5356,24 @@
     "slug": "treasuryprime",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-10-24",
+    "failCount": 0
+  },
+  {
+    "name": "Captivateiq",
+    "website": "captivateiq.com",
+    "ats": "lever",
+    "slug": "captivateiq",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-25",
+    "failCount": 0
+  },
+  {
+    "name": "AlphaSights",
+    "website": "alphasights.com",
+    "ats": "greenhouse",
+    "slug": "alphasights",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-10-25",
     "failCount": 0
   }
 ]

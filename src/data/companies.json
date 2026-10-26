@@ -1258,7 +1258,7 @@
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Comity",
@@ -4854,7 +4854,8 @@
     "slug": "blaxel",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-09-20",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Lucis",
@@ -5374,6 +5375,24 @@
     "slug": "alphasights",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-10-25",
+    "failCount": 0
+  },
+  {
+    "name": "Momentus Space LLC",
+    "website": "momentus.space",
+    "ats": "greenhouse",
+    "slug": "momentus",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-26",
+    "failCount": 0
+  },
+  {
+    "name": "Checkr",
+    "website": "checkr.com",
+    "ats": "greenhouse",
+    "slug": "checkr",
+    "discoveredVia": "hww-probe",
+    "addedAt": "2026-10-26",
     "failCount": 0
   }
 ]

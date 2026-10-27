@@ -1258,7 +1258,7 @@
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Comity",
@@ -5393,6 +5393,33 @@
     "slug": "checkr",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-10-26",
+    "failCount": 0
+  },
+  {
+    "name": "Insight",
+    "website": "insightbrowser.com",
+    "ats": "greenhouse",
+    "slug": "insight",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-27",
+    "failCount": 0
+  },
+  {
+    "name": "Hatch",
+    "website": "usehatch.ai",
+    "ats": "ashby",
+    "slug": "hatch",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-27",
+    "failCount": 0
+  },
+  {
+    "name": "Switchboard",
+    "website": "onswitchboard.com",
+    "ats": "ashby",
+    "slug": "switchboard",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-10-27",
     "failCount": 0
   }
 ]

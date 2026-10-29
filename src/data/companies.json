@@ -550,7 +550,7 @@
     "slug": "lago",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Runway Ml",
@@ -1258,7 +1258,8 @@
     "slug": "hyperspell",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Comity",
@@ -5429,6 +5430,15 @@
     "slug": "ciq",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-10-28",
+    "failCount": 0
+  },
+  {
+    "name": "Defenseunicorns",
+    "website": "defenseunicorns.com",
+    "ats": "ashby",
+    "slug": "defenseunicorns",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-10-29",
     "failCount": 0
   }
 ]

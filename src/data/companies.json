@@ -96,7 +96,7 @@
     "slug": "cloudwalk",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "MinIO",
@@ -550,7 +550,7 @@
     "slug": "lago",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Runway Ml",

@@ -96,7 +96,7 @@
     "slug": "cloudwalk",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "MinIO",
@@ -550,7 +550,7 @@
     "slug": "lago",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Runway Ml",
@@ -5439,6 +5439,15 @@
     "slug": "defenseunicorns",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-10-29",
+    "failCount": 0
+  },
+  {
+    "name": "H1",
+    "website": "h1.co",
+    "ats": "lever",
+    "slug": "h1",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-01",
     "failCount": 0
   }
 ]

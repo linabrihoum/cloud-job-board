@@ -96,7 +96,7 @@
     "slug": "cloudwalk",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "MinIO",
@@ -550,7 +550,7 @@
     "slug": "lago",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Runway Ml",
@@ -2122,7 +2122,7 @@
     "slug": "doctolib",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-22",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Dronedeploy",
@@ -5449,5 +5449,47 @@
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-01",
     "failCount": 0
+  },
+  {
+    "name": "Deepsource",
+    "website": "deepsource.com",
+    "ats": "workable",
+    "slug": "deepsource",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-02",
+    "failCount": 1
+  },
+  {
+    "name": "Auw",
+    "ats": "lever",
+    "slug": "auw",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-02",
+    "failCount": 0
+  },
+  {
+    "name": "Getduranta",
+    "ats": "lever",
+    "slug": "getduranta",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-02",
+    "failCount": 0
+  },
+  {
+    "name": "Equall",
+    "ats": "ashby",
+    "slug": "equall",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-02",
+    "failCount": 0
+  },
+  {
+    "name": "Creditgenie",
+    "ats": "ashby",
+    "slug": "creditgenie",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-02",
+    "failCount": 0,
+    "website": "creditgenie.com"
   }
 ]

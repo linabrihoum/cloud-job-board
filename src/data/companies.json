@@ -96,7 +96,7 @@
     "slug": "cloudwalk",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "MinIO",
@@ -550,7 +550,8 @@
     "slug": "lago",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Runway Ml",
@@ -2122,7 +2123,7 @@
     "slug": "doctolib",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-22",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Dronedeploy",
@@ -5457,7 +5458,7 @@
     "slug": "deepsource",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-02",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Auw",
@@ -5491,5 +5492,29 @@
     "addedAt": "2026-11-02",
     "failCount": 0,
     "website": "creditgenie.com"
+  },
+  {
+    "name": "ControlPlane",
+    "ats": "greenhouse",
+    "slug": "controlplane",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-03",
+    "failCount": 0
+  },
+  {
+    "name": "valis-insights-1",
+    "ats": "workable",
+    "slug": "valis-insights-1",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-03",
+    "failCount": 1
+  },
+  {
+    "name": "Digikey",
+    "ats": "workday",
+    "slug": "digikey:wd5:Digi-Key",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-03",
+    "failCount": 0
   }
 ]

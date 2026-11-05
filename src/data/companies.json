@@ -96,7 +96,8 @@
     "slug": "cloudwalk",
     "discoveredVia": "seed",
     "addedAt": "2026-07-18",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "MinIO",
@@ -2123,7 +2124,7 @@
     "slug": "doctolib",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-22",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Dronedeploy",
@@ -5458,7 +5459,7 @@
     "slug": "deepsource",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-02",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Auw",
@@ -5507,7 +5508,7 @@
     "slug": "valis-insights-1",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-11-03",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Digikey",
@@ -5524,6 +5525,24 @@
     "slug": "formal",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-04",
+    "failCount": 0
+  },
+  {
+    "name": "Albedo",
+    "website": "albedo.com",
+    "ats": "greenhouse",
+    "slug": "albedo",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-05",
+    "failCount": 0
+  },
+  {
+    "name": "Verda",
+    "website": "verda.com",
+    "ats": "ashby",
+    "slug": "verda",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-11-05",
     "failCount": 0
   }
 ]

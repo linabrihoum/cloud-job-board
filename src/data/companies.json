@@ -2124,7 +2124,7 @@
     "slug": "doctolib",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-22",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Dronedeploy",
@@ -5459,7 +5459,7 @@
     "slug": "deepsource",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-02",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Auw",
@@ -5508,7 +5508,7 @@
     "slug": "valis-insights-1",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-11-03",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Digikey",
@@ -5543,6 +5543,23 @@
     "slug": "verda",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-11-05",
+    "failCount": 0
+  },
+  {
+    "name": "Homebase",
+    "website": "gethomebase.com",
+    "ats": "ashby",
+    "slug": "homebase",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-07",
+    "failCount": 0
+  },
+  {
+    "name": "3ive",
+    "ats": "ashby",
+    "slug": "3ive",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-07",
     "failCount": 0
   }
 ]

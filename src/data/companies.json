@@ -2124,7 +2124,8 @@
     "slug": "doctolib",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-22",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Dronedeploy",
@@ -5459,7 +5460,8 @@
     "slug": "deepsource",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-02",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Auw",
@@ -5508,7 +5510,7 @@
     "slug": "valis-insights-1",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-11-03",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Digikey",

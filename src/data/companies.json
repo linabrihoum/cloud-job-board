@@ -1925,7 +1925,7 @@
     "slug": "23andme:wd5:23",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-20",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Black Duck Software, Inc.",
@@ -5581,6 +5581,15 @@
     "slug": "llamaindex",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-11-09",
+    "failCount": 0
+  },
+  {
+    "name": "Level",
+    "website": "trylevel.app",
+    "ats": "ashby",
+    "slug": "level",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-10",
     "failCount": 0
   }
 ]

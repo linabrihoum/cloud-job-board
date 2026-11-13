@@ -1821,7 +1821,7 @@
     "slug": "nvidia:wd5:NVIDIAExternalCareerSite",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Salesforce",
@@ -1885,7 +1885,7 @@
     "slug": "redhat:wd5:jobs",
     "discoveredVia": "seed",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Workday",
@@ -1926,7 +1926,7 @@
     "slug": "23andme:wd5:23",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-20",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Black Duck Software, Inc.",
@@ -3442,7 +3442,7 @@
     "slug": "tryriot",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-11",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Posthog",
@@ -5617,6 +5617,30 @@
     "slug": "odinlabs",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-11-11",
+    "failCount": 0
+  },
+  {
+    "name": "Alternativepayments",
+    "ats": "ashby",
+    "slug": "alternativepayments",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-13",
+    "failCount": 0
+  },
+  {
+    "name": "Bonfireanalytics",
+    "ats": "ashby",
+    "slug": "bonfireanalytics",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-13",
+    "failCount": 0
+  },
+  {
+    "name": "CERN",
+    "ats": "smartrecruiters",
+    "slug": "cern",
+    "discoveredVia": "hn-who-is-hiring",
+    "addedAt": "2026-11-13",
     "failCount": 0
   }
 ]

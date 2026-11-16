@@ -3443,7 +3443,7 @@
     "slug": "tryriot",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-11",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Posthog",

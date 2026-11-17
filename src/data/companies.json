@@ -3443,7 +3443,8 @@
     "slug": "tryriot",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-11",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Posthog",
@@ -5678,6 +5679,24 @@
     "slug": "sixt",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-11-15",
+    "failCount": 0
+  },
+  {
+    "name": "Posh",
+    "website": "poshenergy.com",
+    "ats": "ashby",
+    "slug": "posh",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-17",
+    "failCount": 0
+  },
+  {
+    "name": "Upbound",
+    "website": "upbound.io",
+    "ats": "greenhouse",
+    "slug": "upbound",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-11-17",
     "failCount": 0
   }
 ]

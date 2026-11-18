@@ -630,7 +630,7 @@
     "slug": "norm-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Hive.Co",
@@ -1235,7 +1235,8 @@
     "slug": "river",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 0
+    "failCount": 0,
+    "website": "river.com"
   },
   {
     "name": "Mercor",
@@ -3804,7 +3805,7 @@
     "slug": "gigs",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-18",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Sonatype",
@@ -5697,6 +5698,15 @@
     "slug": "upbound",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-11-17",
+    "failCount": 0
+  },
+  {
+    "name": "Meridial",
+    "website": "getagency.com",
+    "ats": "greenhouse",
+    "slug": "agency",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-18",
     "failCount": 0
   }
 ]

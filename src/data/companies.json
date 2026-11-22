@@ -630,7 +630,7 @@
     "slug": "norm-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Hive.Co",
@@ -3805,7 +3805,7 @@
     "slug": "gigs",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-18",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "Sonatype",
@@ -4245,7 +4245,7 @@
     "slug": "unify",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-30",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Aurelian",
@@ -5734,6 +5734,15 @@
     "slug": "kit",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-11-20",
+    "failCount": 0
+  },
+  {
+    "name": "Quindar",
+    "website": "quindar.space",
+    "ats": "ashby",
+    "slug": "quindar",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-22",
     "failCount": 0
   }
 ]

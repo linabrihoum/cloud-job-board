@@ -525,7 +525,7 @@
     "slug": "complement",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "9 Mothers",
@@ -630,7 +630,8 @@
     "slug": "norm-ai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Hive.Co",
@@ -2777,7 +2778,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-30",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Trivago",
@@ -3805,7 +3806,8 @@
     "slug": "gigs",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-18",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Sonatype",
@@ -4245,7 +4247,7 @@
     "slug": "unify",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-30",
-    "failCount": 5
+    "failCount": 6
   },
   {
     "name": "Aurelian",
@@ -5752,6 +5754,24 @@
     "slug": "octopusdeploy",
     "discoveredVia": "cncf-probe",
     "addedAt": "2026-11-23",
+    "failCount": 0
+  },
+  {
+    "name": "Tennr",
+    "website": "tennr.com",
+    "ats": "ashby",
+    "slug": "tennr",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-24",
+    "failCount": 0
+  },
+  {
+    "name": "Kubermatic",
+    "website": "kubermatic.com",
+    "ats": "ashby",
+    "slug": "kubermatic",
+    "discoveredVia": "cncf-probe",
+    "addedAt": "2026-11-24",
     "failCount": 0
   }
 ]

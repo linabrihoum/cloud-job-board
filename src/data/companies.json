@@ -525,7 +525,7 @@
     "slug": "complement",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "9 Mothers",
@@ -2778,7 +2778,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-30",
-    "failCount": 1
+    "failCount": 2
   },
   {
     "name": "Trivago",
@@ -3159,7 +3159,8 @@
     "slug": "deepsetai",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-08-04",
-    "failCount": 0
+    "failCount": 0,
+    "website": "deepset.ai"
   },
   {
     "name": "Skydropx",
@@ -3689,7 +3690,7 @@
     "slug": "axiom",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-16",
-    "failCount": 0
+    "failCount": 1
   },
   {
     "name": "Encord",
@@ -4247,7 +4248,8 @@
     "slug": "unify",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-30",
-    "failCount": 6
+    "failCount": 7,
+    "blocked": true
   },
   {
     "name": "Aurelian",

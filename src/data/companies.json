@@ -525,7 +525,7 @@
     "slug": "complement",
     "discoveredVia": "hn-who-is-hiring",
     "addedAt": "2026-07-19",
-    "failCount": 4
+    "failCount": 5
   },
   {
     "name": "9 Mothers",
@@ -2778,7 +2778,7 @@
     "slug": "thoughtworks",
     "discoveredVia": "hww-probe",
     "addedAt": "2026-07-30",
-    "failCount": 3
+    "failCount": 4
   },
   {
     "name": "Trivago",
@@ -3690,7 +3690,7 @@
     "slug": "axiom",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-08-16",
-    "failCount": 2
+    "failCount": 3
   },
   {
     "name": "Encord",
@@ -5783,6 +5783,15 @@
     "slug": "resend",
     "discoveredVia": "yc-probe",
     "addedAt": "2026-11-26",
+    "failCount": 0
+  },
+  {
+    "name": "Escape",
+    "website": "escape.tech",
+    "ats": "ashby",
+    "slug": "escape",
+    "discoveredVia": "yc-probe",
+    "addedAt": "2026-11-27",
     "failCount": 0
   }
 ]
